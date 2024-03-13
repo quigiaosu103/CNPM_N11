@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "H87eeWErfAY2o1hcUKnowf2w/qUB2Qnnwma7dZ2aa05efhkduXfR8oFpkJYZFTp07brCTcP0J2yJ2qpIpeEbEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thanh\\Exercise\\Rac\\CNPM\\CNPM.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thanh\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
+    "C:\\Users\\thanh\\.nuget\\packages\\guna.charts.winforms\\1.0.9\\guna.charts.winforms.1.0.9.nupkg.sha512",
+    "C:\\Users\\thanh\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\thanh\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\thanh\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
