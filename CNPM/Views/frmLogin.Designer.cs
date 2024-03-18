@@ -218,6 +218,7 @@
             guna2GradientButton1.Size = new Size(123, 35);
             guna2GradientButton1.TabIndex = 6;
             guna2GradientButton1.Text = "Đăng nhập";
+            guna2GradientButton1.Click += guna2GradientButton1_Click;
             // 
             // guna2CheckBox1
             // 

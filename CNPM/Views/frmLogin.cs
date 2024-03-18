@@ -57,5 +57,10 @@ namespace CNPM.Views
         {
             openCurrentForm(new frmCreateAccount());
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
