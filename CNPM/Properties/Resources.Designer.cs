@@ -223,6 +223,16 @@ namespace CNPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_phone_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-phone-50", resourceCulture);
@@ -256,6 +266,26 @@ namespace CNPM.Properties {
         internal static System.Drawing.Bitmap LogoHANCiTy {
             get {
                 object obj = ResourceManager.GetObject("LogoHANCiTy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sm_cion {
+            get {
+                object obj = ResourceManager.GetObject("sm_cion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_list {
+            get {
+                object obj = ResourceManager.GetObject("small_list", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

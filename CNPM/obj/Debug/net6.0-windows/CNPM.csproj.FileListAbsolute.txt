@@ -142,3 +142,4 @@ Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.
 Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\MySqlConnector.dll
 Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
 Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CardView.resources
