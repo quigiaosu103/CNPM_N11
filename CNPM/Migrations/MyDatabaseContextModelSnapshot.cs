@@ -22,7 +22,7 @@ namespace CNPM.Migrations
             modelBuilder.Entity("CNPM.Model.Account", b =>
                 {
                     b.Property<string>("UserName")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("AvatarUrl")
                         .IsRequired()
@@ -38,7 +38,7 @@ namespace CNPM.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("UserName");
 
@@ -70,13 +70,13 @@ namespace CNPM.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("CustomerUserId")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<int>("Date")
                         .HasColumnType("int");
 
                     b.Property<string>("EmployeeUserId")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -119,10 +119,6 @@ namespace CNPM.Migrations
                     b.Property<long>("Price")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("ProductId")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<int>("categoryId")
                         .HasColumnType("int");
 
@@ -138,7 +134,7 @@ namespace CNPM.Migrations
             modelBuilder.Entity("CNPM.Model.User", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Address")
                         .IsRequired()

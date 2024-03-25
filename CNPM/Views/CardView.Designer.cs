@@ -117,6 +117,7 @@ namespace CNPM.Views
             ForeColor = Color.FromArgb(45, 67, 112);
             Name = "CardView";
             Size = new Size(207, 209);
+            Load += CardView_Load;
             ((System.ComponentModel.ISupportInitialize)itemImage).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net.Http;
-using System.Drawing;
-using System.IO;
-using System.Net;
+﻿using System.Net;
 using CNPM.Views;
-using System.Windows.Forms;
+using Guna.UI2.WinForms;
 namespace CNPM.Controller
 {
     public class MyLib
@@ -27,15 +19,42 @@ namespace CNPM.Controller
             }
         }
 
-        public static CardView addNewProduct(string name, int price, string category, string imageUrl) 
+        public static CardView addNewProduct(string id, string name, int price, string category, Image image) 
         {
             CardView item = new CardView();
-            item.productName = name;
+            item.productId = id;
+            item.productName = name;  
             item.productPrice = price+"đ";
             item.productCategory = category;
             item.addButton = "Thêm";
-            item.itemmImage = MyLib.loadImageFromUrl(imageUrl);
+            item.itemmImage = image;
             return item;
+        }
+
+
+        public static Image openFileDialog()
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                return new Bitmap(open.FileName);
+            }
+            return null;
+        }
+
+        public static void clearText(Guna2TextBox[] textboxes)
+        {
+            foreach(Guna2TextBox box in textboxes)
+            {
+                box.Clear();
+            }
+        }
+
+       
+        public static void loadProductInfo(string id, string name, string price, string type)
+        {
         }
     }
 }

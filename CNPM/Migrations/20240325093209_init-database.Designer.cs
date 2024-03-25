@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CNPM.Migrations
 {
     [DbContext(typeof(MyDatabaseContext))]
-    [Migration("20240318023638_updateCustomerTAble")]
-    partial class updateCustomerTAble
+    [Migration("20240325093209_init-database")]
+    partial class initdatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,7 +24,7 @@ namespace CNPM.Migrations
             modelBuilder.Entity("CNPM.Model.Account", b =>
                 {
                     b.Property<string>("UserName")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("AvatarUrl")
                         .IsRequired()
@@ -40,7 +40,7 @@ namespace CNPM.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("UserName");
 
@@ -72,16 +72,13 @@ namespace CNPM.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("CustomerUserId")
-                        .HasColumnType("varchar(95)");
-
-                    b.Property<string>("CustomerUserId1")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<int>("Date")
                         .HasColumnType("int");
 
                     b.Property<string>("EmployeeUserId")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -94,8 +91,6 @@ namespace CNPM.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerUserId");
-
-                    b.HasIndex("CustomerUserId1");
 
                     b.HasIndex("EmployeeUserId");
 
@@ -126,10 +121,6 @@ namespace CNPM.Migrations
                     b.Property<long>("Price")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("ProductId")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<int>("categoryId")
                         .HasColumnType("int");
 
@@ -145,9 +136,13 @@ namespace CNPM.Migrations
             modelBuilder.Entity("CNPM.Model.User", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("varchar(95)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -162,13 +157,15 @@ namespace CNPM.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("User");
                 });
 
             modelBuilder.Entity("CNPM.Model.Customer", b =>
                 {
                     b.HasBaseType("CNPM.Model.User");
 
-                    b.ToTable("Customers", (string)null);
+                    b.HasDiscriminator().HasValue("Customer");
                 });
 
             modelBuilder.Entity("CNPM.Model.Employee", b =>
@@ -198,7 +195,7 @@ namespace CNPM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.ToTable("Employees", (string)null);
+                    b.HasDiscriminator().HasValue("Employee");
                 });
 
             modelBuilder.Entity("CNPM.Model.Account", b =>
@@ -214,13 +211,9 @@ namespace CNPM.Migrations
 
             modelBuilder.Entity("CNPM.Model.Order", b =>
                 {
-                    b.HasOne("CNPM.Model.Customer", null)
+                    b.HasOne("CNPM.Model.Customer", "Customer")
                         .WithMany("Orders")
                         .HasForeignKey("CustomerUserId");
-
-                    b.HasOne("CNPM.Model.User", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerUserId1");
 
                     b.HasOne("CNPM.Model.Employee", "Employee")
                         .WithMany()
@@ -244,24 +237,6 @@ namespace CNPM.Migrations
                         .IsRequired();
 
                     b.Navigation("category");
-                });
-
-            modelBuilder.Entity("CNPM.Model.Customer", b =>
-                {
-                    b.HasOne("CNPM.Model.User", null)
-                        .WithOne()
-                        .HasForeignKey("CNPM.Model.Customer", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("CNPM.Model.Employee", b =>
-                {
-                    b.HasOne("CNPM.Model.User", null)
-                        .WithOne()
-                        .HasForeignKey("CNPM.Model.Employee", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("CNPM.Model.Category", b =>

@@ -11,7 +11,7 @@ namespace CNPM.Controller
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbConnection = "server=sql6.freesqldatabase.com;database=sql6691797;User=sql6691797;Password=thafvhbY3b";
+            string dbConnection = "server=127.0.0.1;uid=root;pwd=;database=foodordering";
             optionsBuilder.UseMySql(dbConnection, ServerVersion.AutoDetect(dbConnection));
         }
         public DbSet<Account> Account { get; set; }
