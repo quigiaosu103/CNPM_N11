@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,55 @@ namespace CNPM.Views
 {
     public partial class CardView : UserControl
     {
+
+        public Image itemmImage
+        {
+            get { return itemImage.Image; }
+            set { itemImage.Image = value; }
+        }
+
+        public string productName
+        {
+            get { return txtProductName.Text; }
+            set { txtProductName.Text = value; }
+        }
+
+        public string productPrice
+        {
+            get { return txtProductPrice.Text; }
+            set { txtProductPrice.Text = value; }
+        }
+
+        public string productCategory
+        {
+            get { return txtproductCategory.Text; }
+            set { txtproductCategory.Text = value; }
+        }
+
+        public string addButton
+        {
+            get { return btnAdd.Text; }
+            set { btnAdd.Text = value; }
+        }
+
         public CardView()
         {
             InitializeComponent();
+        }
+
+        private void txtProductName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itemImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

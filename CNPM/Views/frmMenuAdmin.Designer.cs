@@ -57,12 +57,13 @@
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2GradientButton7 = new Guna.UI2.WinForms.Guna2GradientButton();
+            find = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            flowLayoutPanel = new FlowLayoutPanel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -128,13 +129,14 @@
             guna2GradientButton1.TabIndex = 0;
             guna2GradientButton1.Text = "THỰC ĐƠN";
             guna2GradientButton1.TextAlign = HorizontalAlignment.Left;
+            guna2GradientButton1.Click += guna2GradientButton1_Click;
             // 
             // guna2CustomGradientPanel1
             // 
             guna2CustomGradientPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             guna2CustomGradientPanel1.BorderRadius = 10;
             guna2CustomGradientPanel1.Controls.Add(guna2TextBox1);
-            guna2CustomGradientPanel1.Controls.Add(guna2GradientButton7);
+            guna2CustomGradientPanel1.Controls.Add(find);
             guna2CustomGradientPanel1.Controls.Add(guna2GradientButton6);
             guna2CustomGradientPanel1.Controls.Add(guna2GradientButton5);
             guna2CustomGradientPanel1.Controls.Add(guna2GradientButton4);
@@ -171,27 +173,28 @@
             guna2TextBox1.Size = new Size(306, 41);
             guna2TextBox1.TabIndex = 5;
             // 
-            // guna2GradientButton7
+            // find
             // 
-            guna2GradientButton7.BackColor = Color.Transparent;
-            guna2GradientButton7.BorderRadius = 5;
-            guna2GradientButton7.BorderThickness = 2;
-            guna2GradientButton7.CustomizableEdges = customizableEdges9;
-            guna2GradientButton7.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton7.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton7.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton7.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton7.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton7.FillColor = Color.FromArgb(119, 68, 4);
-            guna2GradientButton7.FillColor2 = Color.FromArgb(119, 68, 4);
-            guna2GradientButton7.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2GradientButton7.ForeColor = Color.White;
-            guna2GradientButton7.Location = new Point(425, 8);
-            guna2GradientButton7.Name = "guna2GradientButton7";
-            guna2GradientButton7.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2GradientButton7.Size = new Size(116, 39);
-            guna2GradientButton7.TabIndex = 4;
-            guna2GradientButton7.Text = "Thêm loại";
+            find.BackColor = Color.Transparent;
+            find.BorderRadius = 5;
+            find.BorderThickness = 2;
+            find.CustomizableEdges = customizableEdges9;
+            find.DisabledState.BorderColor = Color.DarkGray;
+            find.DisabledState.CustomBorderColor = Color.DarkGray;
+            find.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            find.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            find.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            find.FillColor = Color.FromArgb(119, 68, 4);
+            find.FillColor2 = Color.FromArgb(119, 68, 4);
+            find.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            find.ForeColor = Color.White;
+            find.Location = new Point(425, 8);
+            find.Name = "find";
+            find.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            find.Size = new Size(116, 39);
+            find.TabIndex = 4;
+            find.Text = "Thêm loại";
+            find.Click += guna2GradientButton7_Click;
             // 
             // guna2GradientButton6
             // 
@@ -285,11 +288,13 @@
             guna2GradientButton3.Size = new Size(116, 39);
             guna2GradientButton3.TabIndex = 0;
             guna2GradientButton3.Text = "Thêm";
+            guna2GradientButton3.Click += guna2GradientButton3_Click;
             // 
             // guna2CustomGradientPanel2
             // 
             guna2CustomGradientPanel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             guna2CustomGradientPanel2.BorderRadius = 10;
+            guna2CustomGradientPanel2.Controls.Add(flowLayoutPanel);
             guna2CustomGradientPanel2.Controls.Add(guna2HtmlLabel1);
             guna2CustomGradientPanel2.CustomizableEdges = customizableEdges21;
             guna2CustomGradientPanel2.Location = new Point(2, 108);
@@ -297,6 +302,14 @@
             guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2CustomGradientPanel2.Size = new Size(710, 469);
             guna2CustomGradientPanel2.TabIndex = 2;
+            // 
+            // flowLayoutPanel
+            // 
+            flowLayoutPanel.BackColor = Color.White;
+            flowLayoutPanel.Location = new Point(20, 49);
+            flowLayoutPanel.Name = "flowLayoutPanel";
+            flowLayoutPanel.Size = new Size(670, 412);
+            flowLayoutPanel.TabIndex = 1;
             // 
             // guna2HtmlLabel1
             // 
@@ -365,7 +378,7 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton7;
+        private Guna.UI2.WinForms.Guna2GradientButton find;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
@@ -373,5 +386,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private FlowLayoutPanel flowLayoutPanel;
     }
 }
