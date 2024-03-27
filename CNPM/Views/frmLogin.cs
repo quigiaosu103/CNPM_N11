@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DangKi__DangNhap__QuenMatKhau;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,6 +63,17 @@ namespace CNPM.Views
         {
             Form mainForm = new frMain();
             mainForm.Show();
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            form_QuenMatKhau quenMatKhau = new form_QuenMatKhau();
+            quenMatKhau.ShowDialog();
         }
     }
 }

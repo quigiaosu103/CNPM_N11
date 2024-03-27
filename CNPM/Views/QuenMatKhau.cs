@@ -16,5 +16,10 @@ namespace DangKi__DangNhap__QuenMatKhau
         {
             InitializeComponent();
         }
+
+        private void label1_quenmatkhau_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

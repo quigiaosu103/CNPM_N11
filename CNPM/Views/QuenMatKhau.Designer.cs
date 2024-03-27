@@ -37,27 +37,30 @@
             // label1_quenmatkhau
             // 
             label1_quenmatkhau.AutoSize = true;
-            label1_quenmatkhau.Font = new Font("Segoe UI", 20F);
+            label1_quenmatkhau.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1_quenmatkhau.ForeColor = Color.FromArgb(138, 76, 20);
-            label1_quenmatkhau.Location = new Point(276, 39);
+            label1_quenmatkhau.Location = new Point(305, 48);
             label1_quenmatkhau.Name = "label1_quenmatkhau";
-            label1_quenmatkhau.Size = new Size(250, 46);
+            label1_quenmatkhau.Size = new Size(195, 31);
             label1_quenmatkhau.TabIndex = 0;
             label1_quenmatkhau.Text = "Quên mật khẩu";
+            label1_quenmatkhau.TextAlign = ContentAlignment.MiddleCenter;
+            label1_quenmatkhau.Click += label1_quenmatkhau_Click;
             // 
             // label2_emaildadangki
             // 
             label2_emaildadangki.AutoSize = true;
-            label2_emaildadangki.Font = new Font("Segoe UI", 15F);
-            label2_emaildadangki.Location = new Point(247, 154);
+            label2_emaildadangki.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2_emaildadangki.Location = new Point(245, 144);
             label2_emaildadangki.Name = "label2_emaildadangki";
-            label2_emaildadangki.Size = new Size(308, 35);
+            label2_emaildadangki.Size = new Size(332, 31);
             label2_emaildadangki.TabIndex = 1;
             label2_emaildadangki.Text = "Email đã đăng kí tài khoản";
+            label2_emaildadangki.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox1_typeemail
             // 
-            textBox1_typeemail.Font = new Font("Segoe UI", 15F);
+            textBox1_typeemail.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1_typeemail.Location = new Point(214, 216);
             textBox1_typeemail.Name = "textBox1_typeemail";
             textBox1_typeemail.Size = new Size(375, 41);
@@ -66,7 +69,7 @@
             // button1_laylaimatkhau
             // 
             button1_laylaimatkhau.Cursor = Cursors.Hand;
-            button1_laylaimatkhau.Font = new Font("Segoe UI", 15F);
+            button1_laylaimatkhau.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1_laylaimatkhau.Location = new Point(279, 322);
             button1_laylaimatkhau.Name = "button1_laylaimatkhau";
             button1_laylaimatkhau.Size = new Size(245, 53);

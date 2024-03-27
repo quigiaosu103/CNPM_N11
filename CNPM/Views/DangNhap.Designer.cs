@@ -89,7 +89,7 @@
             button3_quenmatkhaubtn.Cursor = Cursors.Hand;
             button3_quenmatkhaubtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             button3_quenmatkhaubtn.ForeColor = Color.White;
-            button3_quenmatkhaubtn.Location = new Point(124, 408);
+            button3_quenmatkhaubtn.Location = new Point(123, 408);
             button3_quenmatkhaubtn.Name = "button3_quenmatkhaubtn";
             button3_quenmatkhaubtn.Size = new Size(174, 56);
             button3_quenmatkhaubtn.TabIndex = 15;
@@ -157,6 +157,7 @@
             textBox3_typepassword.Location = new Point(69, 219);
             textBox3_typepassword.Multiline = true;
             textBox3_typepassword.Name = "textBox3_typepassword";
+            textBox3_typepassword.PasswordChar = '*';
             textBox3_typepassword.Size = new Size(282, 42);
             textBox3_typepassword.TabIndex = 6;
             // 
@@ -200,6 +201,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(791, 642);
             Controls.Add(groupBox1_dangnhap);
+            MaximizeBox = false;
             Name = "form_DangNhap";
             Text = "DangNhap";
             Load += DangNhap_Load;
