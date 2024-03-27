@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\GitHub\\CNPM_N11\\CNPM\\CNPM.csproj": {}
+    "Q:\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\GitHub\\CNPM_N11\\CNPM\\CNPM.csproj": {
+    "Q:\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\CNPM_N11\\CNPM\\CNPM.csproj",
+        "projectUniqueName": "Q:\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
         "projectName": "CNPM",
-        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\CNPM_N11\\CNPM\\CNPM.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\CNPM_N11\\CNPM\\obj\\",
+        "projectPath": "Q:\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
+        "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
+        "outputPath": "Q:\\CNPM_code\\CNPM\\CNPM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\k\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,19 +81,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.26, 6.0.26]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
+              "version": "[6.0.25, 6.0.25]"
             }
           ],
           "frameworkReferences": {
@@ -104,7 +104,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
