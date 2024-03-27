@@ -141,5 +141,10 @@ namespace DangKi__DangNhap__QuenMatKhau
         {
 
         }
+
+        private void textBox1_xacthuc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

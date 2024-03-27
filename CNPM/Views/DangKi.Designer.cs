@@ -116,6 +116,7 @@
             textBox1_xacthuc.Name = "textBox1_xacthuc";
             textBox1_xacthuc.Size = new Size(209, 42);
             textBox1_xacthuc.TabIndex = 18;
+            textBox1_xacthuc.TextChanged += textBox1_xacthuc_TextChanged;
             // 
             // label1_otp
             // 
