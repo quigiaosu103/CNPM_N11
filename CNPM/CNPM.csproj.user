@@ -4,6 +4,12 @@
     <Compile Update="Views\CardView.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Views\DangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\frmAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -35,6 +41,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\frmTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\QuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
