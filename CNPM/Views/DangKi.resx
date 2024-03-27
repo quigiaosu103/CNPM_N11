@@ -118,9 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>79, 23</value>
+    <value>139, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1_otp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAuVJREFUWEfN
+        mD1OJDEQhZGQyEhJOcDGhMQIiYyInANAzhE4BSk5ISfYC3AAUjKSTXbf1/IbGfM87d6dhX7SJzzlcrlw
+        +6977+zmYtVE45qIxiVIh+JEXIu7AmVsh6nNEqJxBGlfnIsn8SZ+N2CjDp/9FGOEaJxDYtTuxbtwQpRf
+        C60d378azWjchnRQOnQCJMTvU3FcoIyNOvvx+yDF3EY0bkNifv0SdPpTnDT1m8dJncAHX9pc1b4jRGMP
+        6Ui4wxfxI/nV4FN8/Q8dJb8e0dhDuhQevdvkk8C3tKHtZfLpEY09JM895tZx8kngW9rQ9j759IjGHtJj
+        6eRZsJJZMCPgSxvaPqbYPaIxIbEyPZe8xy3BeyUxTlMfiWhskZh79ZbxrxBraC5GY41Ur1xGgUeVRmgE
+        2nokh1Z0NNZIPFqfDKzGNMeW4BVNzNlHHY01Emcp2wOcJZ8aaeu5SwzheOfJpyYaawgyElCi44dC9x+R
+        huKZaKwZCShxpNWLiPKHI7Dy/ZYEPa9q4kkjfW2CEvfCK9EmGC8G0reMICeFTxmgHLcQ6esThF37mWis
+        GQ0o1dvHulYxSJw43Hage0JI/zXB2Y16DmJU8XaS4OqPunVfFkBa73XLSH6VTCOzBGLs9sLaInF6pPmF
+        vVuXYs0RjT1KR4xk75TgFTO+itJG0HbRy3s0JiRGhgSYP9edej/GT6Ml8cJP29l36ZpobJHYC/3Vyt9a
+        KANJU8eFgZUJlLFRZz/a0JYydbN7IERji0RwNlbvh/wFRssr3Juv/aaVKvBJbYfej6OxReK2wij6tZMO
+        2HCZV8xLRqq9zWCjDh98nSCJE2voa1c0JiQeDZ14syWJqROJZEjekMR0o5ZIktcAb/KM5vhnk2RskVgA
+        dEIHfMbgkTPXps8fEo+SxBgZzloSnC6skk8i2tCWGMQaWs3RmJDoaNpeJB755tuMxCjRufdBypsEym+P
+        9ibOCNG4JqJxPVzs/QGWH1jF+Y7lrgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="pictureBox4_retypepass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAjFJREFUWEft
@@ -179,7 +197,13 @@
 </value>
   </data>
   <metadata name="backgroundWorker2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>273, 23</value>
+    <value>333, 17</value>
+  </metadata>
+  <metadata name="timvcode.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
