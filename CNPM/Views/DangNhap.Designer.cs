@@ -61,7 +61,7 @@
             groupBox1_dangnhap.Controls.Add(label3_matkhau);
             groupBox1_dangnhap.Controls.Add(label1_tendangnhap);
             groupBox1_dangnhap.Dock = DockStyle.Left;
-            groupBox1_dangnhap.Font = new Font("Segoe UI", 20F);
+            groupBox1_dangnhap.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             groupBox1_dangnhap.Location = new Point(0, 0);
             groupBox1_dangnhap.Name = "groupBox1_dangnhap";
             groupBox1_dangnhap.Size = new Size(389, 642);
@@ -74,10 +74,10 @@
             // 
             linkLabel1_taotaikhoan.AutoSize = true;
             linkLabel1_taotaikhoan.DisabledLinkColor = Color.FromArgb(192, 178, 178);
-            linkLabel1_taotaikhoan.Font = new Font("Segoe UI", 10F);
+            linkLabel1_taotaikhoan.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabel1_taotaikhoan.Location = new Point(136, 488);
             linkLabel1_taotaikhoan.Name = "linkLabel1_taotaikhoan";
-            linkLabel1_taotaikhoan.Size = new Size(148, 23);
+            linkLabel1_taotaikhoan.Size = new Size(119, 19);
             linkLabel1_taotaikhoan.TabIndex = 3;
             linkLabel1_taotaikhoan.TabStop = true;
             linkLabel1_taotaikhoan.Text = "Tạo tài khoản mới";
@@ -87,7 +87,7 @@
             // 
             button3_quenmatkhaubtn.BackColor = Color.FromArgb(130, 75, 27);
             button3_quenmatkhaubtn.Cursor = Cursors.Hand;
-            button3_quenmatkhaubtn.Font = new Font("Segoe UI", 10F);
+            button3_quenmatkhaubtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             button3_quenmatkhaubtn.ForeColor = Color.White;
             button3_quenmatkhaubtn.Location = new Point(124, 408);
             button3_quenmatkhaubtn.Name = "button3_quenmatkhaubtn";
@@ -101,7 +101,7 @@
             // 
             button1_dangnhapbtn.BackColor = Color.FromArgb(219, 144, 76);
             button1_dangnhapbtn.Cursor = Cursors.Hand;
-            button1_dangnhapbtn.Font = new Font("Segoe UI", 10F);
+            button1_dangnhapbtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             button1_dangnhapbtn.ForeColor = Color.White;
             button1_dangnhapbtn.Location = new Point(136, 339);
             button1_dangnhapbtn.Name = "button1_dangnhapbtn";
@@ -109,6 +109,7 @@
             button1_dangnhapbtn.TabIndex = 14;
             button1_dangnhapbtn.Text = "ĐĂNG NHẬP";
             button1_dangnhapbtn.UseVisualStyleBackColor = false;
+            button1_dangnhapbtn.Click += button1_dangnhapbtn_Click;
             // 
             // pictureBox5_passwordicon
             // 
@@ -132,11 +133,11 @@
             // 
             checkBox1_remember.AutoSize = true;
             checkBox1_remember.Cursor = Cursors.Hand;
-            checkBox1_remember.Font = new Font("Segoe UI", 10F);
+            checkBox1_remember.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             checkBox1_remember.ForeColor = Color.FromArgb(199, 128, 46);
             checkBox1_remember.Location = new Point(69, 281);
             checkBox1_remember.Name = "checkBox1_remember";
-            checkBox1_remember.Size = new Size(181, 27);
+            checkBox1_remember.Size = new Size(147, 23);
             checkBox1_remember.TabIndex = 8;
             checkBox1_remember.Text = "Ghi nhớ đăng nhập";
             checkBox1_remember.UseVisualStyleBackColor = true;
@@ -144,15 +145,15 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10F);
+            label5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(69, 441);
             label5.Name = "label5";
-            label5.Size = new Size(0, 23);
+            label5.Size = new Size(0, 19);
             label5.TabIndex = 1;
             // 
             // textBox3_typepassword
             // 
-            textBox3_typepassword.Font = new Font("Segoe UI", 12F);
+            textBox3_typepassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3_typepassword.Location = new Point(69, 219);
             textBox3_typepassword.Multiline = true;
             textBox3_typepassword.Name = "textBox3_typepassword";
@@ -161,7 +162,7 @@
             // 
             // textBox1_tendangnhap
             // 
-            textBox1_tendangnhap.Font = new Font("Segoe UI", 12F);
+            textBox1_tendangnhap.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1_tendangnhap.Location = new Point(69, 128);
             textBox1_tendangnhap.Multiline = true;
             textBox1_tendangnhap.Name = "textBox1_tendangnhap";
@@ -172,22 +173,22 @@
             // label3_matkhau
             // 
             label3_matkhau.AutoSize = true;
-            label3_matkhau.Font = new Font("Segoe UI", 10F);
+            label3_matkhau.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3_matkhau.ForeColor = Color.FromArgb(199, 128, 46);
             label3_matkhau.Location = new Point(69, 184);
             label3_matkhau.Name = "label3_matkhau";
-            label3_matkhau.Size = new Size(82, 23);
+            label3_matkhau.Size = new Size(68, 19);
             label3_matkhau.TabIndex = 2;
             label3_matkhau.Text = "Mật khẩu";
             // 
             // label1_tendangnhap
             // 
             label1_tendangnhap.AutoSize = true;
-            label1_tendangnhap.Font = new Font("Segoe UI", 10F);
+            label1_tendangnhap.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1_tendangnhap.ForeColor = Color.FromArgb(199, 128, 46);
             label1_tendangnhap.Location = new Point(69, 92);
             label1_tendangnhap.Name = "label1_tendangnhap";
-            label1_tendangnhap.Size = new Size(124, 23);
+            label1_tendangnhap.Size = new Size(100, 19);
             label1_tendangnhap.TabIndex = 0;
             label1_tendangnhap.Text = "Tên đăng nhập";
             // 

@@ -206,6 +206,7 @@
             lbLocation.Size = new Size(194, 56);
             lbLocation.TabIndex = 4;
             lbLocation.Text = "Hồ Chí Minh";
+            lbLocation.Click += lbLocation_Click;
             // 
             // lbPhone
             // 

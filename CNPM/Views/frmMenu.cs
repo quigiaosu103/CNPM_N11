@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CNPM.Controller;
+using CNPM.Model;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +18,46 @@ namespace CNPM.Views
         public frmMenu()
         {
             InitializeComponent();
+            LoadProduct();
+
+        }
+
+        private void LoadProduct()
+        {
+            using (var context = new MyDatabaseContext())
+            {
+                var products = context.Products.Include(p => p.category).ToList();
+                setProductList(products);
+            }
+        }
+
+        private void searchProduct(object sender, EventArgs e)
+        {
+            string keyword = inputSearchValue.Text.Trim();
+            if(!(keyword == ""))
+            {
+                using (var context = new MyDatabaseContext())
+                {
+                    var products = context.Products
+                        .Include(p => p.category)
+                        .Where(pr => pr.Name
+                        .Contains(keyword) || pr.category.Name.Contains(keyword)).ToList();
+                    setProductList(products);
+                }
+            }
+        }
+
+        private void setProductList(List<Product> list)
+        {
+            flowLayoutCustomer.Controls.Clear();
+            foreach (Product product in list)
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    CardView item = MyLib.addNewProduct(product.Id + "", product.Name, product.Price, product.category, product.ImageUrl, product.Description);
+                    flowLayoutCustomer.Controls.Add(item);
+                }
+            }
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
@@ -23,6 +66,25 @@ namespace CNPM.Views
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutCustomer_Paint(object sender, PaintEventArgs e)
+        {
+            foreach (Control control in flowLayoutCustomer.Controls)
+            {
+                CardView card = (CardView)control;
+                card.Controls["btnAdd"].Click += handleAddToCart;
+            }
+        }
+
+        private void handleAddToCart(object sender, EventArgs e)
         {
 
         }

@@ -199,3 +199,6 @@ C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll
 C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangKi.resources
 C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangNhap.resources
 C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_QuenMatKhau.resources
+Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangKi.resources
+Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangNhap.resources
+Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_QuenMatKhau.resources

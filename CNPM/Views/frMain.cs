@@ -1,3 +1,4 @@
+using CNPM.Controller;
 using CNPM.VIew;
 using CNPM.Views;
 using System.Windows.Forms;
@@ -9,6 +10,7 @@ namespace CNPM
         public frMain()
         {
             InitializeComponent();
+            MyLib.InitUser();
         }
 
         private Form currentForm;
@@ -51,7 +53,14 @@ namespace CNPM
 
         private void btnThucDon_Click(object sender, EventArgs e)
         {
-            openCurrentForm(new frmMenuAdmin());
+            if (UserAuthen.currentUser.UserId == "admin")
+            {
+                openCurrentForm(new frmMenuAdmin());
+            }
+            else
+            {
+                openCurrentForm(new frmMenu());
+            }
         }
 
         private void guna2GradientButton6_Click(object sender, EventArgs e)
@@ -85,6 +94,11 @@ namespace CNPM
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
         }

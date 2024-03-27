@@ -104,6 +104,7 @@ namespace CNPM.Views
             btnAdd.TabIndex = 4;
             btnAdd.Text = "Thêm";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // CardView
             // 

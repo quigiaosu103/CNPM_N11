@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CNPM;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,8 +41,14 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         private void linkLabel1_taotaikhoan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            form_DangKi dangKi = new form_DangKi(); 
+            form_DangKi dangKi = new form_DangKi();
             dangKi.ShowDialog();
+        }
+
+        private void button1_dangnhapbtn_Click(object sender, EventArgs e)
+        {
+            Form mainForm = new frMain();
+            mainForm.Show();
         }
     }
 }

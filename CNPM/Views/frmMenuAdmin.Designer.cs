@@ -69,16 +69,16 @@
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             find = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
-            guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnUpdateProduct = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             flowLayoutPanel = new FlowLayoutPanel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            selectType = new Guna.UI2.WinForms.Guna2ComboBox();
             btnSelectImage = new Guna.UI2.WinForms.Guna2Button();
             inputDescription = new Guna.UI2.WinForms.Guna2TextBox();
-            inputType = new Guna.UI2.WinForms.Guna2TextBox();
             inputPrice = new Guna.UI2.WinForms.Guna2TextBox();
             inputName = new Guna.UI2.WinForms.Guna2TextBox();
             txtRightLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -153,7 +153,7 @@
             guna2CustomGradientPanel1.Controls.Add(guna2TextBox1);
             guna2CustomGradientPanel1.Controls.Add(find);
             guna2CustomGradientPanel1.Controls.Add(guna2GradientButton6);
-            guna2CustomGradientPanel1.Controls.Add(guna2GradientButton5);
+            guna2CustomGradientPanel1.Controls.Add(btnUpdateProduct);
             guna2CustomGradientPanel1.Controls.Add(guna2GradientButton4);
             guna2CustomGradientPanel1.Controls.Add(guna2GradientButton3);
             guna2CustomGradientPanel1.CustomizableEdges = customizableEdges19;
@@ -209,7 +209,7 @@
             find.Size = new Size(116, 39);
             find.TabIndex = 4;
             find.Text = "Thêm loại";
-            find.Click += guna2GradientButton7_Click;
+            find.Click += onUpdateClick;
             // 
             // guna2GradientButton6
             // 
@@ -235,28 +235,29 @@
             guna2GradientButton6.TabIndex = 3;
             guna2GradientButton6.Text = "Tìm kiếm";
             // 
-            // guna2GradientButton5
+            // btnUpdateProduct
             // 
-            guna2GradientButton5.BackColor = Color.Transparent;
-            guna2GradientButton5.BorderColor = Color.FromArgb(96, 56, 20);
-            guna2GradientButton5.BorderRadius = 5;
-            guna2GradientButton5.BorderThickness = 2;
-            guna2GradientButton5.CustomizableEdges = customizableEdges13;
-            guna2GradientButton5.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton5.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton5.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton5.FillColor = Color.FromArgb(202, 189, 189);
-            guna2GradientButton5.FillColor2 = Color.FromArgb(202, 189, 189);
-            guna2GradientButton5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2GradientButton5.ForeColor = Color.White;
-            guna2GradientButton5.Location = new Point(292, 8);
-            guna2GradientButton5.Name = "guna2GradientButton5";
-            guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2GradientButton5.Size = new Size(116, 39);
-            guna2GradientButton5.TabIndex = 2;
-            guna2GradientButton5.Text = "Sửa";
+            btnUpdateProduct.BackColor = Color.Transparent;
+            btnUpdateProduct.BorderColor = Color.FromArgb(96, 56, 20);
+            btnUpdateProduct.BorderRadius = 5;
+            btnUpdateProduct.BorderThickness = 2;
+            btnUpdateProduct.CustomizableEdges = customizableEdges13;
+            btnUpdateProduct.DisabledState.BorderColor = Color.DarkGray;
+            btnUpdateProduct.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnUpdateProduct.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnUpdateProduct.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnUpdateProduct.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnUpdateProduct.FillColor = Color.FromArgb(202, 189, 189);
+            btnUpdateProduct.FillColor2 = Color.FromArgb(202, 189, 189);
+            btnUpdateProduct.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdateProduct.ForeColor = Color.White;
+            btnUpdateProduct.Location = new Point(292, 8);
+            btnUpdateProduct.Name = "btnUpdateProduct";
+            btnUpdateProduct.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnUpdateProduct.Size = new Size(116, 39);
+            btnUpdateProduct.TabIndex = 2;
+            btnUpdateProduct.Text = "Sửa";
+            btnUpdateProduct.Click += onUpdateClick;
             // 
             // guna2GradientButton4
             // 
@@ -280,6 +281,7 @@
             guna2GradientButton4.Size = new Size(116, 39);
             guna2GradientButton4.TabIndex = 1;
             guna2GradientButton4.Text = "Xoá";
+            guna2GradientButton4.Click += guna2GradientButton4_Click;
             // 
             // guna2GradientButton3
             // 
@@ -344,9 +346,9 @@
             // 
             guna2CustomGradientPanel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             guna2CustomGradientPanel3.BorderRadius = 10;
+            guna2CustomGradientPanel3.Controls.Add(selectType);
             guna2CustomGradientPanel3.Controls.Add(btnSelectImage);
             guna2CustomGradientPanel3.Controls.Add(inputDescription);
-            guna2CustomGradientPanel3.Controls.Add(inputType);
             guna2CustomGradientPanel3.Controls.Add(inputPrice);
             guna2CustomGradientPanel3.Controls.Add(inputName);
             guna2CustomGradientPanel3.Controls.Add(txtRightLabel);
@@ -358,10 +360,28 @@
             guna2CustomGradientPanel3.Size = new Size(293, 469);
             guna2CustomGradientPanel3.TabIndex = 3;
             // 
+            // selectType
+            // 
+            selectType.BackColor = Color.Transparent;
+            selectType.CustomizableEdges = customizableEdges23;
+            selectType.DrawMode = DrawMode.OwnerDrawFixed;
+            selectType.DropDownStyle = ComboBoxStyle.DropDownList;
+            selectType.FocusedColor = Color.FromArgb(94, 148, 255);
+            selectType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            selectType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            selectType.ForeColor = Color.FromArgb(68, 88, 112);
+            selectType.ItemHeight = 30;
+            selectType.Location = new Point(43, 237);
+            selectType.Name = "selectType";
+            selectType.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            selectType.Size = new Size(212, 36);
+            selectType.TabIndex = 4;
+            selectType.SelectedIndexChanged += selectType_SelectedIndexChanged;
+            // 
             // btnSelectImage
             // 
             btnSelectImage.Cursor = Cursors.Hand;
-            btnSelectImage.CustomizableEdges = customizableEdges23;
+            btnSelectImage.CustomizableEdges = customizableEdges25;
             btnSelectImage.DisabledState.BorderColor = Color.DarkGray;
             btnSelectImage.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSelectImage.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -371,7 +391,7 @@
             btnSelectImage.ForeColor = Color.White;
             btnSelectImage.Location = new Point(72, 386);
             btnSelectImage.Name = "btnSelectImage";
-            btnSelectImage.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btnSelectImage.ShadowDecoration.CustomizableEdges = customizableEdges26;
             btnSelectImage.Size = new Size(153, 47);
             btnSelectImage.TabIndex = 6;
             btnSelectImage.Text = "Chọn ảnh";
@@ -379,7 +399,7 @@
             // 
             // inputDescription
             // 
-            inputDescription.CustomizableEdges = customizableEdges25;
+            inputDescription.CustomizableEdges = customizableEdges27;
             inputDescription.DefaultText = "";
             inputDescription.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             inputDescription.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -388,36 +408,15 @@
             inputDescription.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             inputDescription.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             inputDescription.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            inputDescription.Location = new Point(43, 307);
+            inputDescription.Location = new Point(43, 290);
             inputDescription.Margin = new Padding(4, 4, 4, 4);
             inputDescription.Name = "inputDescription";
             inputDescription.PasswordChar = '\0';
             inputDescription.PlaceholderText = "Mô tả";
             inputDescription.SelectedText = "";
-            inputDescription.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            inputDescription.ShadowDecoration.CustomizableEdges = customizableEdges28;
             inputDescription.Size = new Size(212, 50);
             inputDescription.TabIndex = 5;
-            // 
-            // inputType
-            // 
-            inputType.CustomizableEdges = customizableEdges27;
-            inputType.DefaultText = "";
-            inputType.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            inputType.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            inputType.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            inputType.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            inputType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            inputType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            inputType.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            inputType.Location = new Point(43, 240);
-            inputType.Margin = new Padding(4, 4, 4, 4);
-            inputType.Name = "inputType";
-            inputType.PasswordChar = '\0';
-            inputType.PlaceholderText = "Loại";
-            inputType.SelectedText = "";
-            inputType.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            inputType.Size = new Size(212, 50);
-            inputType.TabIndex = 4;
             // 
             // inputPrice
             // 
@@ -509,7 +508,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2GradientButton find;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
+        private Guna.UI2.WinForms.Guna2GradientButton btnUpdateProduct;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
@@ -518,8 +517,8 @@
         private FlowLayoutPanel flowLayoutPanel;
         private Guna.UI2.WinForms.Guna2TextBox inputName;
         private Guna.UI2.WinForms.Guna2TextBox inputDescription;
-        private Guna.UI2.WinForms.Guna2TextBox inputType;
         private Guna.UI2.WinForms.Guna2TextBox inputPrice;
         private Guna.UI2.WinForms.Guna2Button btnSelectImage;
+        private Guna.UI2.WinForms.Guna2ComboBox selectType;
     }
 }
