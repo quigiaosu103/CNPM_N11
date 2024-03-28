@@ -204,3 +204,5 @@ Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.fo
 Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_QuenMatKhau.resources
 Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemView.resources
 Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CustomMessageBox.resources
+Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.dll
+Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll

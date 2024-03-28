@@ -323,6 +323,7 @@
             guna2GradientButton2.Size = new Size(114, 39);
             guna2GradientButton2.TabIndex = 2;
             guna2GradientButton2.Text = "Lọc";
+            guna2GradientButton2.Click += guna2GradientButton2_Click_1;
             // 
             // guna2HtmlLabel1
             // 
