@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pJqLUim/0OSXgl1JkNq+p1W4lUDrZazRNskW2m5cZKs4j+YbACFXNsvynyysEV7Rhje8dVZxNsjz7fIn3nU5Gg==",
+  "dgSpecHash": "WqyfY2ukbvjJPDRmQh2BrDENreuN8+CmplJkc7BeBa7CUIJTYeOVYqt3s2Zr8K5aNdI5+bGbX1eJ4U7jmKM5Aw==",
   "success": true,
   "projectFilePath": "Q:\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\k\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\guna.charts.winforms\\1.0.9\\guna.charts.winforms.1.0.9.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
