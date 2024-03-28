@@ -191,12 +191,17 @@ namespace CNPM.Views
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-            if(activeCardView != null)
+            if (activeCardView != null)
             {
                 activeCardView.Hide();
                 ProductController.removeProduct(activeCardView.productId);
                 MyLib.clearText(new Guna2TextBox[3] { inputName, inputPrice, inputDescription });
             }
+        }
+
+        private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

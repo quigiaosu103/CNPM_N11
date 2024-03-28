@@ -319,6 +319,7 @@
             guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2CustomGradientPanel2.Size = new Size(710, 469);
             guna2CustomGradientPanel2.TabIndex = 2;
+            guna2CustomGradientPanel2.Paint += guna2CustomGradientPanel2_Paint;
             // 
             // flowLayoutPanel
             // 

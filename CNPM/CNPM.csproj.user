@@ -4,6 +4,9 @@
     <Compile Update="Views\CardView.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Views\CartItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Views\DangKi.cs">
       <SubType>Form</SubType>
     </Compile>

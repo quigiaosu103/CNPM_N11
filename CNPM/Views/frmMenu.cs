@@ -86,7 +86,21 @@ namespace CNPM.Views
 
         private void handleAddToCart(object sender, EventArgs e)
         {
+            if (sender is Button button)
+            {
+                activeCard = button.Parent as CardView;
+                CartItemView cartItemView = new CartItemView();
+                cartItemView.productName = activeCard.productName;
+                cartItemView.itemId = activeCard.productId;
+                cartItemView.itemPrice = Int32.Parse(activeCard.productPrice);
+                cartItemView.totalPrice = Int32.Parse(activeCard.productPrice);
+                cartItemView.itemAmount = 1;
+                flowLayoutPanelCart.Controls.Add(cartItemView);
+            }
+           
 
         }
+
+        private CardView activeCard;
     }
 }
