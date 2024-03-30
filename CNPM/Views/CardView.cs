@@ -78,7 +78,14 @@ namespace CNPM.Views
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            //if(sender is Guna2ImageButton button)
+            //{
+            //    var card = button.Parent as CardView;
+            //    var flowLayout = button.Parent.Parent as FlowLayoutPanel;
+            //    var parent = button.Parent.Parent.Parent as CardView;
+
+            //    MyLib.AlertMessage(parent.Name);
+            //}
         }
     }
 }

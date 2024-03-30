@@ -3,6 +3,7 @@ using System.Net;
 using CNPM.Model;
 using CNPM.Views;
 using Guna.UI2.WinForms;
+using Microsoft.EntityFrameworkCore;
 namespace CNPM.Controller
 {
     public class MyLib
@@ -116,6 +117,37 @@ namespace CNPM.Controller
                 Account = null
 
             };
+        }
+        public static void searchProduct(string searchValue, FlowLayoutPanel layout)
+        {
+            if (!(searchValue == ""))
+            {
+                using (var context = new MyDatabaseContext())
+                {
+                    var products = context.Products
+                        .Include(p => p.category)
+                        .Where(pr => pr.Name
+                        .Contains(searchValue) || pr.category.Name.Contains(searchValue)).ToList();
+                    setProductList(products, layout);
+                }
+            }
+        }
+
+        public static void setProductList(List<Product> list, FlowLayoutPanel layout)
+        {
+            layout.Controls.Clear();
+            foreach (Product product in list)
+            {
+                CardView item = MyLib.addNewProduct(product.Id + "", product.Name, product.Price, product.category, product.ImageUrl, product.Description);
+                layout.Controls.Add(item);
+            }
+        }
+        public static void updateUserInfo(string[] infor)
+        {
+            using (var context = new MyDatabaseContext())
+            {
+                //handle
+            }
         }
     }
 }

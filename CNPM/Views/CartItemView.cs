@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CNPM.Controller;
+using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,13 +24,22 @@ namespace CNPM.Views
 
         private void CartItemView_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void inputCartItemAmount_ValueChanged(object sender, EventArgs e)
         {
             this.itemAmount = (int)inputCartItemAmount.Value;
             this.totalPrice = this.itemPrice * this.itemAmount;
+        }
+
+        private void btnRemoveItem_Click(object sender, EventArgs e)
+        {
+            if(sender is Guna2ImageButton button)
+            {
+                var component = button.Parent as CartItemView;
+                button.Parent.Parent.Controls.Remove(component);
+            }
         }
 
         public string productName

@@ -61,8 +61,9 @@
             // 
             // btnRemoveItem
             // 
-            btnRemoveItem.CheckedState.ImageSize = new Size(64, 64);
-            btnRemoveItem.HoverState.ImageSize = new Size(64, 64);
+            btnRemoveItem.CheckedState.ImageSize = new Size(16, 16);
+            btnRemoveItem.Cursor = Cursors.Hand;
+            btnRemoveItem.HoverState.ImageSize = new Size(16, 16);
             btnRemoveItem.Image = (Image)resources.GetObject("btnRemoveItem.Image");
             btnRemoveItem.ImageOffset = new Point(0, 0);
             btnRemoveItem.ImageRotate = 0F;
@@ -73,6 +74,7 @@
             btnRemoveItem.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnRemoveItem.Size = new Size(16, 16);
             btnRemoveItem.TabIndex = 2;
+            btnRemoveItem.Click += btnRemoveItem_Click;
             // 
             // inputCartItemAmount
             // 

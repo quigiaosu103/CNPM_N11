@@ -1,5 +1,6 @@
 ﻿using CNPM.Controller;
 using CNPM.Model;
+using Guna.UI2.WinForms;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -27,38 +28,17 @@ namespace CNPM.Views
             using (var context = new MyDatabaseContext())
             {
                 var products = context.Products.Include(p => p.category).ToList();
-                setProductList(products);
+                MyLib.setProductList(products, flowLayoutCustomer);
             }
         }
 
         private void searchProduct(object sender, EventArgs e)
         {
-            string keyword = inputSearchValue.Text.Trim();
-            if(!(keyword == ""))
-            {
-                using (var context = new MyDatabaseContext())
-                {
-                    var products = context.Products
-                        .Include(p => p.category)
-                        .Where(pr => pr.Name
-                        .Contains(keyword) || pr.category.Name.Contains(keyword)).ToList();
-                    setProductList(products);
-                }
-            }
+            string searchValue = inputSearchValue.Text.Trim();
+            MyLib.searchProduct(searchValue, flowLayoutCustomer);
         }
 
-        private void setProductList(List<Product> list)
-        {
-            flowLayoutCustomer.Controls.Clear();
-            foreach (Product product in list)
-            {
-                for (int i = 0; i < 5; i++)
-                {
-                    CardView item = MyLib.addNewProduct(product.Id + "", product.Name, product.Price, product.category, product.ImageUrl, product.Description);
-                    flowLayoutCustomer.Controls.Add(item);
-                }
-            }
-        }
+        
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -89,6 +69,16 @@ namespace CNPM.Views
             if (sender is Button button)
             {
                 activeCard = button.Parent as CardView;
+                foreach (Control control in flowLayoutPanelCart.Controls)
+                {
+                    var card = (CartItemView)control;
+                    if(activeCard.productId == card.itemId)
+                    {
+                        var numeric = (Guna2NumericUpDown)card.Controls["inputCartItemAmount"];
+                        numeric.Value += 1;
+                        return;
+                    }
+                }
                 CartItemView cartItemView = new CartItemView();
                 cartItemView.productName = activeCard.productName;
                 cartItemView.itemId = activeCard.productId;

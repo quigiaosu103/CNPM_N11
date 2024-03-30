@@ -55,7 +55,8 @@ namespace CNPM.Controller
         {
             using (var context = new MyDatabaseContext())
             {
-                return context.Products.Count() + 1;
+                int dateNumber = Int32.Parse(DateTime.Now.ToString("ddHHmmss"));
+                return context.Products.Count() + 1 + dateNumber;
             }
         }
     }

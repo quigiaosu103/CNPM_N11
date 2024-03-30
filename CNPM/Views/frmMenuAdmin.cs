@@ -174,7 +174,6 @@ namespace CNPM.Views
                 }
 
                 ProductController.updateProduct(newItem);
-                ProductController.updateProduct(newItem);
                 CardView item = MyLib.updateProductView(activeCardView, newItem);
                 MyLib.clearText(new Guna2TextBox[3] { inputName, inputPrice, inputDescription });
             }
@@ -202,6 +201,12 @@ namespace CNPM.Views
         private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2GradientButton6_Click(object sender, EventArgs e)
+        {
+            string searchValue = inputSearchValue.Text.Trim();
+            MyLib.searchProduct(searchValue, flowLayoutPanel);
         }
     }
 }
