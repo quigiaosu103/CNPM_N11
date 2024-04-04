@@ -90,5 +90,10 @@ namespace CNPM
         {
 
         }
+
+        private void guna2GradientButton3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

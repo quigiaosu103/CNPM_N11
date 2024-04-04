@@ -54,7 +54,7 @@ namespace CNPM.Views
             string phone = inputPhone.Text;
             string mail = inputMail.Text;
             string address = inputAddress.Text;
-            if(name.Trim() == "")
+            if (name.Trim() == "")
             {
                 inputFullName.Focus();
                 return;
@@ -74,8 +74,26 @@ namespace CNPM.Views
                 inputMail.Focus();
                 return;
             }
-            MyLib
 
+        }
+
+        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            Form changePassForm = new ChangePassword();
+            if(changePassForm.ShowDialog() == DialogResult.OK)
+            {
+
+            }
         }
     }
 }

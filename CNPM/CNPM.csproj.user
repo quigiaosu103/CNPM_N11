@@ -7,6 +7,9 @@
     <Compile Update="Views\CartItemView.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Views\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\CustomMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>

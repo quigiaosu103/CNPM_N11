@@ -302,6 +302,7 @@
             guna2GradientButton3.Size = new Size(114, 39);
             guna2GradientButton3.TabIndex = 3;
             guna2GradientButton3.Text = "Tất cả";
+            guna2GradientButton3.Click += guna2GradientButton3_Click_1;
             // 
             // guna2GradientButton2
             // 

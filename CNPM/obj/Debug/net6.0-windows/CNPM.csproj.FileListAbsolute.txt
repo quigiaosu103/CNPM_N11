@@ -206,3 +206,4 @@ Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemView.resource
 Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CustomMessageBox.resources
 Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.dll
 Q:\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll
+Q:\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.ChangePassword.resources
