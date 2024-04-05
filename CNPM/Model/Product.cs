@@ -14,5 +14,6 @@ namespace CNPM.Model
         public int Price { get; set; }
         public string ImageUrl { get; set; }
         public Category category { get; set; }
+        public int OrderID { get; set; }
     }
 }

@@ -1105,19 +1105,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\k\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Q:\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
+      "projectUniqueName": "D:\\Năm 3 kỳ 2\\Công nghệ phần mềm\\ĐỒ ÁN\\CNPM_N11\\CNPM\\CNPM.csproj",
       "projectName": "CNPM",
-      "projectPath": "Q:\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
-      "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
-      "outputPath": "Q:\\CNPM_code\\CNPM\\CNPM\\obj\\",
+      "projectPath": "D:\\Năm 3 kỳ 2\\Công nghệ phần mềm\\ĐỒ ÁN\\CNPM_N11\\CNPM\\CNPM.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\Năm 3 kỳ 2\\Công nghệ phần mềm\\ĐỒ ÁN\\CNPM_N11\\CNPM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
