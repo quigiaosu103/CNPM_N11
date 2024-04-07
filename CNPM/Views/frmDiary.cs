@@ -14,7 +14,7 @@ namespace CNPM
 {
     public partial class frmDiary : Form
     {
-        private Diary diary = new Diary();
+        private DiaryController diary = new DiaryController();
         public frmDiary()
         {
             InitializeComponent();
@@ -43,21 +43,10 @@ namespace CNPM
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
         }
 
-        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            DateTime selectedDate = guna2DateTimePicker1.Value;
-            guna2DateTimePicker1.Value = selectedDate.Date;
-        }
-
-        private void guna2DateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-            DateTime selectedDate = guna2DateTimePicker2.Value;
-            guna2DateTimePicker2.Value = selectedDate.Date;
-        }
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        private void guna2GradientButton2_Click_1(object sender, EventArgs e)
         {
             DateTime startDate = guna2DateTimePicker1.Value;
             DateTime endDate = guna2DateTimePicker2.Value;
@@ -80,20 +69,27 @@ namespace CNPM
 
         }
 
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        private void guna2GradientButton3_Click_1(object sender, EventArgs e)
         {
             guna2DataGridView1.Rows.Clear();
             LoadData();
         }
 
-        private void guna2GradientButton2_Click_1(object sender, EventArgs e)
+        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void guna2GradientButton3_Click_1(object sender, EventArgs e)
+        private void guna2DateTimePicker1_ValueChanged_1(object sender, EventArgs e)
         {
+            DateTime selectedDate = guna2DateTimePicker1.Value;
+            guna2DateTimePicker1.Value = selectedDate.Date;
+        }
 
+        private void guna2DateTimePicker2_ValueChanged_1(object sender, EventArgs e)
+        {
+            DateTime selectedDate = guna2DateTimePicker2.Value;
+            guna2DateTimePicker2.Value = selectedDate.Date;
         }
     }
 }
