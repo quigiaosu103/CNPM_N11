@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CNPM.Controller;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,21 @@ namespace CNPM.Views
         public frmHistory()
         {
             InitializeComponent();
+            LoadHistory();
+        }
+
+        private void LoadHistory()
+        {
+            tableHistory.Rows.Clear();
+            using (var context = new MyDatabaseContext())
+            {
+                var orderItems = context.OrderItems.Where(o => o.Order.Customer.UserId == UserAuthen.currentUser.UserId).Include(o => o.Product).Include(o => o.Order).ToList();
+                foreach (var orderItem in orderItems)
+                {
+                    tableHistory.Rows.Add(orderItem.Product.Name, orderItem.Amount, orderItem.Product.Price, orderItem.Order.Date);
+
+                }
+            }
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -35,6 +52,45 @@ namespace CNPM.Views
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        {
+            LoadHistory();
+        }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            DateTime start = inputDateStart.Value;
+            DateTime end = inputDateEnd.Value;
+            if(start <= end)
+            {
+                tableHistory.Rows.Clear();
+                using (var context = new MyDatabaseContext())
+                {
+                    var orderItems = context.OrderItems
+                        .Where(o =>
+                            o.Order.Customer.UserId == UserAuthen.currentUser.UserId
+                            && o.Order.Date > start 
+                            && o.Order.Date < end
+                            )
+                        .Include(o => o.Product).Include(o => o.Order)
+                        .ToList();
+                    foreach (var orderItem in orderItems)
+                    {
+                        tableHistory.Rows.Add(orderItem.Product.Name, orderItem.Amount, orderItem.Product.Price, orderItem.Order.Date);
+
+                    }
+                }
+            }else
+            {
+                return;
+            }
         }
     }
 }

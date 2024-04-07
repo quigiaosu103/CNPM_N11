@@ -6,8 +6,10 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CNPM.Model;
 using CNPM.Views;
 using Guna.UI2.WinForms;
+using Microsoft.EntityFrameworkCore;
 
 namespace CNPM.Controller
 {
@@ -23,18 +25,11 @@ namespace CNPM.Controller
             dataTable.Columns.Add("Date2", typeof(DateTime));
             using (var context = new MyDatabaseContext())
             {
-                var query = from products in context.Products 
-                            join orders in context.Orders on products.OrderID equals orders.Id
-                            select new
-                            {
-                                ProductId = products.Id,
-                                ProductName = products.Name,
-                                Price = products.Price,
-                                Date = orders.Date
-                            };
-                foreach (var item in query)
+                var orderItems = context.OrderItems.Include(o => o.Product).Include(o=>o.Order).ToList();
+                foreach (var orderItem in orderItems)
                 {
-                    dataTable.Rows.Add(item.ProductId, item.ProductName, item.Price, item.Date, DateTime.Now);
+                    dataTable.Rows.Add(orderItem.Product.Id, orderItem.Product.Name, orderItem.Product.Price, orderItem.Order.Date, DateTime.Now);
+                    
                 }
             }
             return dataTable;

@@ -10,7 +10,29 @@ namespace CNPM
         public frMain()
         {
             InitializeComponent();
-            MyLib.InitUser();
+            LoadUserInfo();
+
+        }
+
+        private void LoadUserInfo()
+        {
+            if (UserAuthen.currentUser != null)
+            {
+                var role = UserAuthen.currentUser.Account.Role;
+                if (role == "Manager" || role == "Admin")
+                {
+                    openCurrentForm(new frmTrangChu());
+                }
+                else
+                {
+                    openCurrentForm(new frmMenu());
+                    btnTrangChu.Hide();
+                    btnEmployee.Hide();
+                    btnDiary.Hide();
+                }
+            }
+                txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName;
+            
         }
 
         private Form currentForm;
@@ -53,7 +75,7 @@ namespace CNPM
 
         private void btnThucDon_Click(object sender, EventArgs e)
         {
-            if (UserAuthen.currentUser.UserId == "admin")
+            if (UserAuthen.currentUser.Account.Role != "customer")
             {
                 openCurrentForm(new frmMenuAdmin());
             }
@@ -99,6 +121,16 @@ namespace CNPM
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
 
         }

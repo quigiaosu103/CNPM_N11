@@ -36,6 +36,10 @@ namespace CNPM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("varchar(255)");
@@ -72,8 +76,8 @@ namespace CNPM.Migrations
                     b.Property<string>("CustomerUserId")
                         .HasColumnType("varchar(255)");
 
-                    b.Property<int>("Date")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("EmployeeUserId")
                         .HasColumnType("varchar(255)");
@@ -82,9 +86,8 @@ namespace CNPM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("TotalPrice")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("TotalPrice")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -93,6 +96,30 @@ namespace CNPM.Migrations
                     b.HasIndex("EmployeeUserId");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("CNPM.Model.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("CNPM.Model.Product", b =>
@@ -113,18 +140,13 @@ namespace CNPM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int?>("OrderId")
+                    b.Property<int>("Price")
                         .HasColumnType("int");
-
-                    b.Property<long>("Price")
-                        .HasColumnType("bigint");
 
                     b.Property<int>("categoryId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
 
                     b.HasIndex("categoryId");
 
@@ -140,6 +162,9 @@ namespace CNPM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<DateTime>("BirthDay")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -147,6 +172,9 @@ namespace CNPM.Migrations
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -222,12 +250,27 @@ namespace CNPM.Migrations
                     b.Navigation("Employee");
                 });
 
+            modelBuilder.Entity("CNPM.Model.OrderItem", b =>
+                {
+                    b.HasOne("CNPM.Model.Order", "Order")
+                        .WithMany("Products")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CNPM.Model.Product", "Product")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("CNPM.Model.Product", b =>
                 {
-                    b.HasOne("CNPM.Model.Order", null)
-                        .WithMany("Products")
-                        .HasForeignKey("OrderId");
-
                     b.HasOne("CNPM.Model.Category", "category")
                         .WithMany("Products")
                         .HasForeignKey("categoryId")
@@ -245,6 +288,11 @@ namespace CNPM.Migrations
             modelBuilder.Entity("CNPM.Model.Order", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("CNPM.Model.Product", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("CNPM.Model.User", b =>

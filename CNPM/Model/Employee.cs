@@ -14,5 +14,6 @@ namespace CNPM.Model
         public long Salary { get; set; }
         public string WorkingTime { get; set; }
         public string ApplyDate { get; set; }
+
     }
 }

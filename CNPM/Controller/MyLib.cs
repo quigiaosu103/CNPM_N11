@@ -1,9 +1,12 @@
 ﻿using System.Drawing.Imaging;
 using System.Net;
+using System.Text;
 using CNPM.Model;
 using CNPM.Views;
 using Guna.UI2.WinForms;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+
 namespace CNPM.Controller
 {
     public class MyLib
@@ -142,11 +145,54 @@ namespace CNPM.Controller
                 layout.Controls.Add(item);
             }
         }
-        public static void updateUserInfo(string[] infor)
+        public static void updateUserInfo(string[] infor, int genderIndex, DateTime birthday)
         {
             using (var context = new MyDatabaseContext())
             {
-                //handle
+                var currUserId = UserAuthen.currentUser.UserId;
+                var user = context.Users.Include(u => u.Account).Where(c => c.UserId == currUserId).FirstOrDefault();
+               // var account = context.Account.Find(user.Account.UserName);
+                user.FullName = infor[0];
+                user.Gender = genderIndex;
+                user.PhoneNumber = infor[1];
+                user.Address = infor[2];
+                user.Account.AvatarUrl = infor[3];
+                user.BirthDay = birthday;
+                context.Users.Update(user);
+                //context.Account.Update(account);
+                context.SaveChanges();
+                AlertMessage("Update successfully!");
+            }
+
+            //update local
+
+            UserAuthen.currentUser.Gender = genderIndex;
+            UserAuthen.currentUser.FullName = infor[0];
+            UserAuthen.currentUser.PhoneNumber = infor[1];
+            UserAuthen.currentUser.Address = infor[2];
+            UserAuthen.currentUser.Account.AvatarUrl = infor[3];
+            UserAuthen.currentUser.BirthDay = birthday;
+
+        
+           
+        }
+
+        
+
+        public static string hashPassword(string pass)
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(pass);
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                
+                byte[] hashBytes = sha256.ComputeHash(bytes);
+
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    builder.Append(hashBytes[i].ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
     }

@@ -18,7 +18,7 @@ namespace CNPM.VIew
         public frmTrangChu()
         {
             InitializeComponent();
-            
+
         }
 
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)
@@ -32,6 +32,11 @@ namespace CNPM.VIew
         }
 
         private void lbLocation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

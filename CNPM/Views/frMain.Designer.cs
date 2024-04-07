@@ -92,9 +92,9 @@
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
-            guna2GradientButton7 = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
-            guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnDiary = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             btnThucDon = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -109,7 +109,6 @@
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -122,6 +121,7 @@
             guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            txtAuthenName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel1.SuspendLayout();
             guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
@@ -137,9 +137,9 @@
             // guna2Panel1
             // 
             guna2Panel1.Controls.Add(guna2Panel4);
-            guna2Panel1.Controls.Add(guna2GradientButton7);
+            guna2Panel1.Controls.Add(btnEmployee);
             guna2Panel1.Controls.Add(guna2GradientButton6);
-            guna2Panel1.Controls.Add(guna2GradientButton5);
+            guna2Panel1.Controls.Add(btnDiary);
             guna2Panel1.Controls.Add(guna2GradientButton4);
             guna2Panel1.Controls.Add(guna2GradientButton3);
             guna2Panel1.Controls.Add(btnThucDon);
@@ -190,29 +190,29 @@
             guna2GradientButton8.Text = "THOÁT";
             guna2GradientButton8.Click += guna2GradientButton8_Click;
             // 
-            // guna2GradientButton7
+            // btnEmployee
             // 
-            guna2GradientButton7.CustomizableEdges = customizableEdges5;
-            guna2GradientButton7.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton7.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton7.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton7.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton7.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton7.Dock = DockStyle.Top;
-            guna2GradientButton7.FillColor = Color.White;
-            guna2GradientButton7.FillColor2 = Color.White;
-            guna2GradientButton7.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2GradientButton7.ForeColor = Color.FromArgb(96, 56, 20);
-            guna2GradientButton7.Image = Properties.Resources.icons8_user_50;
-            guna2GradientButton7.ImageAlign = HorizontalAlignment.Left;
-            guna2GradientButton7.Location = new Point(0, 457);
-            guna2GradientButton7.Name = "guna2GradientButton7";
-            guna2GradientButton7.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2GradientButton7.Size = new Size(162, 57);
-            guna2GradientButton7.TabIndex = 7;
-            guna2GradientButton7.Text = "NHÂN VIÊN";
-            guna2GradientButton7.TextAlign = HorizontalAlignment.Left;
-            guna2GradientButton7.Click += guna2GradientButton7_Click;
+            btnEmployee.CustomizableEdges = customizableEdges5;
+            btnEmployee.DisabledState.BorderColor = Color.DarkGray;
+            btnEmployee.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnEmployee.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnEmployee.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnEmployee.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnEmployee.Dock = DockStyle.Top;
+            btnEmployee.FillColor = Color.White;
+            btnEmployee.FillColor2 = Color.White;
+            btnEmployee.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEmployee.ForeColor = Color.FromArgb(96, 56, 20);
+            btnEmployee.Image = Properties.Resources.icons8_user_50;
+            btnEmployee.ImageAlign = HorizontalAlignment.Left;
+            btnEmployee.Location = new Point(0, 457);
+            btnEmployee.Name = "btnEmployee";
+            btnEmployee.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnEmployee.Size = new Size(162, 57);
+            btnEmployee.TabIndex = 7;
+            btnEmployee.Text = "NHÂN VIÊN";
+            btnEmployee.TextAlign = HorizontalAlignment.Left;
+            btnEmployee.Click += guna2GradientButton7_Click;
             // 
             // guna2GradientButton6
             // 
@@ -238,29 +238,29 @@
             guna2GradientButton6.TextAlign = HorizontalAlignment.Left;
             guna2GradientButton6.Click += guna2GradientButton6_Click;
             // 
-            // guna2GradientButton5
+            // btnDiary
             // 
-            guna2GradientButton5.CustomizableEdges = customizableEdges9;
-            guna2GradientButton5.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton5.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton5.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton5.Dock = DockStyle.Top;
-            guna2GradientButton5.FillColor = Color.White;
-            guna2GradientButton5.FillColor2 = Color.White;
-            guna2GradientButton5.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2GradientButton5.ForeColor = Color.FromArgb(96, 56, 20);
-            guna2GradientButton5.Image = Properties.Resources.icons8_book_50;
-            guna2GradientButton5.ImageAlign = HorizontalAlignment.Left;
-            guna2GradientButton5.Location = new Point(0, 343);
-            guna2GradientButton5.Name = "guna2GradientButton5";
-            guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2GradientButton5.Size = new Size(162, 57);
-            guna2GradientButton5.TabIndex = 5;
-            guna2GradientButton5.Text = "NHẬT KÝ";
-            guna2GradientButton5.TextAlign = HorizontalAlignment.Left;
-            guna2GradientButton5.Click += guna2GradientButton5_Click;
+            btnDiary.CustomizableEdges = customizableEdges9;
+            btnDiary.DisabledState.BorderColor = Color.DarkGray;
+            btnDiary.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDiary.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDiary.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnDiary.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDiary.Dock = DockStyle.Top;
+            btnDiary.FillColor = Color.White;
+            btnDiary.FillColor2 = Color.White;
+            btnDiary.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDiary.ForeColor = Color.FromArgb(96, 56, 20);
+            btnDiary.Image = Properties.Resources.icons8_book_50;
+            btnDiary.ImageAlign = HorizontalAlignment.Left;
+            btnDiary.Location = new Point(0, 343);
+            btnDiary.Name = "btnDiary";
+            btnDiary.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnDiary.Size = new Size(162, 57);
+            btnDiary.TabIndex = 5;
+            btnDiary.Text = "NHẬT KÝ";
+            btnDiary.TextAlign = HorizontalAlignment.Left;
+            btnDiary.Click += guna2GradientButton5_Click;
             // 
             // guna2GradientButton4
             // 
@@ -473,25 +473,14 @@
             guna2Panel5.BorderColor = Color.Wheat;
             guna2Panel5.BorderRadius = 20;
             guna2Panel5.CausesValidation = false;
-            guna2Panel5.Controls.Add(guna2HtmlLabel2);
+            guna2Panel5.Controls.Add(txtAuthenName);
             guna2Panel5.CustomizableEdges = customizableEdges33;
             guna2Panel5.FillColor = Color.FromArgb(217, 132, 28);
-            guna2Panel5.Location = new Point(812, 10);
+            guna2Panel5.Location = new Point(790, 10);
             guna2Panel5.Name = "guna2Panel5";
             guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges34;
             guna2Panel5.Size = new Size(176, 39);
             guna2Panel5.TabIndex = 4;
-            // 
-            // guna2HtmlLabel2
-            // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(27, 8);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(127, 22);
-            guna2HtmlLabel2.TabIndex = 0;
-            guna2HtmlLabel2.Text = "Hi, Nguyen Van A";
             // 
             // guna2PictureBox2
             // 
@@ -651,6 +640,7 @@
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges58;
             guna2Panel3.Size = new Size(1011, 36);
             guna2Panel3.TabIndex = 0;
+            guna2Panel3.Paint += guna2Panel3_Paint;
             // 
             // guna2ControlBox3
             // 
@@ -690,6 +680,18 @@
             guna2ControlBox1.Size = new Size(45, 36);
             guna2ControlBox1.TabIndex = 2;
             // 
+            // txtAuthenName
+            // 
+            txtAuthenName.BackColor = Color.Transparent;
+            txtAuthenName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            txtAuthenName.ForeColor = Color.White;
+            txtAuthenName.Location = new Point(22, 8);
+            txtAuthenName.Name = "txtAuthenName";
+            txtAuthenName.Size = new Size(22, 22);
+            txtAuthenName.TabIndex = 0;
+            txtAuthenName.Text = "Hi, ";
+            txtAuthenName.Click += guna2HtmlLabel2_Click;
+            // 
             // frMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -723,9 +725,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientButton btnTrangChu;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton7;
+        private Guna.UI2.WinForms.Guna2GradientButton btnEmployee;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDiary;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton btnThucDon;
@@ -746,12 +748,12 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtAuthenName;
     }
 }

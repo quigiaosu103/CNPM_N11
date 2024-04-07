@@ -14,7 +14,12 @@ namespace CNPM
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new form_DangNhap());
+            Form login = new form_DangNhap();
+            if(login.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new frMain());
+
+            }
         }
     }
 }

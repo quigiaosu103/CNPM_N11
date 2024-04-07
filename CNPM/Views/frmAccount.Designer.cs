@@ -62,7 +62,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            txtUserAuthenName = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -81,17 +81,17 @@
             imgAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             inputFullName = new Guna.UI2.WinForms.Guna2TextBox();
             selectGender = new Guna.UI2.WinForms.Guna2ComboBox();
-            guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            inputBirthDay = new Guna.UI2.WinForms.Guna2DateTimePicker();
             guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            txtUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel1.SuspendLayout();
             guna2CustomGradientPanel1.SuspendLayout();
             guna2CustomGradientPanel2.SuspendLayout();
@@ -102,7 +102,7 @@
             // 
             // guna2Panel1
             // 
-            guna2Panel1.Controls.Add(guna2GradientButton2);
+            guna2Panel1.Controls.Add(txtUserAuthenName);
             guna2Panel1.Controls.Add(guna2GradientButton1);
             guna2Panel1.CustomizableEdges = customizableEdges5;
             guna2Panel1.Dock = DockStyle.Top;
@@ -112,26 +112,26 @@
             guna2Panel1.Size = new Size(1010, 46);
             guna2Panel1.TabIndex = 0;
             // 
-            // guna2GradientButton2
+            // txtUserAuthenName
             // 
-            guna2GradientButton2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            guna2GradientButton2.BorderRadius = 13;
-            guna2GradientButton2.CustomizableEdges = customizableEdges1;
-            guna2GradientButton2.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton2.FillColor = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.FillColor2 = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2GradientButton2.ForeColor = Color.White;
-            guna2GradientButton2.Location = new Point(817, 8);
-            guna2GradientButton2.Name = "guna2GradientButton2";
-            guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2GradientButton2.Size = new Size(190, 33);
-            guna2GradientButton2.TabIndex = 1;
-            guna2GradientButton2.Text = "Hi, Nguyễn Văn A";
+            txtUserAuthenName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            txtUserAuthenName.BorderRadius = 13;
+            txtUserAuthenName.CustomizableEdges = customizableEdges1;
+            txtUserAuthenName.DisabledState.BorderColor = Color.DarkGray;
+            txtUserAuthenName.DisabledState.CustomBorderColor = Color.DarkGray;
+            txtUserAuthenName.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            txtUserAuthenName.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            txtUserAuthenName.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            txtUserAuthenName.FillColor = Color.FromArgb(217, 132, 28);
+            txtUserAuthenName.FillColor2 = Color.FromArgb(217, 132, 28);
+            txtUserAuthenName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUserAuthenName.ForeColor = Color.White;
+            txtUserAuthenName.Location = new Point(817, 8);
+            txtUserAuthenName.Name = "txtUserAuthenName";
+            txtUserAuthenName.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtUserAuthenName.Size = new Size(190, 33);
+            txtUserAuthenName.TabIndex = 1;
+            txtUserAuthenName.Text = "Hi, Nguyễn Văn A";
             // 
             // guna2GradientButton1
             // 
@@ -201,7 +201,7 @@
             guna2CustomGradientPanel2.Controls.Add(imgAvatar);
             guna2CustomGradientPanel2.Controls.Add(inputFullName);
             guna2CustomGradientPanel2.Controls.Add(selectGender);
-            guna2CustomGradientPanel2.Controls.Add(guna2DateTimePicker1);
+            guna2CustomGradientPanel2.Controls.Add(inputBirthDay);
             guna2CustomGradientPanel2.CustomizableEdges = customizableEdges26;
             guna2CustomGradientPanel2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2CustomGradientPanel2.ForeColor = Color.White;
@@ -462,25 +462,26 @@
             selectGender.Size = new Size(270, 36);
             selectGender.StartIndex = 0;
             selectGender.TabIndex = 3;
+            selectGender.SelectedIndexChanged += selectGender_SelectedIndexChanged;
             // 
-            // guna2DateTimePicker1
+            // inputBirthDay
             // 
-            guna2DateTimePicker1.BackColor = Color.White;
-            guna2DateTimePicker1.Checked = true;
-            guna2DateTimePicker1.CustomizableEdges = customizableEdges24;
-            guna2DateTimePicker1.FillColor = Color.Transparent;
-            guna2DateTimePicker1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker1.HoverState.BorderColor = Color.FromArgb(166, 101, 43);
-            guna2DateTimePicker1.HoverState.FillColor = Color.FromArgb(166, 101, 43);
-            guna2DateTimePicker1.Location = new Point(335, 100);
-            guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges25;
-            guna2DateTimePicker1.Size = new Size(287, 36);
-            guna2DateTimePicker1.TabIndex = 5;
-            guna2DateTimePicker1.Value = new DateTime(2024, 3, 12, 13, 15, 57, 825);
+            inputBirthDay.BackColor = Color.White;
+            inputBirthDay.Checked = true;
+            inputBirthDay.CustomizableEdges = customizableEdges24;
+            inputBirthDay.FillColor = Color.Chocolate;
+            inputBirthDay.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            inputBirthDay.Format = DateTimePickerFormat.Long;
+            inputBirthDay.HoverState.BorderColor = Color.FromArgb(166, 101, 43);
+            inputBirthDay.HoverState.FillColor = Color.FromArgb(166, 101, 43);
+            inputBirthDay.Location = new Point(335, 100);
+            inputBirthDay.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            inputBirthDay.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            inputBirthDay.Name = "inputBirthDay";
+            inputBirthDay.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            inputBirthDay.Size = new Size(287, 36);
+            inputBirthDay.TabIndex = 5;
+            inputBirthDay.Value = new DateTime(2024, 3, 12, 13, 15, 57, 825);
             // 
             // guna2CustomGradientPanel3
             // 
@@ -517,7 +518,7 @@
             guna2CustomGradientPanel4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             guna2CustomGradientPanel4.BackColor = Color.White;
             guna2CustomGradientPanel4.BorderRadius = 13;
-            guna2CustomGradientPanel4.Controls.Add(guna2HtmlLabel14);
+            guna2CustomGradientPanel4.Controls.Add(txtUserName);
             guna2CustomGradientPanel4.Controls.Add(guna2GradientButton5);
             guna2CustomGradientPanel4.Controls.Add(guna2HtmlLabel13);
             guna2CustomGradientPanel4.CustomizableEdges = customizableEdges32;
@@ -526,6 +527,19 @@
             guna2CustomGradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges33;
             guna2CustomGradientPanel4.Size = new Size(1005, 135);
             guna2CustomGradientPanel4.TabIndex = 3;
+            // 
+            // txtUserName
+            // 
+            txtUserName.AutoSize = false;
+            txtUserName.BackColor = Color.Transparent;
+            txtUserName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUserName.ForeColor = Color.FromArgb(221, 165, 100);
+            txtUserName.Location = new Point(170, 44);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(124, 24);
+            txtUserName.TabIndex = 17;
+            txtUserName.Text = "user01";
+            txtUserName.TextAlignment = ContentAlignment.BottomCenter;
             // 
             // guna2GradientButton5
             // 
@@ -622,19 +636,6 @@
             guna2HtmlLabel3.TextAlignment = ContentAlignment.TopCenter;
             guna2HtmlLabel3.Click += guna2HtmlLabel3_Click;
             // 
-            // guna2HtmlLabel14
-            // 
-            guna2HtmlLabel14.AutoSize = false;
-            guna2HtmlLabel14.BackColor = Color.Transparent;
-            guna2HtmlLabel14.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel14.ForeColor = Color.FromArgb(221, 165, 100);
-            guna2HtmlLabel14.Location = new Point(170, 43);
-            guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            guna2HtmlLabel14.Size = new Size(124, 24);
-            guna2HtmlLabel14.TabIndex = 17;
-            guna2HtmlLabel14.Text = "user01";
-            guna2HtmlLabel14.TextAlignment = ContentAlignment.BottomCenter;
-            // 
             // frmAccount
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -664,7 +665,7 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton txtUserAuthenName;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
@@ -675,7 +676,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnSelectAvatar;
         private Guna.UI2.WinForms.Guna2TextBox inputFullName;
         private Guna.UI2.WinForms.Guna2ComboBox selectGender;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker inputBirthDay;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
@@ -692,6 +693,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnUpdate;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtUserName;
     }
 }

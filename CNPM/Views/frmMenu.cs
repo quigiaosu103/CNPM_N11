@@ -20,7 +20,13 @@ namespace CNPM.Views
         {
             InitializeComponent();
             LoadProduct();
+            LoadUserInfo();
 
+        }
+
+        private void LoadUserInfo()
+        {
+            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName;
         }
 
         private void LoadProduct()

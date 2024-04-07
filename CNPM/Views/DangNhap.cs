@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Security.Cryptography;
+using CNPM.Controller;
+using CNPM.Model;
 
 namespace DangKi__DangNhap__QuenMatKhau
 {
@@ -37,8 +39,7 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         private void button3_quenmatkhaubtn_Click(object sender, EventArgs e)
         {
-            form_QuenMatKhau quenMatKhau = new form_QuenMatKhau();
-            quenMatKhau.ShowDialog();
+            
         }
 
         private void linkLabel1_taotaikhoan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -51,26 +52,58 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         private void button1_dangnhapbtn_Click(object sender, EventArgs e)
         {
-            
-            string user_name = textBox1_tendangnhap.Text;
-            string password = textBox3_typepassword.Text;
 
-            if(user_name.Trim() == "")
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string user_name = txtUserName.Text;
+            string password = txtPassword.Text;
+
+            if (user_name.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập tên đăng nhập!");
                 return;
             }
 
-            else if(password.Trim() == "")
+            else if (password.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập mật khẩu!");
                 return;
             }
-            Form mainForm = new frMain();
-            mainForm.Show();
-            //else 
+            using (var context = new MyDatabaseContext())
+            {
+                Account account = context.Account.Find(user_name);
+                if (account == null)
+                {
+                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!");
+                    return;
+                }
+                if (MyLib.hashPassword(password) != account.HashedPassword)
+                {
+                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!");
+                    return;
+                }
+                User user;
+                if (account.Role != "customer")
+                {
+                    user = (User)context.Users.OfType<Employee>().Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
+                }
+                else
+                {
+                    user = (User)context.Users.OfType<Customer>().Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
+                }
+                UserAuthen.currentUser = user;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
-        
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            form_QuenMatKhau quenMatKhau = new form_QuenMatKhau();
+            quenMatKhau.ShowDialog();
+        }
     }
 }
