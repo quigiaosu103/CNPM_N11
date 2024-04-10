@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Mail;
 using CNPM.Controller;
 using System.Drawing;
+using CNPM;
 
 
 namespace DangKi__DangNhap__QuenMatKhau
@@ -93,9 +94,12 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         private void linkLabel1_dangnhap_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            form_DangNhap dangNhap = new form_DangNhap();
-            dangNhap.ShowDialog();
+            Form login = new form_DangNhap();
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                Form main = new frMain();
+                main.ShowDialog();
+            }
             this.Close();
         }
 
