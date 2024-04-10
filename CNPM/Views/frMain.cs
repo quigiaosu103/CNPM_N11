@@ -22,6 +22,8 @@ namespace CNPM
                 if (role == "Manager" || role == "Admin")
                 {
                     openCurrentForm(new frmTrangChu());
+                    btnHistory.Hide();
+                    btnPayment.Hide();
                 }
                 else
                 {
