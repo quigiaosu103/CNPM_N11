@@ -1111,11 +1111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thanh\\Desktop\\New folder (2)\\CNPM_N11-main\\CNPM\\CNPM.csproj",
+      "projectUniqueName": "C:\\Users\\thanh\\Desktop\\github\\New folder\\CNPM_N11\\CNPM\\CNPM.csproj",
       "projectName": "CNPM",
-      "projectPath": "C:\\Users\\thanh\\Desktop\\New folder (2)\\CNPM_N11-main\\CNPM\\CNPM.csproj",
+      "projectPath": "C:\\Users\\thanh\\Desktop\\github\\New folder\\CNPM_N11\\CNPM\\CNPM.csproj",
       "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thanh\\Desktop\\New folder (2)\\CNPM_N11-main\\CNPM\\obj\\",
+      "outputPath": "C:\\Users\\thanh\\Desktop\\github\\New folder\\CNPM_N11\\CNPM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1195,6 +1195,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.22, 6.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -1203,7 +1221,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
       }
     }
   }

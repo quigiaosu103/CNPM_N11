@@ -58,19 +58,25 @@
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            flowLayoutCustomer = new FlowLayoutPanel();
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            inputSearchValue = new Guna.UI2.WinForms.Guna2TextBox();
             guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            flowLayoutPanelCart = new FlowLayoutPanel();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel1.SuspendLayout();
             guna2CustomGradientPanel1.SuspendLayout();
             guna2Panel3.SuspendLayout();
             guna2CustomGradientPanel2.SuspendLayout();
+            guna2Panel5.SuspendLayout();
             SuspendLayout();
             // 
             // guna2Panel1
@@ -143,6 +149,7 @@
             // 
             guna2CustomGradientPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             guna2CustomGradientPanel1.BorderRadius = 15;
+            guna2CustomGradientPanel1.Controls.Add(flowLayoutCustomer);
             guna2CustomGradientPanel1.Controls.Add(guna2Panel4);
             guna2CustomGradientPanel1.Controls.Add(guna2Panel3);
             guna2CustomGradientPanel1.CustomizableEdges = customizableEdges18;
@@ -151,6 +158,18 @@
             guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges19;
             guna2CustomGradientPanel1.Size = new Size(722, 532);
             guna2CustomGradientPanel1.TabIndex = 2;
+            guna2CustomGradientPanel1.Paint += guna2CustomGradientPanel1_Paint;
+            // 
+            // flowLayoutCustomer
+            // 
+            flowLayoutCustomer.AccessibleRole = AccessibleRole.None;
+            flowLayoutCustomer.AutoScroll = true;
+            flowLayoutCustomer.BackColor = Color.White;
+            flowLayoutCustomer.Location = new Point(6, 68);
+            flowLayoutCustomer.Name = "flowLayoutCustomer";
+            flowLayoutCustomer.Size = new Size(710, 457);
+            flowLayoutCustomer.TabIndex = 2;
+            flowLayoutCustomer.Paint += flowLayoutCustomer_Paint;
             // 
             // guna2Panel4
             // 
@@ -167,7 +186,7 @@
             guna2Panel3.BackColor = Color.Transparent;
             guna2Panel3.Controls.Add(guna2CustomRadioButton1);
             guna2Panel3.Controls.Add(guna2GradientButton3);
-            guna2Panel3.Controls.Add(guna2TextBox1);
+            guna2Panel3.Controls.Add(inputSearchValue);
             guna2Panel3.CustomizableEdges = customizableEdges16;
             guna2Panel3.Dock = DockStyle.Top;
             guna2Panel3.Location = new Point(0, 0);
@@ -214,33 +233,33 @@
             guna2GradientButton3.Size = new Size(122, 39);
             guna2GradientButton3.TabIndex = 1;
             guna2GradientButton3.Text = "Tìm kiếm";
-            guna2GradientButton3.Click += guna2GradientButton3_Click;
+            guna2GradientButton3.Click += searchProduct;
             // 
-            // guna2TextBox1
+            // inputSearchValue
             // 
-            guna2TextBox1.BorderColor = Color.FromArgb(96, 56, 20);
-            guna2TextBox1.BorderRadius = 10;
-            guna2TextBox1.BorderThickness = 2;
-            guna2TextBox1.CustomizableEdges = customizableEdges14;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
-            guna2TextBox1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox1.ForeColor = Color.FromArgb(96, 56, 20);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
-            guna2TextBox1.Location = new Point(121, 10);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
-            guna2TextBox1.PlaceholderText = "Tìm kiếm";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            guna2TextBox1.Size = new Size(316, 39);
-            guna2TextBox1.TabIndex = 0;
-            guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
+            inputSearchValue.BorderColor = Color.FromArgb(96, 56, 20);
+            inputSearchValue.BorderRadius = 10;
+            inputSearchValue.BorderThickness = 2;
+            inputSearchValue.CustomizableEdges = customizableEdges14;
+            inputSearchValue.DefaultText = "";
+            inputSearchValue.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            inputSearchValue.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            inputSearchValue.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            inputSearchValue.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            inputSearchValue.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
+            inputSearchValue.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            inputSearchValue.ForeColor = Color.FromArgb(96, 56, 20);
+            inputSearchValue.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
+            inputSearchValue.Location = new Point(121, 10);
+            inputSearchValue.Name = "inputSearchValue";
+            inputSearchValue.PasswordChar = '\0';
+            inputSearchValue.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
+            inputSearchValue.PlaceholderText = "Tìm kiếm";
+            inputSearchValue.SelectedText = "";
+            inputSearchValue.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            inputSearchValue.Size = new Size(316, 39);
+            inputSearchValue.TabIndex = 0;
+            inputSearchValue.TextChanged += guna2TextBox1_TextChanged;
             // 
             // guna2CustomGradientPanel2
             // 
@@ -281,6 +300,7 @@
             guna2GradientButton4.Size = new Size(125, 45);
             guna2GradientButton4.TabIndex = 2;
             guna2GradientButton4.Text = "Thanh toán";
+            guna2GradientButton4.Click += guna2GradientButton4_Click;
             // 
             // guna2HtmlLabel1
             // 
@@ -300,12 +320,54 @@
             // 
             guna2Panel5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             guna2Panel5.BackColor = Color.FromArgb(188, 159, 133);
+            guna2Panel5.Controls.Add(flowLayoutPanelCart);
+            guna2Panel5.Controls.Add(guna2HtmlLabel4);
+            guna2Panel5.Controls.Add(guna2HtmlLabel3);
+            guna2Panel5.Controls.Add(guna2HtmlLabel2);
             guna2Panel5.CustomizableEdges = customizableEdges22;
             guna2Panel5.Location = new Point(0, 57);
             guna2Panel5.Name = "guna2Panel5";
             guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges23;
             guna2Panel5.Size = new Size(276, 390);
             guna2Panel5.TabIndex = 0;
+            // 
+            // flowLayoutPanelCart
+            // 
+            flowLayoutPanelCart.AutoScroll = true;
+            flowLayoutPanelCart.Location = new Point(8, 35);
+            flowLayoutPanelCart.Name = "flowLayoutPanelCart";
+            flowLayoutPanelCart.Size = new Size(260, 300);
+            flowLayoutPanelCart.TabIndex = 3;
+            // 
+            // guna2HtmlLabel4
+            // 
+            guna2HtmlLabel4.BackColor = Color.Transparent;
+            guna2HtmlLabel4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel4.Location = new Point(212, 10);
+            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            guna2HtmlLabel4.Size = new Size(35, 19);
+            guna2HtmlLabel4.TabIndex = 2;
+            guna2HtmlLabel4.Text = "Tổng";
+            // 
+            // guna2HtmlLabel3
+            // 
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel3.Location = new Point(108, 10);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(59, 19);
+            guna2HtmlLabel3.TabIndex = 1;
+            guna2HtmlLabel3.Text = "Số lượng";
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel2.Location = new Point(28, 10);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(26, 19);
+            guna2HtmlLabel2.TabIndex = 0;
+            guna2HtmlLabel2.Text = "Tên";
             // 
             // frmMenu
             // 
@@ -324,6 +386,8 @@
             guna2CustomGradientPanel1.ResumeLayout(false);
             guna2Panel3.ResumeLayout(false);
             guna2CustomGradientPanel2.ResumeLayout(false);
+            guna2Panel5.ResumeLayout(false);
+            guna2Panel5.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -335,7 +399,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox inputSearchValue;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton1;
@@ -343,5 +407,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
+        private FlowLayoutPanel flowLayoutCustomer;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private FlowLayoutPanel flowLayoutPanelCart;
     }
 }

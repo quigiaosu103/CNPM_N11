@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.Security;
 using System.Security.Policy;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -20,100 +21,24 @@ namespace CNPM.Controller
 {
     public class PaymentController
     {
-    
-
         MyDatabaseContext db = new MyDatabaseContext();
-        Cart spn = new Cart();
-        List<Cart> dssp = new List<Cart>();
-        //CustomMessageBox customMessageBox = new CustomMessageBox();
-        public void dsSanPham(DataGridView dataGridView, Guna2HtmlLabel txtTotal, Guna2HtmlLabel txtVAT, Guna2HtmlLabel txtDiscont, Guna2HtmlLabel txtFinalTotal)
+        public int totalPriceProduct(FlowLayoutPanel flowLayoutPanel)
+        { 
+            int totalPrice = 0;
+            foreach(CartItemPaymentView data in flowLayoutPanel.Controls)
+            {
+                totalPrice += data.itemPrice;
+
+            }
+            return totalPrice;
+        }
+
+        public void loadInforBill(Guna2HtmlLabel txtTotal, Guna2HtmlLabel txtVAT, Guna2HtmlLabel txtDiscont, Guna2HtmlLabel txtFinalTotal)
         {
-     
-            spn = new Cart() { nameSanPham = "Banh 1", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 2", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 3", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 4", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 5", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 6", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 7", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 8", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 9", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 10", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 1", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 2", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 3", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 4", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 5", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 6", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 7", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 8", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 9", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 10", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 1", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 2", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 3", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 4", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 5", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 6", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 7", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 8", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 9", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            spn = new Cart() { nameSanPham = "Banh 100", soLuong = 2, total = 100000 };
-            dssp.Add(spn);
-            //dssp.Reverse();
-
-            foreach (var i in dssp)
-            {
-                dataGridView.Rows.Add(i.nameSanPham, i.soLuong, i.total);
-            }
-            dataGridView.AllowUserToAddRows = false;
-            double total = 0;
-            foreach (DataGridViewRow i in dataGridView.Rows)
-            {
-                try
-                { 
-                    total += double.Parse(i.Cells["cPrice"]!.Value.ToString());
-                }
-                catch (NullReferenceException w) { }
-
-            }
-
-            txtTotal.Text = total.ToString("N0");
             txtDiscont.Text = "0%";
             txtVAT.Text = "10%";
-            //txtFinalTotal.Text = getFinalTotal(txtTotal, txtVAT, txtDiscont).ToString("N0");
             getFinalTotal(txtTotal, txtVAT, txtDiscont, txtFinalTotal);
 
-            //dataGridView.ColumnWidthChanged()
         }
       
         public double getCodeDiscount(Guna2TextBox txtCodeDiscount)
@@ -124,7 +49,6 @@ namespace CNPM.Controller
             {
                 return discountValue;
             }
-            //MessageBox.Show( txtCodeDiscount.Text.GetType().ToString());
             return excelFileReader(txtCodeDiscount.Text);
         }
 
@@ -135,49 +59,11 @@ namespace CNPM.Controller
             double vat = double.Parse(txtVAT.Text.Replace("%", ""));
             double total = double.Parse(txtTotal.Text) * (1 + 1 * (vat /100) - 1 * (discount / 100));
             txtFinalTotal.Text = total.ToString("N0");
-            //return total;
-        }
-
-        public void getBill(Guna2HtmlLabel txtTotal, Guna2HtmlLabel txtVAT, Guna2HtmlLabel txtDiscont, Guna2HtmlLabel txtFinalTotal, Guna2TextBox lbNamePayment, Guna2TextBox lbPhonePayment, Guna2TextBox lbAddressPayment)
-        {
-            if(lbNamePayment.Text == lbAddressPayment.Text && lbPhonePayment.Text == lbAddressPayment.Text && lbAddressPayment.Text == "")
-            {
-                new CustomMessageBox("Vui lòng nhập đầy đủ thông tin", "Thông tin nhập sai").ShowDialog();
-            } else
-            {
-                if (lbNamePayment.Text == "")
-                {
-                    new CustomMessageBox("Vui lòng nhập thông tin", "Thông tin nhập sai").ShowDialog();
-                }
-                else if (lbPhonePayment.Text == "")
-
-
-                {
-                    new CustomMessageBox("Vui lòng nhập đúng só điện thoại", "Thông tin nhập sai").ShowDialog();
-
-                }
-                else if (lbAddressPayment.Text == "")
-                {
-                    new CustomMessageBox("Vui lòng địa chỉ người nhận", "Thông tin nhập sai").ShowDialog();
-                }
-
-            }
-
-           
-        }
-
-        public static bool IsPhoneNbr(string number)
-        {
-            Match match = Regex.Match(number, @"[^\d]");
-            if (number != null)
-                return match.Success;
-            else return false;
         }
 
         public int excelFileReader(string code)
         {
-            var stream = File.Open("C:\\Users\\thanh\\Desktop\\New folder (2)\\CNPM_N11-main\\CNPM\\Resources\\DataCodeDiscount.xlsx", FileMode.Open, FileAccess.Read);
-        
+            var stream = File.Open("C:\\Users\\thanh\\Desktop\\github\\CNPM_N11\\CNPM\\Resources\\DataCodeDiscount.xlsx", FileMode.Open, FileAccess.Read);
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             var reader = ExcelReaderFactory.CreateReader(stream);
             var result = reader.AsDataSet();
@@ -188,20 +74,110 @@ namespace CNPM.Controller
                 {
                     if (code == table1.Rows[i][0].ToString())
                     {
-                        //new CustomMessageBox(code.ToString(), "Thông tin nhập sai").ShowDialog();
                         stream.Close();
                         return int.Parse(table1.Rows[i][1].ToString());
                     }
                 }
             }
+            new CustomMessageBox("Mã giảm giá của bạn sai. Vui lòng nhập lại!", "Mã giảm giá").ShowDialog();
             stream.Close();
             return 0;
         }
-       
-        public void deleteShopCart( DataGridViewButtonColumn btnEdits)
-        {
 
+        public void insertOder(string totalPrice, string paymentMethods, List<DataPayment> data)
+        {
+            using (var context = new MyDatabaseContext())
+            {
+                var orderId = context.Orders.Max(p => (int?)p.Id) ?? 0;
+                int newOrderId = orderId + 1;
+                var test = new Employee();
+                int index = UserAuthen.currentUser.UserId.IndexOf("admin");
+                var order = new Model.Order();
+              
+
+                //if (index >= 0)
+                //{
+                //    var idCustomer = context.Customers.Where(x => x.UserId == UserAuthen.currentUser.UserId).FirstOrDefault();
+                //    order = new Model.Order { Id = newOrderId, Status = paymentMethods, TotalPrice = int.Parse(totalPrice.Replace(",", "")), Date = DateTime.Now, Customer = idCustomer, Employee = null };
+                //}
+                //else
+                //{
+                //    var idEmployee = context.Employees.Where(x => x.UserId == UserAuthen.currentUser.UserId).FirstOrDefault();
+                //    order = new Model.Order { Id = newOrderId, Status = paymentMethods, TotalPrice = int.Parse(totalPrice.Replace(",", "")), Date = DateTime.Now, Customer = null, Employee = idEmployee };
+                //}
+                var idCustomer = context.Customers.Where(x => x.UserId == UserAuthen.currentUser.UserId).FirstOrDefault();
+                order = new Model.Order { Id = newOrderId, Status = paymentMethods, TotalPrice = int.Parse(totalPrice.Replace(",", "")), Date = DateTime.Now, Customer = idCustomer, Employee = null };
+                context.Orders.Add(order);
+                
+                int numEntitiesAdded = context.SaveChanges();
+                if (numEntitiesAdded > 0)
+                {
+                    //foreach (var item in data)
+                    //{
+                    //    var orderItem = new Model.OrderItem();
+                    //    var productInfor = context.Products.Where(x => x.Id == int.Parse(item.idProduct)).FirstOrDefault();
+                    //    //productInfor = new Product() { Id = int.Parse(item.idProduct), Name = item.nameProduct, Price = item.priceProduct, ImageUrl = null };
+                    //    //var orderItemId = context.OrderItems.Max(p => (int?)p.Id) ?? 0;
+                    //    //orderItem.Id = orderItemId + 1;
+                    //    orderItem.Amount = item.numberProduct;
+                    //    orderItem.Product = productInfor;
+                    //    orderItem.Order = order;
+                    //    context.OrderItems.Add(orderItem);
+                    //    context.SaveChanges();
+
+                    //}
+                    new CustomMessageBox("Đơn hàng của bạn đặt thành công", "Đặt hàng thành công").ShowDialog();
+                }
+                else
+                {
+                    new CustomMessageBox("Đơn hàng của bạn đặt thất bại", "Đặt hàng không thành công").ShowDialog();
+                }
+            }
         }
+
+        public bool checkInforCustomer(Guna2TextBox lbNamePayment, Guna2TextBox lbPhonePayment, Guna2TextBox lbAddressPayment)
+        {
+            if (lbNamePayment.Text == lbAddressPayment.Text && lbPhonePayment.Text == lbAddressPayment.Text && lbAddressPayment.Text == "")
+            {
+                new CustomMessageBox("Vui lòng nhập đầy đủ thông tin", "Thông tin nhập sai").ShowDialog();
+                return false;
+            }
+            else
+            {
+                if (lbNamePayment.Text == "")
+                {
+                    new CustomMessageBox("Vui lòng nhập thông tin", "Thông tin nhập sai").ShowDialog();
+                    return false;
+                }
+                else if (lbPhonePayment.Text == "")
+                {
+                    new CustomMessageBox("Vui lòng nhập đúng só điện thoại", "Thông tin nhập sai").ShowDialog();
+                    return false;
+
+                }
+                else if (lbAddressPayment.Text == "")
+                {
+                    new CustomMessageBox("Vui lòng địa chỉ người nhận", "Thông tin nhập sai").ShowDialog();
+                    return false;
+                }
+            }
+            return true;
+        }
+        public void changeNumberic(FlowLayoutPanel flowLayoutPanel, CartItemPaymentView cartItemPaymentView)
+        {
+            foreach (Control control in flowLayoutPanel.Controls)
+            {
+                var card = (CartItemPaymentView)control;
+                if (cartItemPaymentView.itemId == card.itemId)
+                {
+                    var numeric = (Guna2NumericUpDown)card.Controls["inputCartItemAmount"];
+                    numeric.Value += 1;
+                    return;
+                }
+            }
+            MessageBox.Show("ha");
+        }
+
 
     }
 }

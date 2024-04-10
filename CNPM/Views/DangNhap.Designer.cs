@@ -77,7 +77,7 @@
             linkLabel1_taotaikhoan.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabel1_taotaikhoan.Location = new Point(136, 488);
             linkLabel1_taotaikhoan.Name = "linkLabel1_taotaikhoan";
-            linkLabel1_taotaikhoan.Size = new Size(148, 23);
+            linkLabel1_taotaikhoan.Size = new Size(119, 19);
             linkLabel1_taotaikhoan.TabIndex = 3;
             linkLabel1_taotaikhoan.TabStop = true;
             linkLabel1_taotaikhoan.Text = "Tạo tài khoản mới";
@@ -137,7 +137,7 @@
             checkBox1_remember.ForeColor = Color.FromArgb(199, 128, 46);
             checkBox1_remember.Location = new Point(69, 281);
             checkBox1_remember.Name = "checkBox1_remember";
-            checkBox1_remember.Size = new Size(181, 27);
+            checkBox1_remember.Size = new Size(147, 23);
             checkBox1_remember.TabIndex = 8;
             checkBox1_remember.Text = "Ghi nhớ đăng nhập";
             checkBox1_remember.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@
             label5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(69, 441);
             label5.Name = "label5";
-            label5.Size = new Size(0, 23);
+            label5.Size = new Size(0, 19);
             label5.TabIndex = 1;
             // 
             // textBox3_typepassword
@@ -178,7 +178,7 @@
             label3_matkhau.ForeColor = Color.FromArgb(199, 128, 46);
             label3_matkhau.Location = new Point(69, 184);
             label3_matkhau.Name = "label3_matkhau";
-            label3_matkhau.Size = new Size(82, 23);
+            label3_matkhau.Size = new Size(68, 19);
             label3_matkhau.TabIndex = 2;
             label3_matkhau.Text = "Mật khẩu";
             // 
@@ -189,7 +189,7 @@
             label1_tendangnhap.ForeColor = Color.FromArgb(199, 128, 46);
             label1_tendangnhap.Location = new Point(69, 92);
             label1_tendangnhap.Name = "label1_tendangnhap";
-            label1_tendangnhap.Size = new Size(124, 23);
+            label1_tendangnhap.Size = new Size(100, 19);
             label1_tendangnhap.TabIndex = 0;
             label1_tendangnhap.Text = "Tên đăng nhập";
             // 

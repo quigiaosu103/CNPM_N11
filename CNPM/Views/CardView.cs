@@ -15,6 +15,8 @@ namespace CNPM.Views
     public partial class CardView : UserControl
     {
         public string productId;
+        public string description;
+        public int cateId;
 
         public Image itemmImage
         {
@@ -53,7 +55,7 @@ namespace CNPM.Views
 
         private void txtProductName_Click(object sender, EventArgs e)
         {
-           // MyLib.loadProductInfo(this.productId, this.productName, this,productPrice, this.productCategory);
+            // MyLib.loadProductInfo(this.productId, this.productName, this,productPrice, this.productCategory);
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -68,7 +70,22 @@ namespace CNPM.Views
 
         private void CardView_Load(object sender, EventArgs e)
         {
+            if (UserAuthen.currentUser.UserId == "admin")
+            {
+                btnAdd.Hide();
+            }
+        }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            //if(sender is Guna2ImageButton button)
+            //{
+            //    var card = button.Parent as CardView;
+            //    var flowLayout = button.Parent.Parent as FlowLayoutPanel;
+            //    var parent = button.Parent.Parent.Parent as CardView;
+
+            //    MyLib.AlertMessage(parent.Name);
+            //}
         }
     }
 }

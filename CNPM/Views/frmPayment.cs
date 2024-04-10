@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CNPM.Controller;
+using Guna.UI2.WinForms;
+using Microsoft.EntityFrameworkCore;
 namespace CNPM.Views
 {
     public partial class frmPayment : Form
@@ -16,37 +18,44 @@ namespace CNPM.Views
         PaymentController controller = new PaymentController();
 
         MyDatabaseContext databaseContext = new MyDatabaseContext();
+       
+        public DataPayment payment = new DataPayment();
         public frmPayment()
         {
             InitializeComponent();
-            controller.dsSanPham(dsSanPham, txtTotal, txtVAT, txtDiscount, txtFinalTotal);
-            //btnDeletePayment.HeaderText = "";
-            //btnDeletePayment.Width = 30;
+            List<DataPayment> data = UserListProduct.dataPayment;
+            if (data != null)
+            {
+                foreach (DataPayment us in data)
+                {
+                    handleAddToCart(us);
+                    loadDataPayment();
+                }
+            }
+            controller.loadInforBill(txtTotal, txtVAT, txtDiscount, txtFinalTotal);
         }
+        private void loadDataPayment()
+        {
+            using (var context = new MyDatabaseContext())
+            {
+                txtTotal .Text= controller.totalPriceProduct(flowLayoutPanelPayment).ToString("N0");
+            }
+        }
+        private CartItemPaymentView cartItemPaymentView;
 
-
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        private void changeUpDownNumberic(object sender, EventArgs e)
         {
 
         }
-
-        private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
+        private void handleAddToCart(DataPayment data) 
         {
-
-        }
-
-
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void frmPayment_Load(object sender, EventArgs e)
-        {
-
-
+            CartItemPaymentView cartItemView = new CartItemPaymentView();
+            cartItemView.productName = data.nameProduct;
+            cartItemView.itemId = data.idProduct;
+            cartItemView.itemPrice = int.Parse(data.priceProduct.ToString());
+            cartItemView.totalPrice = int.Parse(data.priceProductTotal.ToString());
+            cartItemView.itemAmount = data.numberProduct;
+            flowLayoutPanelPayment.Controls.Add(cartItemView);
         }
 
         private void btnDiscount_Click(object sender, EventArgs e)
@@ -57,12 +66,18 @@ namespace CNPM.Views
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            controller.getBill(txtTotal, txtVAT, txtDiscount, txtFinalTotal, lbNamePayment, lbPhonePayment, lbAddressPayment);
-        }
-
-        private void dsSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //btnEdits
+            var textStatus = lbNamePayment.Text + " " + lbAddressPayment.Text + " " + lbPhonePayment.Text + " " + cbPaymentMethod.Text + " " + cbImportBill.Text;
+            List<DataPayment> paymentList = new List<DataPayment>();
+            foreach (Control control in flowLayoutPanelPayment.Controls)
+            {
+                CartItemPaymentView card = (CartItemPaymentView)control;
+                paymentList.Add(new DataPayment() { idProduct = card.itemId, nameProduct = card.productName, priceProduct = card.itemPrice, numberProduct = card.itemAmount, priceProductTotal = card.totalPrice });
+            }
+            if (controller.checkInforCustomer(lbNamePayment, lbPhonePayment, lbAddressPayment))
+            {
+                controller.insertOder(txtFinalTotal.Text, textStatus, paymentList);
+            }
+            
         }
     }
 }

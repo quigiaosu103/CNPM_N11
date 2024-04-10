@@ -1,4 +1,4 @@
-﻿using MySqlConnector;
+﻿using CNPM;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -51,6 +51,7 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         private void button1_dangnhapbtn_Click(object sender, EventArgs e)
         {
+            
             string user_name = textBox1_tendangnhap.Text;
             string password = textBox3_typepassword.Text;
 
@@ -65,7 +66,8 @@ namespace DangKi__DangNhap__QuenMatKhau
                 MessageBox.Show("Vui lòng nhập mật khẩu!");
                 return;
             }
-
+            Form mainForm = new frMain();
+            mainForm.Show();
             //else 
         }
 

@@ -7,11 +7,11 @@ using CNPM.Model;
 using Microsoft.EntityFrameworkCore;
 namespace CNPM.Controller
 {
-    internal class MyDatabaseContext:DbContext
+    internal class MyDatabaseContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbConnection = "server=127.0.0.1;uid=root;pwd=;database=foodordering";
+            string dbConnection = "server=127.0.0.1;uid=root;pwd=;database=foodorderingnew";
             optionsBuilder.UseMySql(dbConnection, ServerVersion.AutoDetect(dbConnection));
         }
         public DbSet<Account> Account { get; set; }
@@ -20,6 +20,7 @@ namespace CNPM.Controller
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -32,5 +33,6 @@ namespace CNPM.Controller
 
     }
 
-    
+
+
 }
