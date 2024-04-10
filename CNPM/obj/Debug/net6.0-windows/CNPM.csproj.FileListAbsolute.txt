@@ -61,6 +61,7 @@ C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\refint\CNPM.
 C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
 C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
 C:\Users\HP\Documents\GitHub\CNPM_N11\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll
+<<<<<<< HEAD
 Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.exe
 Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.deps.json
 Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.runtimeconfig.json
@@ -124,3 +125,5 @@ Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dll
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll
+=======
+>>>>>>> 074992082ea2fed0b97e254492c2265be9266a99
