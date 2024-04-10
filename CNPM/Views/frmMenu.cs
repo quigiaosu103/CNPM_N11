@@ -44,7 +44,7 @@ namespace CNPM.Views
             MyLib.searchProduct(searchValue, flowLayoutCustomer);
         }
 
-        
+
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -78,7 +78,7 @@ namespace CNPM.Views
                 foreach (Control control in flowLayoutPanelCart.Controls)
                 {
                     var card = (CartItemView)control;
-                    if(activeCard.productId == card.itemId)
+                    if (activeCard.productId == card.itemId)
                     {
                         var numeric = (Guna2NumericUpDown)card.Controls["inputCartItemAmount"];
                         numeric.Value += 1;
@@ -93,10 +93,20 @@ namespace CNPM.Views
                 cartItemView.itemAmount = 1;
                 flowLayoutPanelCart.Controls.Add(cartItemView);
             }
-           
+
 
         }
 
         private CardView activeCard;
+
+        private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanelCart_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

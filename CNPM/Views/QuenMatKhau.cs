@@ -51,6 +51,11 @@ namespace DangKi__DangNhap__QuenMatKhau
             this.Controls.Add(panel);
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //location: 205, 79
     }
 }
