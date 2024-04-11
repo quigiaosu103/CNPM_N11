@@ -77,6 +77,7 @@
             // 
             txtOldPass.BorderColor = Color.BurlyWood;
             txtOldPass.BorderRadius = 4;
+            txtOldPass.BorderThickness = 0;
             txtOldPass.CustomizableEdges = customizableEdges1;
             txtOldPass.DefaultText = "";
             txtOldPass.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -100,6 +101,7 @@
             // 
             txtNewPass.BorderColor = Color.BurlyWood;
             txtNewPass.BorderRadius = 4;
+            txtNewPass.BorderThickness = 0;
             txtNewPass.CustomizableEdges = customizableEdges3;
             txtNewPass.DefaultText = "";
             txtNewPass.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -123,6 +125,7 @@
             // 
             txtConfirmPass.BorderColor = Color.BurlyWood;
             txtConfirmPass.BorderRadius = 4;
+            txtConfirmPass.BorderThickness = 0;
             txtConfirmPass.CustomizableEdges = customizableEdges5;
             txtConfirmPass.DefaultText = "";
             txtConfirmPass.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);

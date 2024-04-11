@@ -314,6 +314,7 @@
             guna2GradientButton4.Size = new Size(143, 60);
             guna2GradientButton4.TabIndex = 2;
             guna2GradientButton4.Text = "Thanh toán";
+            guna2GradientButton4.Click += guna2GradientButton4_Click;
             // 
             // guna2HtmlLabel1
             // 

@@ -39,6 +39,7 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -57,13 +58,19 @@
             guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            emplyeeDatagridView = new Guna.UI2.WinForms.Guna2DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
+            Column11 = new DataGridViewTextBoxColumn();
+            Column12 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column8 = new DataGridViewTextBoxColumn();
+            Column9 = new DataGridViewTextBoxColumn();
+            Column10 = new DataGridViewTextBoxColumn();
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -73,7 +80,7 @@
             guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2Panel1.SuspendLayout();
             guna2CustomGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)emplyeeDatagridView).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel1
@@ -139,7 +146,7 @@
             guna2CustomGradientPanel1.BackColor = Color.Transparent;
             guna2CustomGradientPanel1.BorderRadius = 15;
             guna2CustomGradientPanel1.BorderThickness = 2;
-            guna2CustomGradientPanel1.Controls.Add(guna2DataGridView1);
+            guna2CustomGradientPanel1.Controls.Add(emplyeeDatagridView);
             guna2CustomGradientPanel1.Controls.Add(guna2Panel3);
             guna2CustomGradientPanel1.Controls.Add(guna2Panel2);
             guna2CustomGradientPanel1.Controls.Add(guna2TextBox1);
@@ -154,12 +161,14 @@
             guna2CustomGradientPanel1.Size = new Size(1004, 530);
             guna2CustomGradientPanel1.TabIndex = 1;
             // 
-            // guna2DataGridView1
+            // emplyeeDatagridView
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            guna2DataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            guna2DataGridView1.BackgroundColor = Color.DarkGray;
+            emplyeeDatagridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            emplyeeDatagridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            emplyeeDatagridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            emplyeeDatagridView.BackgroundColor = Color.DarkGray;
+            emplyeeDatagridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -167,10 +176,10 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeight = 17;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
+            emplyeeDatagridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            emplyeeDatagridView.ColumnHeadersHeight = 50;
+            emplyeeDatagridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            emplyeeDatagridView.Columns.AddRange(new DataGridViewColumn[] { Column1, Column11, Column12, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10 });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -178,65 +187,116 @@
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            guna2DataGridView1.GridColor = Color.Black;
-            guna2DataGridView1.Location = new Point(1, 67);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowTemplate.Height = 25;
-            guna2DataGridView1.Size = new Size(1003, 452);
-            guna2DataGridView1.TabIndex = 7;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.DarkGray;
-            guna2DataGridView1.ThemeStyle.GridColor = Color.Black;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 17;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 25;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            emplyeeDatagridView.DefaultCellStyle = dataGridViewCellStyle3;
+            emplyeeDatagridView.GridColor = Color.Black;
+            emplyeeDatagridView.Location = new Point(1, 67);
+            emplyeeDatagridView.Name = "emplyeeDatagridView";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            emplyeeDatagridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            emplyeeDatagridView.RowHeadersVisible = false;
+            emplyeeDatagridView.RowTemplate.Height = 70;
+            emplyeeDatagridView.Size = new Size(1003, 452);
+            emplyeeDatagridView.TabIndex = 7;
+            emplyeeDatagridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            emplyeeDatagridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            emplyeeDatagridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            emplyeeDatagridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            emplyeeDatagridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            emplyeeDatagridView.ThemeStyle.BackColor = Color.DarkGray;
+            emplyeeDatagridView.ThemeStyle.GridColor = Color.Black;
+            emplyeeDatagridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            emplyeeDatagridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            emplyeeDatagridView.ThemeStyle.HeaderStyle.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            emplyeeDatagridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            emplyeeDatagridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            emplyeeDatagridView.ThemeStyle.HeaderStyle.Height = 50;
+            emplyeeDatagridView.ThemeStyle.ReadOnly = false;
+            emplyeeDatagridView.ThemeStyle.RowsStyle.BackColor = Color.White;
+            emplyeeDatagridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            emplyeeDatagridView.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            emplyeeDatagridView.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            emplyeeDatagridView.ThemeStyle.RowsStyle.Height = 70;
+            emplyeeDatagridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            emplyeeDatagridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            emplyeeDatagridView.CellClick += emplyeeDatagridView_CellClick;
             // 
             // Column1
             // 
-            Column1.HeaderText = "Column1";
+            Column1.HeaderText = "Tài Khoản";
             Column1.Name = "Column1";
+            Column1.Width = 84;
+            // 
+            // Column11
+            // 
+            Column11.HeaderText = "Họ tên";
+            Column11.Name = "Column11";
+            Column11.Width = 83;
+            // 
+            // Column12
+            // 
+            Column12.HeaderText = "Địa chỉ";
+            Column12.Name = "Column12";
+            Column12.Width = 84;
             // 
             // Column2
             // 
-            Column2.HeaderText = "Column2";
+            Column2.HeaderText = "Số điện thoại";
             Column2.Name = "Column2";
+            Column2.Width = 83;
             // 
             // Column3
             // 
-            Column3.HeaderText = "Column3";
+            Column3.HeaderText = "Email";
             Column3.Name = "Column3";
+            Column3.Width = 84;
             // 
             // Column4
             // 
-            Column4.HeaderText = "Column4";
+            Column4.HeaderText = "Giới tính";
             Column4.Name = "Column4";
+            Column4.Width = 84;
             // 
             // Column5
             // 
-            Column5.HeaderText = "Column5";
+            Column5.HeaderText = "Ngày sinh";
             Column5.Name = "Column5";
+            Column5.Width = 83;
             // 
             // Column6
             // 
-            Column6.HeaderText = "Column6";
+            Column6.HeaderText = "Cmnd";
             Column6.Name = "Column6";
+            Column6.Width = 84;
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "Vị trí";
+            Column7.Name = "Column7";
+            Column7.Width = 83;
+            // 
+            // Column8
+            // 
+            Column8.HeaderText = "Lương";
+            Column8.Name = "Column8";
+            Column8.Width = 84;
+            // 
+            // Column9
+            // 
+            Column9.HeaderText = "Ca làm";
+            Column9.Name = "Column9";
+            Column9.Width = 83;
+            // 
+            // Column10
+            // 
+            Column10.HeaderText = "Ngày vào làm";
+            Column10.Name = "Column10";
+            Column10.Width = 84;
             // 
             // guna2Panel3
             // 
@@ -260,6 +320,7 @@
             // 
             // guna2TextBox1
             // 
+            guna2TextBox1.BackColor = Color.FromArgb(96, 56, 20);
             guna2TextBox1.BorderColor = Color.FromArgb(96, 56, 20);
             guna2TextBox1.CustomizableEdges = customizableEdges11;
             guna2TextBox1.DefaultText = "";
@@ -293,6 +354,7 @@
             guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox1.ItemHeight = 30;
+            guna2ComboBox1.Items.AddRange(new object[] { "Tài khoản", "Họ tên", "Địa chỉ", "Số điện thoại", "Email", "Cmnd", "Vị trí", "Lương", "Ca làm", "Ngày vào làm", "Ngày sinh", "Giới tính" });
             guna2ComboBox1.Location = new Point(349, 13);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
@@ -314,7 +376,7 @@
             guna2GradientButton5.FillColor2 = Color.FromArgb(202, 189, 189);
             guna2GradientButton5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton5.ForeColor = Color.White;
-            guna2GradientButton5.Location = new Point(852, 10);
+            guna2GradientButton5.Location = new Point(852, 13);
             guna2GradientButton5.Name = "guna2GradientButton5";
             guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2GradientButton5.Size = new Size(103, 39);
@@ -336,12 +398,13 @@
             guna2GradientButton4.FillColor2 = Color.FromArgb(202, 189, 189);
             guna2GradientButton4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton4.ForeColor = Color.White;
-            guna2GradientButton4.Location = new Point(205, 10);
+            guna2GradientButton4.Location = new Point(205, 13);
             guna2GradientButton4.Name = "guna2GradientButton4";
             guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2GradientButton4.Size = new Size(103, 39);
             guna2GradientButton4.TabIndex = 1;
             guna2GradientButton4.Text = "Thêm";
+            guna2GradientButton4.Click += guna2GradientButton4_Click;
             // 
             // guna2GradientButton3
             // 
@@ -358,12 +421,13 @@
             guna2GradientButton3.FillColor2 = Color.FromArgb(202, 189, 189);
             guna2GradientButton3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton3.ForeColor = Color.White;
-            guna2GradientButton3.Location = new Point(56, 10);
+            guna2GradientButton3.Location = new Point(39, 13);
             guna2GradientButton3.Name = "guna2GradientButton3";
             guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2GradientButton3.Size = new Size(103, 39);
             guna2GradientButton3.TabIndex = 0;
             guna2GradientButton3.Text = "Cập nhật";
+            guna2GradientButton3.Click += guna2GradientButton3_Click;
             // 
             // frmEmployee
             // 
@@ -378,7 +442,7 @@
             Text = "frmEmployee";
             guna2Panel1.ResumeLayout(false);
             guna2CustomGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)emplyeeDatagridView).EndInit();
             ResumeLayout(false);
         }
 
@@ -394,13 +458,19 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView emplyeeDatagridView;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column11;
+        private DataGridViewTextBoxColumn Column12;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn Column9;
+        private DataGridViewTextBoxColumn Column10;
     }
 }

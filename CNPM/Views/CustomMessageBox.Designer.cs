@@ -93,7 +93,7 @@
             lbName.BackColor = Color.Transparent;
             lbName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbName.ForeColor = Color.FromArgb(138, 76, 20);
-            lbName.Location = new Point(3, 86);
+            lbName.Location = new Point(3, 96);
             lbName.Name = "lbName";
             lbName.Size = new Size(274, 53);
             lbName.TabIndex = 2;
@@ -104,11 +104,11 @@
             // 
             lbError.AutoSize = false;
             lbError.BackColor = Color.Transparent;
-            lbError.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lbError.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbError.ForeColor = Color.FromArgb(138, 76, 20);
             lbError.Location = new Point(3, 42);
             lbError.Name = "lbError";
-            lbError.Size = new Size(271, 38);
+            lbError.Size = new Size(271, 57);
             lbError.TabIndex = 1;
             lbError.Text = "Thông tin nhập sai";
             lbError.TextAlignment = ContentAlignment.MiddleCenter;

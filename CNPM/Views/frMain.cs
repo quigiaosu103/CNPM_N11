@@ -2,11 +2,14 @@ using CNPM.Controller;
 using CNPM.VIew;
 using CNPM.Views;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace CNPM
 {
     public partial class frMain : Form
     {
+        public Form currentForm;
+        public List<DataPayment> paymentList = new List<DataPayment>();
         public frMain()
         {
             InitializeComponent();
@@ -36,10 +39,9 @@ namespace CNPM
                 txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName;
             
         }
-
-        private Form currentForm;
-
-        private void openCurrentForm(Form form)
+   
+        
+        public void openCurrentForm(Form form)
         {
             if (currentForm != null)
             {
@@ -99,6 +101,7 @@ namespace CNPM
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
+
             openCurrentForm(new frmPayment());
         }
 

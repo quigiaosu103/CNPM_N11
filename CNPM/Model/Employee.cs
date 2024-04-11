@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CNPM.Model
 {
-    public class Employee:User
+    public class Employee : User
     {
         public string Email { get; set; }
         public string IdCard { get; set; }

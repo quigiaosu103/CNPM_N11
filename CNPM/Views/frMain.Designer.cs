@@ -436,7 +436,7 @@
             guna2Panel9.Size = new Size(217, 160);
             guna2Panel9.TabIndex = 3;
             // 
-            // guna2Panel8
+            // guna2Panel3
             // 
             guna2Panel8.CustomizableEdges = customizableEdges87;
             guna2Panel8.Location = new Point(25, 62);
@@ -493,6 +493,32 @@
             txtAuthenName.TabIndex = 0;
             txtAuthenName.Text = "Hi, ";
             txtAuthenName.Click += guna2HtmlLabel2_Click;
+            // 
+            // guna2Panel5
+            // 
+            guna2Panel5.BackColor = SystemColors.Window;
+            guna2Panel5.BorderColor = Color.Wheat;
+            guna2Panel5.BorderRadius = 20;
+            guna2Panel5.CausesValidation = false;
+            guna2Panel5.Controls.Add(guna2HtmlLabel2);
+            guna2Panel5.CustomizableEdges = customizableEdges33;
+            guna2Panel5.FillColor = Color.FromArgb(217, 132, 28);
+            guna2Panel5.Location = new Point(812, 10);
+            guna2Panel5.Name = "guna2Panel5";
+            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            guna2Panel5.Size = new Size(176, 39);
+            guna2Panel5.TabIndex = 4;
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel2.ForeColor = Color.White;
+            guna2HtmlLabel2.Location = new Point(27, 8);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(127, 22);
+            guna2HtmlLabel2.TabIndex = 0;
+            guna2HtmlLabel2.Text = "Hi, Nguyen Van A";
             // 
             // guna2PictureBox2
             // 
@@ -701,6 +727,7 @@
             Controls.Add(guna2Panel2);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
+            IsMdiContainer = true;
             Name = "frMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -738,7 +765,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Panel bodyPanel;
+        public Guna.UI2.WinForms.Guna2Panel bodyPanel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;

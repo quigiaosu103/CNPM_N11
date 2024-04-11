@@ -1,12 +1,8 @@
-﻿using System.Drawing.Imaging;
-using System.Net;
-using System.Text;
+﻿using System.Net;
 using CNPM.Model;
 using CNPM.Views;
 using Guna.UI2.WinForms;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography;
-
 namespace CNPM.Controller
 {
     public class MyLib

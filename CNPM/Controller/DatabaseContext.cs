@@ -7,7 +7,7 @@ using CNPM.Model;
 using Microsoft.EntityFrameworkCore;
 namespace CNPM.Controller
 {
-    internal class MyDatabaseContext:DbContext
+    internal class MyDatabaseContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -33,5 +33,6 @@ namespace CNPM.Controller
 
     }
 
-    
+
+
 }
