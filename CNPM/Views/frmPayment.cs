@@ -36,6 +36,7 @@ namespace CNPM.Views
         }
         private void loadDataPayment()
         {
+
             using (var context = new MyDatabaseContext())
             {
                 txtTotal .Text= controller.totalPriceProduct(flowLayoutPanelPayment).ToString("N0");

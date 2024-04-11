@@ -13,6 +13,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using CNPM.Views;
 using System.Runtime.CompilerServices;
 using System.ComponentModel.DataAnnotations;
+using Guna.UI2.WinForms;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+using System.Windows.Media.Animation;
 namespace CNPM.Controller
 {
     public class EmployeeController
@@ -20,13 +24,13 @@ namespace CNPM.Controller
         public void loadDataEmployee(DataGridView data)
         {
             using (var context = new MyDatabaseContext())
-            { 
-                Employee employee   = new Employee();
+            {
+                Employee employee = new Employee();
                 var dataEmployee = context.Employees.ToList();
-                
-                foreach(var i in dataEmployee)
+
+                foreach (var i in dataEmployee)
                 {
-                    data.Rows.Add(i.FullName, i.Address, i.PhoneNumber, i.Gender, i.BirthDay, i.IdCard, i.Position, i.Salary, i.WorkingTime, i.ApplyDate);
+                    data.Rows.Add(i.UserId,i.FullName, i.Address, i.PhoneNumber, i.Email, i.Gender, i.BirthDay, i.IdCard, i.Position, i.Salary, i.WorkingTime, i.ApplyDate);
                 }
                 data.AllowUserToAddRows = false;
             }
@@ -89,7 +93,7 @@ namespace CNPM.Controller
                         new CustomMessageBox("Cập nhật thông tin thất bại", "Cập nhật không thành công").ShowDialog();
                     }
                 }
-                
+
             }
         }
 
@@ -98,11 +102,11 @@ namespace CNPM.Controller
             using (var context = new MyDatabaseContext())
             {
                 var findId = context.Employees.Select(x => x.UserId).ToList();
-                int maxNumber = findId.Select(int.Parse).Max() +1;
+                int maxNumber = findId.Select(int.Parse).Max() + 1;
                 Employee newEmployees = new Employee();
                 newEmployees.UserId = maxNumber.ToString();
                 newEmployees.FullName = data.FullName;
-                newEmployees.IdCard = data.IdCard;         
+                newEmployees.IdCard = data.IdCard;
                 newEmployees.Salary = data.Salary;
                 newEmployees.ApplyDate = data.ApplyDate;
                 newEmployees.WorkingTime = data.WorkingTime;
@@ -122,10 +126,29 @@ namespace CNPM.Controller
                 {
                     new CustomMessageBox("Thêm nhân viên thất bại", "Thêm không thành công").ShowDialog();
                 }
-                
+
 
             }
         }
+
+        public static void getData(Employee data)
+        {
+            if (data != null) 
+            {
+
+            }
+        }
+        public static void loadDataCombobox(Guna2ComboBox cb)
+        {
+            //using (var context = new MyDatabaseContext())
+            //{
+            //    var data = context.Employees;
+            //    var a  = 
+            //}
+
+        }
+
+
     }
 }
 

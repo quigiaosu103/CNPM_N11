@@ -23,7 +23,7 @@ namespace CNPM.Views
         {
             InitializeComponent();
         }
-      
+
         public MessageBoxAddEmployee(string htmlLabel, string button, Employee data)
         {
             InitializeComponent();
@@ -32,24 +32,25 @@ namespace CNPM.Views
             txtName.Text = data.FullName;
             txtPhone.Text = data.PhoneNumber;
             txtSalary.Text = data.Salary.ToString("N0");
-            txtIdCard.Text = data.IdCard;   
+            txtIdCard.Text = data.IdCard;
             txtAddress.Text = data.Address;
             cbGender.SelectedIndex = data.Gender;
             ////MessageBox.Show(data.BirthDay.ToString());
-            ////dttBirthday.CustomFormat = "dd/mm/yy";
+            dttBirthday.CustomFormat = "dd/mm/yy";
             dttBirthday.Value = data.BirthDay;
             cbPosition.Text = data.Position;
             txtTimeWork.Text = data.WorkingTime.ToString();
             txtTimeApply.Text = data.ApplyDate.ToString();
-            lbId.Text = data.UserId.ToString();
-            lbId.Visible = false;
+            txtId.Text = data.UserId.ToString();
+            txtEmail.Text = data.Email.ToString();
+            //lbId.Visible = false;
         }
         public MessageBoxAddEmployee(string htmlLabel, string button)
         {
             InitializeComponent();
             lbTitle.Text = htmlLabel;
             btnTitle.Text = button;
-            lbId.Visible = false;
+            //lbId.Visible = false;
         }
         private void btnTitle_Click(object sender, EventArgs e)
         {
@@ -66,7 +67,8 @@ namespace CNPM.Views
                 data.Position = cbPosition.Text;
                 data.WorkingTime = txtTimeWork.Text;
                 data.ApplyDate = txtTimeApply.Text;
-                data.UserId = lbId.Text;
+                data.UserId = txtId.Text;
+                data.Email = txtEmail.Text;
                 EmployeeController.InitEmployee(data);
                 EmployeeController.updateEmployee(data);
                 this.Close();
@@ -84,11 +86,17 @@ namespace CNPM.Views
                 data.Position = cbPosition.Text;
                 data.WorkingTime = txtTimeWork.Text;
                 data.ApplyDate = txtTimeApply.Text;
-                data.UserId = lbId.Text;
+                data.UserId = txtId.Text;
+                data.Email = txtEmail.Text;
                 EmployeeController.addEmployee(data);
                 this.Close();
             }
-           
+
+        }
+
+        private void MessageBoxAddEmployee_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

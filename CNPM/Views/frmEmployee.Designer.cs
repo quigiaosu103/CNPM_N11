@@ -60,6 +60,8 @@
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             emplyeeDatagridView = new Guna.UI2.WinForms.Guna2DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
+            Column11 = new DataGridViewTextBoxColumn();
+            Column12 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
@@ -164,6 +166,7 @@
             dataGridViewCellStyle1.BackColor = Color.White;
             emplyeeDatagridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             emplyeeDatagridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            emplyeeDatagridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             emplyeeDatagridView.BackgroundColor = Color.DarkGray;
             emplyeeDatagridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -176,7 +179,7 @@
             emplyeeDatagridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             emplyeeDatagridView.ColumnHeadersHeight = 50;
             emplyeeDatagridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            emplyeeDatagridView.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10 });
+            emplyeeDatagridView.Columns.AddRange(new DataGridViewColumn[] { Column1, Column11, Column12, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10 });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -225,53 +228,75 @@
             // 
             // Column1
             // 
-            Column1.HeaderText = "Column1";
+            Column1.HeaderText = "Tài Khoản";
             Column1.Name = "Column1";
+            Column1.Width = 84;
+            // 
+            // Column11
+            // 
+            Column11.HeaderText = "Họ tên";
+            Column11.Name = "Column11";
+            Column11.Width = 83;
+            // 
+            // Column12
+            // 
+            Column12.HeaderText = "Địa chỉ";
+            Column12.Name = "Column12";
+            Column12.Width = 84;
             // 
             // Column2
             // 
-            Column2.HeaderText = "Column2";
+            Column2.HeaderText = "Số điện thoại";
             Column2.Name = "Column2";
+            Column2.Width = 83;
             // 
             // Column3
             // 
-            Column3.HeaderText = "Column3";
+            Column3.HeaderText = "Email";
             Column3.Name = "Column3";
+            Column3.Width = 84;
             // 
             // Column4
             // 
-            Column4.HeaderText = "Column4";
+            Column4.HeaderText = "Giới tính";
             Column4.Name = "Column4";
+            Column4.Width = 84;
             // 
             // Column5
             // 
-            Column5.HeaderText = "Column5";
+            Column5.HeaderText = "Ngày sinh";
             Column5.Name = "Column5";
+            Column5.Width = 83;
             // 
             // Column6
             // 
-            Column6.HeaderText = "Column6";
+            Column6.HeaderText = "Cmnd";
             Column6.Name = "Column6";
+            Column6.Width = 84;
             // 
             // Column7
             // 
-            Column7.HeaderText = "Column7";
+            Column7.HeaderText = "Vị trí";
             Column7.Name = "Column7";
+            Column7.Width = 83;
             // 
             // Column8
             // 
-            Column8.HeaderText = "Column8";
+            Column8.HeaderText = "Lương";
             Column8.Name = "Column8";
+            Column8.Width = 84;
             // 
             // Column9
             // 
-            Column9.HeaderText = "Column9";
+            Column9.HeaderText = "Ca làm";
             Column9.Name = "Column9";
+            Column9.Width = 83;
             // 
             // Column10
             // 
-            Column10.HeaderText = "Column10";
+            Column10.HeaderText = "Ngày vào làm";
             Column10.Name = "Column10";
+            Column10.Width = 84;
             // 
             // guna2Panel3
             // 
@@ -329,6 +354,7 @@
             guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox1.ItemHeight = 30;
+            guna2ComboBox1.Items.AddRange(new object[] { "Tài khoản", "Họ tên", "Địa chỉ", "Số điện thoại", "Email", "Cmnd", "Vị trí", "Lương", "Ca làm", "Ngày vào làm", "Ngày sinh", "Giới tính" });
             guna2ComboBox1.Location = new Point(349, 13);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
@@ -350,7 +376,7 @@
             guna2GradientButton5.FillColor2 = Color.FromArgb(202, 189, 189);
             guna2GradientButton5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton5.ForeColor = Color.White;
-            guna2GradientButton5.Location = new Point(852, 10);
+            guna2GradientButton5.Location = new Point(852, 13);
             guna2GradientButton5.Name = "guna2GradientButton5";
             guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2GradientButton5.Size = new Size(103, 39);
@@ -372,7 +398,7 @@
             guna2GradientButton4.FillColor2 = Color.FromArgb(202, 189, 189);
             guna2GradientButton4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton4.ForeColor = Color.White;
-            guna2GradientButton4.Location = new Point(205, 10);
+            guna2GradientButton4.Location = new Point(205, 13);
             guna2GradientButton4.Name = "guna2GradientButton4";
             guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2GradientButton4.Size = new Size(103, 39);
@@ -395,7 +421,7 @@
             guna2GradientButton3.FillColor2 = Color.FromArgb(202, 189, 189);
             guna2GradientButton3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton3.ForeColor = Color.White;
-            guna2GradientButton3.Location = new Point(42, 10);
+            guna2GradientButton3.Location = new Point(39, 13);
             guna2GradientButton3.Name = "guna2GradientButton3";
             guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2GradientButton3.Size = new Size(103, 39);
@@ -435,6 +461,8 @@
         private Guna.UI2.WinForms.Guna2DataGridView emplyeeDatagridView;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column11;
+        private DataGridViewTextBoxColumn Column12;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;

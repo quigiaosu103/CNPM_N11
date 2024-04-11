@@ -1111,11 +1111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thanh\\Desktop\\github\\New folder\\CNPM_N11\\CNPM\\CNPM.csproj",
+      "projectUniqueName": "C:\\Users\\thanh\\Desktop\\CNPM_N11\\CNPM\\CNPM.csproj",
       "projectName": "CNPM",
-      "projectPath": "C:\\Users\\thanh\\Desktop\\github\\New folder\\CNPM_N11\\CNPM\\CNPM.csproj",
+      "projectPath": "C:\\Users\\thanh\\Desktop\\CNPM_N11\\CNPM\\CNPM.csproj",
       "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thanh\\Desktop\\github\\New folder\\CNPM_N11\\CNPM\\obj\\",
+      "outputPath": "C:\\Users\\thanh\\Desktop\\CNPM_N11\\CNPM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
