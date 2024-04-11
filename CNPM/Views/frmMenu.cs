@@ -112,48 +112,7 @@ namespace CNPM.Views
             MyLib.InitUserProduct(paymentList);
         }
 
-        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void flowLayoutCustomer_Paint(object sender, PaintEventArgs e)
-        {
-            foreach (Control control in flowLayoutCustomer.Controls)
-            {
-                CardView card = (CardView)control;
-                card.Controls["btnAdd"].Click += handleAddToCart;
-            }
-        }
-
-        private void handleAddToCart(object sender, EventArgs e)
-        {
-            if (sender is Button button)
-            {
-                activeCard = button.Parent as CardView;
-                foreach (Control control in flowLayoutPanelCart.Controls)
-                {
-                    var card = (CartItemView)control;
-                    if (activeCard.productId == card.itemId)
-                    {
-                        var numeric = (Guna2NumericUpDown)card.Controls["inputCartItemAmount"];
-                        numeric.Value += 1;
-                        return;
-                    }
-                }
-                CartItemView cartItemView = new CartItemView();
-                cartItemView.productName = activeCard.productName;
-                cartItemView.itemId = activeCard.productId;
-                cartItemView.itemPrice = Int32.Parse(activeCard.productPrice);
-                cartItemView.totalPrice = Int32.Parse(activeCard.productPrice);
-                cartItemView.itemAmount = 1;
-                flowLayoutPanelCart.Controls.Add(cartItemView);
-            }
-
-
-        }
-
-        private CardView activeCard;
 
         private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
         {

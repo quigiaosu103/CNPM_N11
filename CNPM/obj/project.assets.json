@@ -1110,19 +1110,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "Q:\\Code\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
       "projectName": "CNPM",
       "projectPath": "Q:\\Code\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
       "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
       "outputPath": "Q:\\Code\\CNPM_code\\CNPM\\CNPM\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\thanh\\Desktop\\CNPM_N11\\CNPM\\CNPM.csproj",
-      "projectName": "CNPM",
-      "projectPath": "C:\\Users\\thanh\\Desktop\\CNPM_N11\\CNPM\\CNPM.csproj",
-      "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thanh\\Desktop\\CNPM_N11\\CNPM\\obj\\",
->>>>>>> tkhoi
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\k\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1200,7 +1192,6 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-<<<<<<< HEAD
             "version": "[6.0.25, 6.0.25]"
           },
           {
@@ -1214,21 +1205,6 @@
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[6.0.25, 6.0.25]"
-=======
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
->>>>>>> tkhoi
           }
         ],
         "frameworkReferences": {
@@ -1239,11 +1215,7 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
->>>>>>> tkhoi
       }
     }
   }

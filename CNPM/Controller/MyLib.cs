@@ -1,4 +1,7 @@
-﻿using System.Net;
+﻿using System.Drawing.Imaging;
+using System.Net;
+using System.Security.Cryptography;
+using System.Text;
 using CNPM.Model;
 using CNPM.Views;
 using Guna.UI2.WinForms;
@@ -116,6 +119,15 @@ namespace CNPM.Controller
                 Account = null
 
             };
+        }
+
+        public static void InitUserProduct(List<DataPayment> data)
+        {
+            UserListProduct userListProduct = new UserListProduct();
+            foreach (DataPayment dataPayment in data)
+            {
+                userListProduct.addProduct(dataPayment);
+            }
         }
         public static void searchProduct(string searchValue, FlowLayoutPanel layout)
         {

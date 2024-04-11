@@ -3,7 +3,7 @@ using CNPM.VIew;
 using CNPM.Views;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
-
+using CNPM.Model;
 namespace CNPM
 {
     public partial class frMain : Form

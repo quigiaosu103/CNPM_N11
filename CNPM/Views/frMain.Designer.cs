@@ -496,29 +496,9 @@
             // 
             // guna2Panel5
             // 
-            guna2Panel5.BackColor = SystemColors.Window;
-            guna2Panel5.BorderColor = Color.Wheat;
-            guna2Panel5.BorderRadius = 20;
-            guna2Panel5.CausesValidation = false;
-            guna2Panel5.Controls.Add(guna2HtmlLabel2);
-            guna2Panel5.CustomizableEdges = customizableEdges33;
-            guna2Panel5.FillColor = Color.FromArgb(217, 132, 28);
-            guna2Panel5.Location = new Point(812, 10);
-            guna2Panel5.Name = "guna2Panel5";
-            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            guna2Panel5.Size = new Size(176, 39);
-            guna2Panel5.TabIndex = 4;
             // 
             // guna2HtmlLabel2
             // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(27, 8);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(127, 22);
-            guna2HtmlLabel2.TabIndex = 0;
-            guna2HtmlLabel2.Text = "Hi, Nguyen Van A";
             // 
             // guna2PictureBox2
             // 
