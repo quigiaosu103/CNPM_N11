@@ -105,6 +105,7 @@ namespace CNPM.Views
 
         private void btnSelectImage_Click(object sender, EventArgs e)
         {
+
             tempImage = MyLib.openFileDialog();
             if (tempImage != null)
             {

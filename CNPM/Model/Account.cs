@@ -14,9 +14,10 @@ namespace CNPM.Model
         public string UserName { get; set; }
         public string HashedPassword { get; set; }
         public string AvatarUrl { get; set; }
+        public string Role { get; set; }
         public string Email { get; set; }
         [ForeignKey("User")]
-        public string UserId {  get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
     }
 }

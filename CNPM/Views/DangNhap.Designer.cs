@@ -85,6 +85,7 @@
             // 
             // button3_quenmatkhaubtn
             // 
+            button3_quenmatkhaubtn.AutoSize = true;
             button3_quenmatkhaubtn.BackColor = Color.FromArgb(130, 75, 27);
             button3_quenmatkhaubtn.Cursor = Cursors.Hand;
             button3_quenmatkhaubtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
@@ -94,6 +95,7 @@
             button3_quenmatkhaubtn.Size = new Size(174, 56);
             button3_quenmatkhaubtn.TabIndex = 15;
             button3_quenmatkhaubtn.Text = "QUÊN MẬT KHẨU";
+            button3_quenmatkhaubtn.TextAlign = ContentAlignment.TopCenter;
             button3_quenmatkhaubtn.UseVisualStyleBackColor = false;
             button3_quenmatkhaubtn.Click += button3_quenmatkhaubtn_Click;
             // 
