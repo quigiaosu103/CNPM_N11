@@ -64,6 +64,12 @@
     <Compile Update="Views\MessageBoxAddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\MessageBoxEditsEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\MessageBoxUpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\QuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -7,14 +7,70 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CNPM.Controller;
+using CNPM.Model;
+using Guna.UI2.AnimatorNS;
 namespace CNPM.Views
 {
     public partial class frmManagerAccount : Form
     {
+        Account account = new Account();
         public frmManagerAccount()
         {
             InitializeComponent();
+            ManagerAccountController.loadDataAccount(accountManager);
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            if (account.UserId == null)
+            {
+                new CustomMessageBox("Vui lòng chọn dữ liệu muốn thay đổi", "Lỗi").ShowDialog();
+                return;
+            }
+            new MessageBoxUpdateAccount("Cập nhật thông tin", "Lưu", account).ShowDialog();
+            accountManager.Rows.Clear();
+            ManagerAccountController.loadDataAccount(accountManager);
+        }
+        int indexRow;
+        private string checkValue(string data)
+        {
+
+            if (data == null || data == "")
+            {
+                return "Chưa cập nhật";
+            }
+            return data;
+
+        }
+        private void accountManager_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+
+            DataGridViewRow row = accountManager.Rows[indexRow];
+            account.UserId = checkValue(row.Cells[0].Value?.ToString());
+            account.AvatarUrl = checkValue(row.Cells[1].Value?.ToString());
+            account.Role = checkValue(row.Cells[2].Value?.ToString());
+            account.Email = checkValue(row.Cells[3].Value?.ToString());
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            new MessageBoxAddEmployee().ShowDialog();
+            accountManager.Rows.Clear();
+            ManagerAccountController.loadDataAccount(accountManager);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            ManagerAccountController.loadDataAccountSearch(accountManager, ManagerAccountController.searchAccount(txtSearch.Text, cbSearch.Text));
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            accountManager.Rows.Clear();
+            ManagerAccountController.loadDataAccount(accountManager);
         }
     }
 }

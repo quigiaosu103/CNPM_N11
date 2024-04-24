@@ -17,7 +17,7 @@ namespace CNPM.Model
         public string Role { get; set; }
         public string Email { get; set; }
         [ForeignKey("User")]
-        public string UserId {  get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
     }
 }

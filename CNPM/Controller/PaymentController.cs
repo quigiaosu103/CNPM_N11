@@ -108,24 +108,26 @@ namespace CNPM.Controller
                 var idCustomer = context.Customers.Where(x => x.UserId == UserAuthen.currentUser.UserId).FirstOrDefault();
                 order = new Model.Order { Id = newOrderId, Status = paymentMethods, TotalPrice = int.Parse(totalPrice.Replace(",", "")), Date = DateTime.Now, Customer = idCustomer, Employee = null };
                 context.Orders.Add(order);
-                
+                //////////////
+               
+                ///////////////
                 int numEntitiesAdded = context.SaveChanges();
                 if (numEntitiesAdded > 0)
                 {
-                    //foreach (var item in data)
-                    //{
-                    //    var orderItem = new Model.OrderItem();
-                    //    var productInfor = context.Products.Where(x => x.Id == int.Parse(item.idProduct)).FirstOrDefault();
-                    //    //productInfor = new Product() { Id = int.Parse(item.idProduct), Name = item.nameProduct, Price = item.priceProduct, ImageUrl = null };
-                    //    //var orderItemId = context.OrderItems.Max(p => (int?)p.Id) ?? 0;
-                    //    //orderItem.Id = orderItemId + 1;
-                    //    orderItem.Amount = item.numberProduct;
-                    //    orderItem.Product = productInfor;
-                    //    orderItem.Order = order;
-                    //    context.OrderItems.Add(orderItem);
-                    //    context.SaveChanges();
+                    foreach (var item in data)
+                    {
+                        var orderItem = new Model.OrderItem();
+                        var productInfor = context.Products.Where(x => x.Id == int.Parse(item.idProduct)).FirstOrDefault();
+                        //productInfor = new Product() { Id = int.Parse(item.idProduct), Name = item.nameProduct, Price = item.priceProduct, ImageUrl = null };
+                        //var orderItemId = context.OrderItems.Max(p => (int?)p.Id) ?? 0;
+                        //orderItem.Id = orderItemId + 1;
+                        orderItem.Amount = item.numberProduct;
+                        orderItem.Product = productInfor;
+                        orderItem.Order = order;
+                        context.OrderItems.Add(orderItem);
+                        context.SaveChanges();
 
-                    //}
+                    }
                     new CustomMessageBox("Đơn hàng của bạn đặt thành công", "Đặt hàng thành công").ShowDialog();
                 }
                 else

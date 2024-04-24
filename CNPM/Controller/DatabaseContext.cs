@@ -31,6 +31,8 @@ namespace CNPM.Controller
             base.OnModelCreating(modelBuilder);
         }
 
+     
+
     }
 
 

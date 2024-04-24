@@ -64,7 +64,7 @@ namespace CNPM
 
         private void guna2GradientButton8_Click(object sender, EventArgs e)
         {
-
+            openCurrentForm(new frmManagerAccount());
         }
 
         private void guna2GradientButton7_Click(object sender, EventArgs e)
