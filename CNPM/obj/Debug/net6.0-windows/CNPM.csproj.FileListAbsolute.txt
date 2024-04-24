@@ -50,6 +50,8 @@ Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmPayment.resou
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmResetPassword.resources
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.VIew.frmTrangChu.resources
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxAddEmployee.resources
+Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxEditsEmployee.resources
+Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxUpdateAccount.resources
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_QuenMatKhau.resources
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.GenerateResource.cache
 Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.GeneratedMSBuildEditorConfig.editorconfig

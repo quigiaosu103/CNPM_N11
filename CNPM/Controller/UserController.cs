@@ -41,5 +41,41 @@ namespace CNPM.Controller
                 context.SaveChanges();
             }
         }
+        public static bool UpdatePassword(string newPass, string email) 
+        {
+            using(var context = new MyDatabaseContext())
+            {
+                Account account = context.Account.Where(a => a.Email == email).FirstOrDefault();
+                if(account != null)
+                {
+                    account.HashedPassword = newPass;
+                    context.Account.Update(account);
+                    context.SaveChanges();
+                    MyLib.AlertMessage("Đổi mật khẩu thành công");
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool CheckAndUpdatePassword(string username, string pass, string newPass)
+        {
+            using (var context = new MyDatabaseContext())
+            {
+                Account user = context.Account.Find(username);
+                if(user != null)
+                {
+                    if(user.HashedPassword == pass)
+                    {
+                        user.HashedPassword = newPass;
+                        context.Account.Update(user);
+                        context.SaveChanges();
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
     }
+
 }

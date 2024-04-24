@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "isR7nwzXTFBa1pb+DAcXvBvCsQj7zQYXEFjOP62rqBmECdzcWeSsgiiAXtZO7mhqHDu+LF54FEouedD+IKrWhw==",
+  "dgSpecHash": "KejnW7vFhZjSJfaHHMmWCQ8c/8lCatyziKLqD1jKqn6Gv9qMt5rml/JyYcdrrB82jRUp0dySSs1HutlptYF8ew==",
   "success": true,
   "projectFilePath": "Q:\\Code\\CNPM_code\\CNPM\\CNPM\\CNPM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\k\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
-    "C:\\Users\\k\\.nuget\\packages\\guna.charts.winforms\\1.0.9\\guna.charts.winforms.1.0.9.nupkg.sha512",
+    "C:\\Users\\k\\.nuget\\packages\\guna.charts.winforms\\1.0.8\\guna.charts.winforms.1.0.8.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.28\\microsoft.entityframeworkcore.6.0.28.nupkg.sha512",
@@ -37,12 +37,5 @@
     "C:\\Users\\k\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
     "C:\\Users\\k\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file Q:\\Code\\CNPM_code\\CNPM\\CNPM\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

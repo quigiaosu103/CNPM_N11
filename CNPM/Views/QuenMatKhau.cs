@@ -1,4 +1,5 @@
-﻿using CNPM.Views;
+﻿using CNPM.Controller;
+using CNPM.Views;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace DangKi__DangNhap__QuenMatKhau
 {
     public partial class form_QuenMatKhau : Form
     {
+        private string otp = "";
         public form_QuenMatKhau()
         {
             InitializeComponent();
@@ -42,13 +44,21 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            panelGetOTP.Hide();
-            UserControl resetPass = new frmResetPassword();
-            Panel panel = new Panel();
-            panel.Location = new Point(190, 79);
-            panel.Size = new Size(230, 230);
-            panel.Controls.Add(resetPass);
-            this.Controls.Add(panel);
+            string inputOtp = txtOtpInput.Text;
+            if(inputOtp.Trim()!="" && inputOtp == otp)
+            {
+                panelGetOTP.Hide();
+                UserControl resetPass = new frmResetPassword();
+                Panel panel = new Panel();
+                panel.Location = new Point(190, 79);
+                panel.Size = new Size(230, 230);
+                panel.Controls.Add(resetPass);
+                this.Controls.Add(panel);
+                otp = "";
+            }else
+            {
+                MyLib.AlertMessage("OTP không đúng!");
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -56,6 +66,15 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         }
 
-        //location: 205, 79
+        private void btnSendOTP_Click(object sender, EventArgs e)
+        {
+            string mail = txtMail.Text;
+            if(mail.Trim() != "")
+            {
+                otp = MyLib.SendOTP(mail);
+                UserAuthen.Email = mail;
+            }
+        }
+
     }
 }

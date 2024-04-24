@@ -6,6 +6,8 @@ using CNPM.Views;
 using Guna.UI2.WinForms;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
+using static System.Net.WebRequestMethods;
+using System.Net.Mail;
 namespace CNPM.Controller
 {
     public class MyLib
@@ -102,7 +104,7 @@ namespace CNPM.Controller
         {
             Form f = new Form();
             Label lab = new Label();
-
+            lab.AutoSize = true;
             lab.Text = message;
             f.Controls.Add(lab);
             f.ShowDialog();
@@ -180,13 +182,7 @@ namespace CNPM.Controller
             UserAuthen.currentUser.Address = infor[2];
             UserAuthen.currentUser.Account.AvatarUrl = infor[3];
             UserAuthen.currentUser.BirthDay = birthday;
-
-        
-           
         }
-
-        
-
         public static string hashPassword(string pass)
         {
             byte[] bytes = Encoding.UTF8.GetBytes(pass);
@@ -204,21 +200,34 @@ namespace CNPM.Controller
             }
         }
 
-        public static string hashPassword(string pass)
+        public static string SendOTP(string to)
         {
-            byte[] bytes = Encoding.UTF8.GetBytes(pass);
-            using (SHA256 sha256 = SHA256.Create())
+
+            string from = "leanhquan99982@gmail.com";
+            string pass = "grmt hetg mfkc sxza";
+            string verification_code = $"{DateTime.Now.Second}{DateTime.Now.Millisecond}";
+            MailMessage message = new MailMessage();
+            message.To.Add(to);
+            message.From = new MailAddress(from);
+            message.Body = "Mã xác thực của bạn là: " + verification_code;
+            message.Subject = "WeFood - Mã xác thực";
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+            smtp.EnableSsl = true;
+            smtp.Port = 587;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.Credentials = new NetworkCredential(from, pass);
+            try
             {
-
-                byte[] hashBytes = sha256.ComputeHash(bytes);
-
-                StringBuilder builder = new StringBuilder();
-                for (int i = 0; i < hashBytes.Length; i++)
-                {
-                    builder.Append(hashBytes[i].ToString("x2"));
-                }
-                return builder.ToString();
+                smtp.Send(message);
+                MessageBox.Show("Mã xác thực đã được gửi thành công, kiểm tra mail của bạn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return verification_code;
         }
+
+       
     }
 }

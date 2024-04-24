@@ -153,6 +153,7 @@
             Controls.Add(txtNewPass);
             Name = "frmResetPassword";
             Size = new Size(230, 230);
+            Load += frmResetPassword_Load;
             ResumeLayout(false);
             PerformLayout();
         }
