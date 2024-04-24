@@ -51,6 +51,10 @@ namespace CNPM.Views
         public CardView()
         {
             InitializeComponent();
+            if(UserAuthen.currentUser.Account.Role !="customer")
+            {
+                btnAdd.Hide();
+            }
         }
 
         private void txtProductName_Click(object sender, EventArgs e)
