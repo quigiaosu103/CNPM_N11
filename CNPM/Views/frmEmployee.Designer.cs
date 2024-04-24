@@ -110,7 +110,7 @@
             guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2GradientButton2.FillColor = Color.FromArgb(217, 132, 28);
             guna2GradientButton2.FillColor2 = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton2.ForeColor = Color.White;
             guna2GradientButton2.ImageAlign = HorizontalAlignment.Left;
             guna2GradientButton2.Location = new Point(811, 8);
@@ -131,7 +131,7 @@
             guna2GradientButton1.Dock = DockStyle.Left;
             guna2GradientButton1.FillColor = Color.Wheat;
             guna2GradientButton1.FillColor2 = Color.Wheat;
-            guna2GradientButton1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton1.ForeColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton1.Image = Properties.Resources.icons8_user_50;
             guna2GradientButton1.ImageAlign = HorizontalAlignment.Left;
@@ -169,16 +169,15 @@
             // 
             btnReset.BorderColor = Color.FromArgb(96, 56, 20);
             btnReset.BorderRadius = 5;
-            btnReset.BorderThickness = 2;
             btnReset.CustomizableEdges = customizableEdges7;
             btnReset.DisabledState.BorderColor = Color.DarkGray;
             btnReset.DisabledState.CustomBorderColor = Color.DarkGray;
             btnReset.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnReset.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnReset.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnReset.FillColor = Color.FromArgb(202, 189, 189);
-            btnReset.FillColor2 = Color.FromArgb(202, 189, 189);
-            btnReset.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReset.FillColor = Color.FromArgb(96, 56, 20);
+            btnReset.FillColor2 = Color.FromArgb(96, 56, 20);
+            btnReset.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnReset.ForeColor = Color.White;
             btnReset.Location = new Point(892, 13);
             btnReset.Name = "btnReset";
@@ -360,18 +359,17 @@
             txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtSearch.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            txtSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             txtSearch.ForeColor = Color.FromArgb(96, 56, 20);
             txtSearch.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.Location = new Point(483, 16);
-            txtSearch.Margin = new Padding(4, 4, 4, 4);
+            txtSearch.Location = new Point(487, 16);
             txtSearch.Name = "txtSearch";
             txtSearch.PasswordChar = '\0';
             txtSearch.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
             txtSearch.PlaceholderText = "Tìm kiếm";
             txtSearch.SelectedText = "";
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtSearch.Size = new Size(264, 36);
+            txtSearch.Size = new Size(209, 36);
             txtSearch.TabIndex = 4;
             // 
             // cbSearch
@@ -385,7 +383,7 @@
             cbSearch.DropDownStyle = ComboBoxStyle.DropDownList;
             cbSearch.FocusedColor = Color.FromArgb(96, 56, 20);
             cbSearch.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
-            cbSearch.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            cbSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             cbSearch.ForeColor = Color.FromArgb(96, 56, 20);
             cbSearch.ItemHeight = 30;
             cbSearch.Items.AddRange(new object[] { "Tài khoản", "Họ tên", "Địa chỉ", "Số điện thoại", "Email", "Cmnd", "Vị trí", "Lương", "Ca làm", "Ngày vào làm", "Ngày sinh", "Giới tính" });
@@ -400,16 +398,15 @@
             // 
             guna2GradientButton5.BorderColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton5.BorderRadius = 5;
-            guna2GradientButton5.BorderThickness = 2;
             guna2GradientButton5.CustomizableEdges = customizableEdges17;
             guna2GradientButton5.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton5.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2GradientButton5.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             guna2GradientButton5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton5.FillColor = Color.FromArgb(202, 189, 189);
-            guna2GradientButton5.FillColor2 = Color.FromArgb(202, 189, 189);
-            guna2GradientButton5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton5.FillColor = Color.FromArgb(96, 56, 20);
+            guna2GradientButton5.FillColor2 = Color.FromArgb(96, 56, 20);
+            guna2GradientButton5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton5.ForeColor = Color.White;
             guna2GradientButton5.Location = new Point(771, 13);
             guna2GradientButton5.Name = "guna2GradientButton5";
@@ -423,16 +420,15 @@
             // 
             guna2GradientButton4.BorderColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton4.BorderRadius = 5;
-            guna2GradientButton4.BorderThickness = 2;
             guna2GradientButton4.CustomizableEdges = customizableEdges19;
             guna2GradientButton4.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton4.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2GradientButton4.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             guna2GradientButton4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton4.FillColor = Color.FromArgb(202, 189, 189);
-            guna2GradientButton4.FillColor2 = Color.FromArgb(202, 189, 189);
-            guna2GradientButton4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton4.FillColor = Color.FromArgb(96, 56, 20);
+            guna2GradientButton4.FillColor2 = Color.FromArgb(96, 56, 20);
+            guna2GradientButton4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton4.ForeColor = Color.White;
             guna2GradientButton4.Location = new Point(148, 13);
             guna2GradientButton4.Name = "guna2GradientButton4";
@@ -446,16 +442,15 @@
             // 
             guna2GradientButton3.BorderColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton3.BorderRadius = 5;
-            guna2GradientButton3.BorderThickness = 2;
             guna2GradientButton3.CustomizableEdges = customizableEdges21;
             guna2GradientButton3.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton3.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2GradientButton3.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             guna2GradientButton3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton3.FillColor = Color.FromArgb(202, 189, 189);
-            guna2GradientButton3.FillColor2 = Color.FromArgb(202, 189, 189);
-            guna2GradientButton3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton3.FillColor = Color.FromArgb(96, 56, 20);
+            guna2GradientButton3.FillColor2 = Color.FromArgb(96, 56, 20);
+            guna2GradientButton3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton3.ForeColor = Color.White;
             guna2GradientButton3.Location = new Point(9, 13);
             guna2GradientButton3.Name = "guna2GradientButton3";

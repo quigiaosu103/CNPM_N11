@@ -69,15 +69,15 @@ namespace CNPM.Views
             foreach (Control control in flowLayoutCustomer.Controls)
             {
                 CardView card = (CardView)control;
-                card.Controls["btnAdd"].Click += handleAddToCart;
+                card.Controls["boundPanel"].Controls["btnAdd"].Click += handleAddToCart;
             }
         }
       
         private void handleAddToCart(object sender, EventArgs e)
         {
-            if (sender is Button button)
+            if (sender is Guna2Button button)
             {
-                activeCard = button.Parent as CardView;
+                activeCard = button.Parent.Parent as CardView;
                 foreach (Control control in flowLayoutPanelCart.Controls)
                 {
                     var card = (CartItemView)control;

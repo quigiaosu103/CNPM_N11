@@ -78,11 +78,11 @@
             // lbTitle
             // 
             lbTitle.BackColor = Color.Transparent;
-            lbTitle.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbTitle.ForeColor = Color.FromArgb(138, 76, 20);
             lbTitle.Location = new Point(252, 12);
             lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(195, 28);
+            lbTitle.Size = new Size(190, 32);
             lbTitle.TabIndex = 1;
             lbTitle.Text = "Cập nhật thông tin";
             // 
@@ -100,7 +100,7 @@
             btnSave.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnSave.FillColor = Color.FromArgb(232, 164, 81);
             btnSave.FillColor2 = Color.FromArgb(232, 164, 81);
-            btnSave.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.White;
             btnSave.Location = new Point(302, 281);
             btnSave.Name = "btnSave";
@@ -113,60 +113,61 @@
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.FromArgb(138, 76, 20);
             guna2HtmlLabel1.Location = new Point(13, 80);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(95, 21);
+            guna2HtmlLabel1.Size = new Size(88, 19);
             guna2HtmlLabel1.TabIndex = 3;
             guna2HtmlLabel1.Text = "Tên tài khoản";
             // 
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.FromArgb(138, 76, 20);
             guna2HtmlLabel2.Location = new Point(13, 151);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(41, 21);
+            guna2HtmlLabel2.Size = new Size(37, 19);
             guna2HtmlLabel2.TabIndex = 4;
             guna2HtmlLabel2.Text = "Email";
             // 
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.FromArgb(138, 76, 20);
             guna2HtmlLabel3.Location = new Point(383, 80);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(49, 21);
+            guna2HtmlLabel3.Size = new Size(45, 19);
             guna2HtmlLabel3.TabIndex = 5;
             guna2HtmlLabel3.Text = "Vai trò";
             // 
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.FromArgb(138, 76, 20);
             guna2HtmlLabel4.Location = new Point(13, 218);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(49, 21);
+            guna2HtmlLabel4.Size = new Size(43, 19);
             guna2HtmlLabel4.TabIndex = 6;
             guna2HtmlLabel4.Text = "Avatar";
             // 
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel5.ForeColor = Color.FromArgb(138, 76, 20);
             guna2HtmlLabel5.Location = new Point(383, 151);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(66, 21);
+            guna2HtmlLabel5.Size = new Size(61, 19);
             guna2HtmlLabel5.TabIndex = 7;
             guna2HtmlLabel5.Text = "Password";
             // 
             // txtUserName
             // 
+            txtUserName.BorderRadius = 4;
             txtUserName.CustomizableEdges = customizableEdges5;
             txtUserName.DefaultText = "";
             txtUserName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -176,7 +177,7 @@
             txtUserName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUserName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtUserName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUserName.Location = new Point(132, 65);
+            txtUserName.Location = new Point(132, 71);
             txtUserName.Name = "txtUserName";
             txtUserName.PasswordChar = '\0';
             txtUserName.PlaceholderText = "";
@@ -187,6 +188,7 @@
             // 
             // txtEmail
             // 
+            txtEmail.BorderRadius = 4;
             txtEmail.CustomizableEdges = customizableEdges7;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -196,7 +198,7 @@
             txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmail.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmail.Location = new Point(132, 136);
+            txtEmail.Location = new Point(132, 141);
             txtEmail.Name = "txtEmail";
             txtEmail.PasswordChar = '\0';
             txtEmail.PlaceholderText = "";
@@ -207,6 +209,7 @@
             // 
             // txtRole
             // 
+            txtRole.BorderRadius = 4;
             txtRole.CustomizableEdges = customizableEdges9;
             txtRole.DefaultText = "";
             txtRole.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -216,7 +219,7 @@
             txtRole.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtRole.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtRole.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRole.Location = new Point(467, 65);
+            txtRole.Location = new Point(467, 70);
             txtRole.Name = "txtRole";
             txtRole.PasswordChar = '\0';
             txtRole.PlaceholderText = "";
@@ -227,6 +230,7 @@
             // 
             // txtPass
             // 
+            txtPass.BorderRadius = 4;
             txtPass.CustomizableEdges = customizableEdges11;
             txtPass.DefaultText = "";
             txtPass.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -236,7 +240,7 @@
             txtPass.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPass.Location = new Point(467, 136);
+            txtPass.Location = new Point(467, 139);
             txtPass.Name = "txtPass";
             txtPass.PasswordChar = '\0';
             txtPass.PlaceholderText = "";
@@ -259,7 +263,7 @@
             linkImage.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             linkImage.FillColor = Color.FromArgb(232, 164, 81);
             linkImage.FillColor2 = Color.FromArgb(232, 164, 81);
-            linkImage.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            linkImage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             linkImage.ForeColor = Color.White;
             linkImage.Location = new Point(132, 206);
             linkImage.Name = "linkImage";
@@ -281,16 +285,17 @@
             // txtA
             // 
             txtA.BackColor = Color.Transparent;
-            txtA.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtA.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             txtA.ForeColor = Color.FromArgb(138, 76, 20);
             txtA.Location = new Point(383, 218);
             txtA.Name = "txtA";
-            txtA.Size = new Size(78, 21);
+            txtA.Size = new Size(71, 19);
             txtA.TabIndex = 15;
             txtA.Text = "Avatar mới";
             // 
             // PB
             // 
+            PB.BorderRadius = 4;
             PB.CustomizableEdges = customizableEdges15;
             PB.ImageRotate = 0F;
             PB.Location = new Point(467, 189);

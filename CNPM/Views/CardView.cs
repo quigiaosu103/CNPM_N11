@@ -54,11 +54,16 @@ namespace CNPM.Views
             if(UserAuthen.currentUser.Account.Role !="customer")
             {
                 btnAdd.Hide();
+
             }
+            txtProductName.MaximumSize = new System.Drawing.Size(134, 0);
+            txtProductName.AutoSize = true;
+            
         }
 
         private void txtProductName_Click(object sender, EventArgs e)
         {
+            
             // MyLib.loadProductInfo(this.productId, this.productName, this,productPrice, this.productCategory);
         }
 

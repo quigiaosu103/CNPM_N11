@@ -217,7 +217,7 @@
             // 
             lbLocation.BackColor = Color.FromArgb(204, 128, 34);
             lbLocation.BorderColor = Color.Wheat;
-            lbLocation.BorderRadius = 20;
+            lbLocation.BorderRadius = 4;
             lbLocation.CustomizableEdges = customizableEdges1;
             lbLocation.DisabledState.BorderColor = Color.DarkGray;
             lbLocation.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -226,7 +226,7 @@
             lbLocation.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             lbLocation.FillColor = Color.Wheat;
             lbLocation.FillColor2 = Color.Wheat;
-            lbLocation.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbLocation.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbLocation.ForeColor = Color.FromArgb(96, 56, 20);
             lbLocation.Image = Properties.Resources.icons8_location_50;
             lbLocation.ImageAlign = HorizontalAlignment.Left;
@@ -242,7 +242,7 @@
             // 
             lbPhone.BackColor = Color.FromArgb(204, 128, 34);
             lbPhone.BorderColor = Color.Wheat;
-            lbPhone.BorderRadius = 20;
+            lbPhone.BorderRadius = 4;
             lbPhone.CustomizableEdges = customizableEdges3;
             lbPhone.DisabledState.BorderColor = Color.DarkGray;
             lbPhone.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -251,7 +251,7 @@
             lbPhone.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             lbPhone.FillColor = Color.Wheat;
             lbPhone.FillColor2 = Color.Wheat;
-            lbPhone.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbPhone.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbPhone.ForeColor = Color.FromArgb(96, 56, 20);
             lbPhone.Image = Properties.Resources.icons8_phone_50;
             lbPhone.ImageAlign = HorizontalAlignment.Left;
@@ -266,7 +266,7 @@
             // 
             lbEmail.BackColor = Color.FromArgb(204, 128, 34);
             lbEmail.BorderColor = Color.Wheat;
-            lbEmail.BorderRadius = 20;
+            lbEmail.BorderRadius = 4;
             lbEmail.CustomizableEdges = customizableEdges5;
             lbEmail.DisabledState.BorderColor = Color.DarkGray;
             lbEmail.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -275,7 +275,7 @@
             lbEmail.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             lbEmail.FillColor = Color.Wheat;
             lbEmail.FillColor2 = Color.Wheat;
-            lbEmail.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbEmail.ForeColor = Color.FromArgb(96, 56, 20);
             lbEmail.Image = Properties.Resources.icons8_gmail_50;
             lbEmail.ImageAlign = HorizontalAlignment.Left;
@@ -291,7 +291,7 @@
             // 
             lbName.BackColor = Color.FromArgb(204, 128, 34);
             lbName.BorderColor = Color.Wheat;
-            lbName.BorderRadius = 20;
+            lbName.BorderRadius = 4;
             lbName.CustomizableEdges = customizableEdges7;
             lbName.DisabledState.BorderColor = Color.DarkGray;
             lbName.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -300,7 +300,7 @@
             lbName.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             lbName.FillColor = Color.Wheat;
             lbName.FillColor2 = Color.Wheat;
-            lbName.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbName.ForeColor = Color.FromArgb(96, 56, 20);
             lbName.Image = Properties.Resources.icons8_user_90;
             lbName.ImageAlign = HorizontalAlignment.Left;
@@ -338,7 +338,7 @@
             lbRole.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             lbRole.FillColor = Color.Black;
             lbRole.FillColor2 = Color.Black;
-            lbRole.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbRole.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbRole.ForeColor = Color.White;
             lbRole.Location = new Point(0, 135);
             lbRole.Name = "lbRole";
@@ -451,121 +451,126 @@
             // lbTotal4
             // 
             lbTotal4.BackColor = Color.Transparent;
-            lbTotal4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbTotal4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbTotal4.ForeColor = Color.FromArgb(96, 56, 20);
             lbTotal4.Location = new Point(185, 299);
             lbTotal4.Name = "lbTotal4";
-            lbTotal4.Size = new Size(63, 21);
+            lbTotal4.Size = new Size(64, 19);
             lbTotal4.TabIndex = 10;
             lbTotal4.Text = "Sản phẩm";
+            lbTotal4.TextAlignment = ContentAlignment.MiddleRight;
             // 
             // lbTotal3
             // 
             lbTotal3.BackColor = Color.Transparent;
-            lbTotal3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbTotal3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbTotal3.ForeColor = Color.FromArgb(96, 56, 20);
             lbTotal3.Location = new Point(185, 252);
             lbTotal3.Name = "lbTotal3";
-            lbTotal3.Size = new Size(63, 21);
+            lbTotal3.Size = new Size(64, 19);
             lbTotal3.TabIndex = 9;
             lbTotal3.Text = "Sản phẩm";
+            lbTotal3.TextAlignment = ContentAlignment.MiddleRight;
             // 
             // lbTotal2
             // 
             lbTotal2.BackColor = Color.Transparent;
-            lbTotal2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbTotal2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbTotal2.ForeColor = Color.FromArgb(96, 56, 20);
             lbTotal2.Location = new Point(185, 203);
             lbTotal2.Name = "lbTotal2";
-            lbTotal2.Size = new Size(63, 21);
+            lbTotal2.Size = new Size(64, 19);
             lbTotal2.TabIndex = 8;
             lbTotal2.Text = "Sản phẩm";
+            lbTotal2.TextAlignment = ContentAlignment.MiddleRight;
             // 
             // lbTotal1
             // 
             lbTotal1.BackColor = Color.Transparent;
-            lbTotal1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbTotal1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbTotal1.ForeColor = Color.FromArgb(96, 56, 20);
             lbTotal1.Location = new Point(185, 156);
             lbTotal1.Name = "lbTotal1";
-            lbTotal1.Size = new Size(63, 21);
+            lbTotal1.Size = new Size(64, 19);
             lbTotal1.TabIndex = 7;
             lbTotal1.Text = "Sản phẩm";
+            lbTotal1.TextAlignment = ContentAlignment.MiddleRight;
             // 
             // lbSp3
             // 
             lbSp3.BackColor = Color.Transparent;
-            lbSp3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbSp3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbSp3.ForeColor = Color.FromArgb(96, 56, 20);
             lbSp3.Location = new Point(19, 252);
             lbSp3.Name = "lbSp3";
-            lbSp3.Size = new Size(63, 21);
+            lbSp3.Size = new Size(64, 19);
             lbSp3.TabIndex = 6;
             lbSp3.Text = "Sản phẩm";
             // 
             // lbSp4
             // 
             lbSp4.BackColor = Color.Transparent;
-            lbSp4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbSp4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbSp4.ForeColor = Color.FromArgb(96, 56, 20);
             lbSp4.Location = new Point(19, 299);
             lbSp4.Name = "lbSp4";
-            lbSp4.Size = new Size(63, 21);
+            lbSp4.Size = new Size(64, 19);
             lbSp4.TabIndex = 5;
             lbSp4.Text = "Sản phẩm";
             // 
             // lbSp2
             // 
             lbSp2.BackColor = Color.Transparent;
-            lbSp2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbSp2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbSp2.ForeColor = Color.FromArgb(96, 56, 20);
             lbSp2.Location = new Point(19, 203);
             lbSp2.Name = "lbSp2";
-            lbSp2.Size = new Size(63, 21);
+            lbSp2.Size = new Size(64, 19);
             lbSp2.TabIndex = 4;
             lbSp2.Text = "Sản phẩm";
             // 
             // lbSp1
             // 
             lbSp1.BackColor = Color.Transparent;
-            lbSp1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbSp1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbSp1.ForeColor = Color.FromArgb(96, 56, 20);
             lbSp1.Location = new Point(19, 156);
             lbSp1.Name = "lbSp1";
-            lbSp1.Size = new Size(63, 21);
+            lbSp1.Size = new Size(64, 19);
             lbSp1.TabIndex = 3;
             lbSp1.Text = "Sản phẩm";
             // 
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.FromArgb(96, 56, 20);
             guna2HtmlLabel4.Location = new Point(185, 107);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(58, 21);
+            guna2HtmlLabel4.Size = new Size(57, 19);
             guna2HtmlLabel4.TabIndex = 2;
             guna2HtmlLabel4.Text = "Số lượng";
+            guna2HtmlLabel4.TextAlignment = ContentAlignment.MiddleRight;
             // 
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.FromArgb(96, 56, 20);
             guna2HtmlLabel3.Location = new Point(19, 107);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(63, 21);
+            guna2HtmlLabel3.Size = new Size(64, 19);
             guna2HtmlLabel3.TabIndex = 1;
             guna2HtmlLabel3.Text = "Sản phẩm";
             // 
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.FromArgb(138, 76, 20);
             guna2HtmlLabel2.Location = new Point(91, 23);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(111, 33);
+            guna2HtmlLabel2.Size = new Size(105, 34);
             guna2HtmlLabel2.TabIndex = 0;
             guna2HtmlLabel2.Text = "Bán chạy";
             // 
@@ -726,7 +731,7 @@
             lbMoneyMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lbMoneyMonth.AutoSize = false;
             lbMoneyMonth.BackColor = Color.Transparent;
-            lbMoneyMonth.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbMoneyMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbMoneyMonth.ForeColor = Color.Red;
             lbMoneyMonth.Location = new Point(3, 32);
             lbMoneyMonth.Name = "lbMoneyMonth";
@@ -740,7 +745,7 @@
             lbMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lbMonth.AutoSize = false;
             lbMonth.BackColor = Color.Transparent;
-            lbMonth.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbMonth.ForeColor = Color.Red;
             lbMonth.Location = new Point(3, 3);
             lbMonth.Name = "lbMonth";
@@ -821,7 +826,7 @@
             lbMoneyThisMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lbMoneyThisMonth.AutoSize = false;
             lbMoneyThisMonth.BackColor = Color.Transparent;
-            lbMoneyThisMonth.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbMoneyThisMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbMoneyThisMonth.ForeColor = Color.Green;
             lbMoneyThisMonth.Location = new Point(3, 32);
             lbMoneyThisMonth.Name = "lbMoneyThisMonth";
@@ -836,7 +841,7 @@
             lbThisMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lbThisMonth.AutoSize = false;
             lbThisMonth.BackColor = Color.Transparent;
-            lbThisMonth.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbThisMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbThisMonth.ForeColor = Color.Green;
             lbThisMonth.Location = new Point(3, 3);
             lbThisMonth.Name = "lbThisMonth";

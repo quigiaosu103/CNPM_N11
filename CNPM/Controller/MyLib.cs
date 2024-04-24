@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using static System.Net.WebRequestMethods;
 using System.Net.Mail;
+using System.Windows.Markup.Localizer;
 namespace CNPM.Controller
 {
     public class MyLib
@@ -30,7 +31,13 @@ namespace CNPM.Controller
         {
             CardView item = new CardView();
             item.productId = id;
-            item.productName = name;
+            if (name.Length > 16)
+            {
+                item.productName = name.Substring(0, 16) + "...";
+            }else
+            {
+                item.productName = name;
+            }
             item.productPrice = price + "";
             item.productCategory = category.Name;
             item.addButton = "Thêm";

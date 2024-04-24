@@ -124,7 +124,7 @@
             txtUserAuthenName.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             txtUserAuthenName.FillColor = Color.FromArgb(217, 132, 28);
             txtUserAuthenName.FillColor2 = Color.FromArgb(217, 132, 28);
-            txtUserAuthenName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUserAuthenName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             txtUserAuthenName.ForeColor = Color.White;
             txtUserAuthenName.Location = new Point(817, 8);
             txtUserAuthenName.Name = "txtUserAuthenName";
@@ -143,7 +143,7 @@
             guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2GradientButton1.FillColor = Color.Wheat;
             guna2GradientButton1.FillColor2 = Color.Wheat;
-            guna2GradientButton1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton1.ForeColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton1.Image = Properties.Resources.icons8_user_90;
             guna2GradientButton1.ImageAlign = HorizontalAlignment.Left;
@@ -175,11 +175,11 @@
             // 
             guna2HtmlLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.White;
             guna2HtmlLabel1.Location = new Point(10, 8);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(178, 26);
+            guna2HtmlLabel1.Size = new Size(174, 27);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Thông Tin Cá Nhân";
             // 
@@ -215,7 +215,6 @@
             // 
             btnUpdate.BackColor = Color.Transparent;
             btnUpdate.BorderRadius = 8;
-            btnUpdate.BorderThickness = 2;
             btnUpdate.CustomizableEdges = customizableEdges9;
             btnUpdate.DisabledState.BorderColor = Color.DarkGray;
             btnUpdate.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -224,7 +223,7 @@
             btnUpdate.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnUpdate.FillColor = Color.FromArgb(138, 76, 20);
             btnUpdate.FillColor2 = Color.FromArgb(138, 76, 20);
-            btnUpdate.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdate.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnUpdate.ForeColor = Color.White;
             btnUpdate.Location = new Point(577, 262);
             btnUpdate.Name = "btnUpdate";
@@ -261,14 +260,14 @@
             // 
             guna2HtmlLabel12.AutoSize = false;
             guna2HtmlLabel12.BackColor = Color.Transparent;
-            guna2HtmlLabel12.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel12.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel12.ForeColor = Color.FromArgb(221, 165, 100);
             guna2HtmlLabel12.Location = new Point(335, 199);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             guna2HtmlLabel12.Size = new Size(59, 24);
             guna2HtmlLabel12.TabIndex = 13;
             guna2HtmlLabel12.Text = "Email";
-            guna2HtmlLabel12.TextAlignment = ContentAlignment.BottomCenter;
+            guna2HtmlLabel12.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // inputAddress
             // 
@@ -296,14 +295,14 @@
             // 
             guna2HtmlLabel11.AutoSize = false;
             guna2HtmlLabel11.BackColor = Color.Transparent;
-            guna2HtmlLabel11.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel11.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel11.ForeColor = Color.FromArgb(221, 165, 100);
             guna2HtmlLabel11.Location = new Point(335, 142);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             guna2HtmlLabel11.Size = new Size(59, 24);
             guna2HtmlLabel11.TabIndex = 11;
             guna2HtmlLabel11.Text = "Địa chỉ";
-            guna2HtmlLabel11.TextAlignment = ContentAlignment.BottomCenter;
+            guna2HtmlLabel11.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // inputPhone
             // 
@@ -331,54 +330,54 @@
             // 
             guna2HtmlLabel10.AutoSize = false;
             guna2HtmlLabel10.BackColor = Color.Transparent;
-            guna2HtmlLabel10.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel10.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel10.ForeColor = Color.FromArgb(221, 165, 100);
             guna2HtmlLabel10.Location = new Point(673, 74);
             guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             guna2HtmlLabel10.Size = new Size(102, 24);
             guna2HtmlLabel10.TabIndex = 9;
             guna2HtmlLabel10.Text = "Số điện thoại";
-            guna2HtmlLabel10.TextAlignment = ContentAlignment.BottomCenter;
+            guna2HtmlLabel10.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel9
             // 
             guna2HtmlLabel9.AutoSize = false;
             guna2HtmlLabel9.BackColor = Color.Transparent;
-            guna2HtmlLabel9.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel9.ForeColor = Color.FromArgb(221, 165, 100);
             guna2HtmlLabel9.Location = new Point(335, 74);
             guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             guna2HtmlLabel9.Size = new Size(80, 24);
             guna2HtmlLabel9.TabIndex = 8;
             guna2HtmlLabel9.Text = "Ngày sinh";
-            guna2HtmlLabel9.TextAlignment = ContentAlignment.BottomCenter;
+            guna2HtmlLabel9.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel8
             // 
             guna2HtmlLabel8.AutoSize = false;
             guna2HtmlLabel8.BackColor = Color.Transparent;
-            guna2HtmlLabel8.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel8.ForeColor = Color.FromArgb(221, 165, 100);
             guna2HtmlLabel8.Location = new Point(673, 7);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             guna2HtmlLabel8.Size = new Size(72, 24);
             guna2HtmlLabel8.TabIndex = 7;
             guna2HtmlLabel8.Text = "Giới tính";
-            guna2HtmlLabel8.TextAlignment = ContentAlignment.BottomCenter;
+            guna2HtmlLabel8.TextAlignment = ContentAlignment.MiddleLeft;
             guna2HtmlLabel8.Click += guna2HtmlLabel8_Click;
             // 
             // guna2HtmlLabel7
             // 
             guna2HtmlLabel7.AutoSize = false;
             guna2HtmlLabel7.BackColor = Color.Transparent;
-            guna2HtmlLabel7.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel7.ForeColor = Color.FromArgb(221, 165, 100);
             guna2HtmlLabel7.Location = new Point(335, 7);
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             guna2HtmlLabel7.Size = new Size(59, 24);
             guna2HtmlLabel7.TabIndex = 6;
             guna2HtmlLabel7.Text = "Họ tên";
-            guna2HtmlLabel7.TextAlignment = ContentAlignment.BottomCenter;
+            guna2HtmlLabel7.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // btnSelectAvatar
             // 
@@ -393,7 +392,7 @@
             btnSelectAvatar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnSelectAvatar.FillColor = Color.White;
             btnSelectAvatar.FillColor2 = Color.White;
-            btnSelectAvatar.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSelectAvatar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnSelectAvatar.ForeColor = Color.FromArgb(96, 56, 20);
             btnSelectAvatar.Location = new Point(61, 187);
             btnSelectAvatar.Name = "btnSelectAvatar";
@@ -451,7 +450,7 @@
             selectGender.DropDownStyle = ComboBoxStyle.DropDownList;
             selectGender.FocusedColor = Color.FromArgb(166, 101, 43);
             selectGender.FocusedState.BorderColor = Color.FromArgb(166, 101, 43);
-            selectGender.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            selectGender.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             selectGender.ForeColor = Color.FromArgb(221, 165, 100);
             selectGender.HoverState.BorderColor = Color.FromArgb(166, 101, 43);
             selectGender.ItemHeight = 30;
@@ -504,11 +503,11 @@
             // 
             guna2HtmlLabel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.White;
             guna2HtmlLabel2.Location = new Point(10, 8);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(194, 26);
+            guna2HtmlLabel2.Size = new Size(187, 27);
             guna2HtmlLabel2.TabIndex = 0;
             guna2HtmlLabel2.Text = "Thông Tin Tài Khoản";
             guna2HtmlLabel2.Click += guna2HtmlLabel2_Click;
@@ -532,20 +531,19 @@
             // 
             txtUserName.AutoSize = false;
             txtUserName.BackColor = Color.Transparent;
-            txtUserName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             txtUserName.ForeColor = Color.FromArgb(221, 165, 100);
-            txtUserName.Location = new Point(170, 44);
+            txtUserName.Location = new Point(144, 20);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(124, 24);
             txtUserName.TabIndex = 17;
             txtUserName.Text = "user01";
-            txtUserName.TextAlignment = ContentAlignment.BottomCenter;
+            txtUserName.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // guna2GradientButton5
             // 
             guna2GradientButton5.BackColor = Color.Transparent;
             guna2GradientButton5.BorderRadius = 8;
-            guna2GradientButton5.BorderThickness = 2;
             guna2GradientButton5.CustomizableEdges = customizableEdges30;
             guna2GradientButton5.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton5.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -554,7 +552,7 @@
             guna2GradientButton5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2GradientButton5.FillColor = Color.FromArgb(138, 76, 20);
             guna2GradientButton5.FillColor2 = Color.FromArgb(138, 76, 20);
-            guna2GradientButton5.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton5.ForeColor = Color.White;
             guna2GradientButton5.Location = new Point(802, 57);
             guna2GradientButton5.Name = "guna2GradientButton5";
@@ -569,13 +567,13 @@
             // 
             guna2HtmlLabel13.AutoSize = false;
             guna2HtmlLabel13.BackColor = Color.Transparent;
-            guna2HtmlLabel13.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel13.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel13.ForeColor = Color.FromArgb(221, 165, 100);
-            guna2HtmlLabel13.Location = new Point(40, 43);
+            guna2HtmlLabel13.Location = new Point(20, 16);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             guna2HtmlLabel13.Size = new Size(124, 24);
             guna2HtmlLabel13.TabIndex = 16;
-            guna2HtmlLabel13.Text = "Tên đăng nhập";
+            guna2HtmlLabel13.Text = "Tên đăng nhập:";
             guna2HtmlLabel13.TextAlignment = ContentAlignment.BottomCenter;
             guna2HtmlLabel13.Click += guna2HtmlLabel13_Click;
             // 

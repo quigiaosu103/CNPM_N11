@@ -201,7 +201,7 @@
             btnEmployee.Dock = DockStyle.Top;
             btnEmployee.FillColor = Color.White;
             btnEmployee.FillColor2 = Color.White;
-            btnEmployee.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEmployee.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnEmployee.ForeColor = Color.FromArgb(96, 56, 20);
             btnEmployee.Image = Properties.Resources.icons8_user_50;
             btnEmployee.ImageAlign = HorizontalAlignment.Left;
@@ -225,7 +225,7 @@
             guna2GradientButton6.Dock = DockStyle.Top;
             guna2GradientButton6.FillColor = Color.White;
             guna2GradientButton6.FillColor2 = Color.White;
-            guna2GradientButton6.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton6.ForeColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton6.Image = Properties.Resources.icons8_user_90;
             guna2GradientButton6.ImageAlign = HorizontalAlignment.Left;
@@ -249,7 +249,7 @@
             btnDiary.Dock = DockStyle.Top;
             btnDiary.FillColor = Color.White;
             btnDiary.FillColor2 = Color.White;
-            btnDiary.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDiary.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnDiary.ForeColor = Color.FromArgb(96, 56, 20);
             btnDiary.Image = Properties.Resources.icons8_book_50;
             btnDiary.ImageAlign = HorizontalAlignment.Left;
@@ -273,7 +273,7 @@
             btnHistory.Dock = DockStyle.Top;
             btnHistory.FillColor = Color.White;
             btnHistory.FillColor2 = Color.White;
-            btnHistory.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnHistory.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnHistory.ForeColor = Color.FromArgb(96, 56, 20);
             btnHistory.Image = Properties.Resources.icons8_history_64;
             btnHistory.ImageAlign = HorizontalAlignment.Left;
@@ -297,7 +297,7 @@
             btnPayment.Dock = DockStyle.Top;
             btnPayment.FillColor = Color.White;
             btnPayment.FillColor2 = Color.White;
-            btnPayment.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPayment.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnPayment.ForeColor = Color.FromArgb(96, 56, 20);
             btnPayment.Image = Properties.Resources.icons8_card_64__1_;
             btnPayment.ImageAlign = HorizontalAlignment.Left;
@@ -321,7 +321,7 @@
             btnThucDon.Dock = DockStyle.Top;
             btnThucDon.FillColor = Color.White;
             btnThucDon.FillColor2 = Color.White;
-            btnThucDon.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnThucDon.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThucDon.ForeColor = Color.FromArgb(96, 56, 20);
             btnThucDon.Image = Properties.Resources.icons8_menu_50__1_;
             btnThucDon.ImageAlign = HorizontalAlignment.Left;
@@ -345,7 +345,7 @@
             btnTrangChu.Dock = DockStyle.Top;
             btnTrangChu.FillColor = Color.White;
             btnTrangChu.FillColor2 = Color.White;
-            btnTrangChu.Font = new Font("Times New Roman", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnTrangChu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnTrangChu.ForeColor = Color.FromArgb(96, 56, 20);
             btnTrangChu.Image = Properties.Resources.icons8_home_50;
             btnTrangChu.ImageAlign = HorizontalAlignment.Left;

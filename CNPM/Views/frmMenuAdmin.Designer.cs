@@ -112,7 +112,7 @@
             guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2GradientButton2.FillColor = Color.FromArgb(217, 132, 28);
             guna2GradientButton2.FillColor2 = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton2.ForeColor = Color.White;
             guna2GradientButton2.ImageAlign = HorizontalAlignment.Left;
             guna2GradientButton2.Location = new Point(820, 4);
@@ -178,21 +178,20 @@
             inputSearchValue.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             inputSearchValue.ForeColor = Color.FromArgb(96, 56, 20);
             inputSearchValue.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
-            inputSearchValue.Location = new Point(547, 8);
+            inputSearchValue.Location = new Point(463, 11);
             inputSearchValue.Name = "inputSearchValue";
             inputSearchValue.PasswordChar = '\0';
             inputSearchValue.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
             inputSearchValue.PlaceholderText = "Tìm kiếm";
             inputSearchValue.SelectedText = "";
             inputSearchValue.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            inputSearchValue.Size = new Size(306, 41);
+            inputSearchValue.Size = new Size(390, 36);
             inputSearchValue.TabIndex = 5;
             // 
             // find
             // 
             find.BackColor = Color.Transparent;
             find.BorderRadius = 5;
-            find.BorderThickness = 2;
             find.CustomizableEdges = customizableEdges9;
             find.DisabledState.BorderColor = Color.DarkGray;
             find.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -203,12 +202,12 @@
             find.FillColor2 = Color.FromArgb(119, 68, 4);
             find.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             find.ForeColor = Color.White;
-            find.Location = new Point(425, 8);
+            find.Location = new Point(325, 11);
             find.Name = "find";
             find.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            find.Size = new Size(116, 39);
+            find.Size = new Size(116, 36);
             find.TabIndex = 4;
-            find.Text = "Thêm loại";
+            find.Text = "Cập nhật";
             find.Click += onUpdateClick;
             // 
             // guna2GradientButton6
@@ -217,21 +216,20 @@
             guna2GradientButton6.BackColor = Color.Transparent;
             guna2GradientButton6.BorderColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton6.BorderRadius = 5;
-            guna2GradientButton6.BorderThickness = 2;
             guna2GradientButton6.CustomizableEdges = customizableEdges11;
             guna2GradientButton6.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton6.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton6.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2GradientButton6.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             guna2GradientButton6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton6.FillColor = Color.FromArgb(202, 189, 189);
-            guna2GradientButton6.FillColor2 = Color.FromArgb(202, 189, 189);
-            guna2GradientButton6.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton6.FillColor = Color.FromArgb(96, 56, 20);
+            guna2GradientButton6.FillColor2 = Color.FromArgb(96, 56, 20);
+            guna2GradientButton6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton6.ForeColor = Color.White;
-            guna2GradientButton6.Location = new Point(871, 8);
+            guna2GradientButton6.Location = new Point(871, 11);
             guna2GradientButton6.Name = "guna2GradientButton6";
             guna2GradientButton6.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2GradientButton6.Size = new Size(116, 39);
+            guna2GradientButton6.Size = new Size(116, 36);
             guna2GradientButton6.TabIndex = 3;
             guna2GradientButton6.Text = "Tìm kiếm";
             guna2GradientButton6.Click += guna2GradientButton6_Click;
@@ -241,21 +239,20 @@
             btnUpdateProduct.BackColor = Color.Transparent;
             btnUpdateProduct.BorderColor = Color.FromArgb(96, 56, 20);
             btnUpdateProduct.BorderRadius = 5;
-            btnUpdateProduct.BorderThickness = 2;
             btnUpdateProduct.CustomizableEdges = customizableEdges13;
             btnUpdateProduct.DisabledState.BorderColor = Color.DarkGray;
             btnUpdateProduct.DisabledState.CustomBorderColor = Color.DarkGray;
             btnUpdateProduct.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnUpdateProduct.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnUpdateProduct.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnUpdateProduct.FillColor = Color.FromArgb(202, 189, 189);
-            btnUpdateProduct.FillColor2 = Color.FromArgb(202, 189, 189);
-            btnUpdateProduct.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdateProduct.FillColor = Color.FromArgb(96, 56, 20);
+            btnUpdateProduct.FillColor2 = Color.FromArgb(96, 56, 20);
+            btnUpdateProduct.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnUpdateProduct.ForeColor = Color.White;
-            btnUpdateProduct.Location = new Point(292, 8);
+            btnUpdateProduct.Location = new Point(225, 11);
             btnUpdateProduct.Name = "btnUpdateProduct";
             btnUpdateProduct.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnUpdateProduct.Size = new Size(116, 39);
+            btnUpdateProduct.Size = new Size(80, 36);
             btnUpdateProduct.TabIndex = 2;
             btnUpdateProduct.Text = "Sửa";
             btnUpdateProduct.Click += onUpdateClick;
@@ -265,21 +262,20 @@
             guna2GradientButton4.BackColor = Color.Transparent;
             guna2GradientButton4.BorderColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton4.BorderRadius = 5;
-            guna2GradientButton4.BorderThickness = 2;
             guna2GradientButton4.CustomizableEdges = customizableEdges15;
             guna2GradientButton4.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton4.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2GradientButton4.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             guna2GradientButton4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton4.FillColor = Color.FromArgb(202, 189, 189);
-            guna2GradientButton4.FillColor2 = Color.FromArgb(202, 189, 189);
-            guna2GradientButton4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton4.FillColor = Color.FromArgb(96, 56, 20);
+            guna2GradientButton4.FillColor2 = Color.FromArgb(96, 56, 20);
+            guna2GradientButton4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton4.ForeColor = Color.White;
-            guna2GradientButton4.Location = new Point(153, 8);
+            guna2GradientButton4.Location = new Point(121, 11);
             guna2GradientButton4.Name = "guna2GradientButton4";
             guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2GradientButton4.Size = new Size(116, 39);
+            guna2GradientButton4.Size = new Size(80, 36);
             guna2GradientButton4.TabIndex = 1;
             guna2GradientButton4.Text = "Xoá";
             guna2GradientButton4.Click += guna2GradientButton4_Click;
@@ -289,21 +285,20 @@
             guna2GradientButton3.BackColor = Color.Transparent;
             guna2GradientButton3.BorderColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton3.BorderRadius = 5;
-            guna2GradientButton3.BorderThickness = 2;
             guna2GradientButton3.CustomizableEdges = customizableEdges17;
             guna2GradientButton3.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton3.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2GradientButton3.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             guna2GradientButton3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton3.FillColor = Color.FromArgb(202, 189, 189);
-            guna2GradientButton3.FillColor2 = Color.FromArgb(202, 189, 189);
-            guna2GradientButton3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton3.FillColor = Color.FromArgb(96, 56, 20);
+            guna2GradientButton3.FillColor2 = Color.FromArgb(96, 56, 20);
+            guna2GradientButton3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton3.ForeColor = Color.White;
-            guna2GradientButton3.Location = new Point(20, 8);
+            guna2GradientButton3.Location = new Point(20, 11);
             guna2GradientButton3.Name = "guna2GradientButton3";
             guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2GradientButton3.Size = new Size(116, 39);
+            guna2GradientButton3.Size = new Size(80, 36);
             guna2GradientButton3.TabIndex = 0;
             guna2GradientButton3.Text = "Thêm";
             guna2GradientButton3.Click += guna2GradientButton3_Click;
@@ -318,7 +313,7 @@
             guna2CustomGradientPanel2.Location = new Point(2, 108);
             guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2CustomGradientPanel2.Size = new Size(710, 469);
+            guna2CustomGradientPanel2.Size = new Size(726, 469);
             guna2CustomGradientPanel2.TabIndex = 2;
             guna2CustomGradientPanel2.Paint += guna2CustomGradientPanel2_Paint;
             // 
@@ -326,9 +321,9 @@
             // 
             flowLayoutPanel.AutoScroll = true;
             flowLayoutPanel.BackColor = Color.White;
-            flowLayoutPanel.Location = new Point(20, 49);
+            flowLayoutPanel.Location = new Point(10, 49);
             flowLayoutPanel.Name = "flowLayoutPanel";
-            flowLayoutPanel.Size = new Size(670, 412);
+            flowLayoutPanel.Size = new Size(710, 412);
             flowLayoutPanel.TabIndex = 1;
             flowLayoutPanel.Paint += flowLayoutPanel_Paint;
             // 
@@ -340,7 +335,7 @@
             guna2HtmlLabel1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.Location = new Point(241, 12);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(200, 31);
+            guna2HtmlLabel1.Size = new Size(216, 31);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Danh mục sản phẩm";
             guna2HtmlLabel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -357,15 +352,16 @@
             guna2CustomGradientPanel3.Controls.Add(txtRightLabel);
             customizableEdges33.TopRight = false;
             guna2CustomGradientPanel3.CustomizableEdges = customizableEdges33;
-            guna2CustomGradientPanel3.Location = new Point(715, 108);
+            guna2CustomGradientPanel3.Location = new Point(731, 108);
             guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            guna2CustomGradientPanel3.Size = new Size(293, 469);
+            guna2CustomGradientPanel3.Size = new Size(277, 469);
             guna2CustomGradientPanel3.TabIndex = 3;
             // 
             // selectType
             // 
             selectType.BackColor = Color.Transparent;
+            selectType.BorderRadius = 4;
             selectType.CustomizableEdges = customizableEdges23;
             selectType.DrawMode = DrawMode.OwnerDrawFixed;
             selectType.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -374,7 +370,7 @@
             selectType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             selectType.ForeColor = Color.FromArgb(68, 88, 112);
             selectType.ItemHeight = 30;
-            selectType.Location = new Point(43, 237);
+            selectType.Location = new Point(40, 237);
             selectType.Name = "selectType";
             selectType.ShadowDecoration.CustomizableEdges = customizableEdges24;
             selectType.Size = new Size(212, 36);
@@ -383,13 +379,14 @@
             // 
             // btnSelectImage
             // 
+            btnSelectImage.BorderRadius = 4;
             btnSelectImage.Cursor = Cursors.Hand;
             btnSelectImage.CustomizableEdges = customizableEdges25;
             btnSelectImage.DisabledState.BorderColor = Color.DarkGray;
             btnSelectImage.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSelectImage.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnSelectImage.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnSelectImage.FillColor = Color.FromArgb(166, 79, 79);
+            btnSelectImage.FillColor = Color.MediumSeaGreen;
             btnSelectImage.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnSelectImage.ForeColor = Color.White;
             btnSelectImage.Location = new Point(72, 386);
@@ -402,6 +399,7 @@
             // 
             // inputDescription
             // 
+            inputDescription.BorderRadius = 4;
             inputDescription.CustomizableEdges = customizableEdges27;
             inputDescription.DefaultText = "";
             inputDescription.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -411,7 +409,7 @@
             inputDescription.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             inputDescription.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             inputDescription.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            inputDescription.Location = new Point(43, 290);
+            inputDescription.Location = new Point(40, 290);
             inputDescription.Margin = new Padding(4, 4, 4, 4);
             inputDescription.Name = "inputDescription";
             inputDescription.PasswordChar = '\0';
@@ -423,6 +421,7 @@
             // 
             // inputPrice
             // 
+            inputPrice.BorderRadius = 4;
             inputPrice.CustomizableEdges = customizableEdges29;
             inputPrice.DefaultText = "";
             inputPrice.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -432,7 +431,7 @@
             inputPrice.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             inputPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             inputPrice.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            inputPrice.Location = new Point(43, 171);
+            inputPrice.Location = new Point(40, 171);
             inputPrice.Margin = new Padding(4, 4, 4, 4);
             inputPrice.Name = "inputPrice";
             inputPrice.PasswordChar = '\0';
@@ -444,6 +443,7 @@
             // 
             // inputName
             // 
+            inputName.BorderRadius = 4;
             customizableEdges31.BottomLeft = false;
             customizableEdges31.BottomRight = false;
             customizableEdges31.TopLeft = false;
@@ -456,7 +456,7 @@
             inputName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             inputName.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             inputName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            inputName.Location = new Point(43, 104);
+            inputName.Location = new Point(40, 104);
             inputName.Margin = new Padding(4, 4, 4, 4);
             inputName.Name = "inputName";
             inputName.PasswordChar = '\0';
@@ -474,7 +474,7 @@
             txtRightLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txtRightLabel.Location = new Point(3, 49);
             txtRightLabel.Name = "txtRightLabel";
-            txtRightLabel.Size = new Size(287, 31);
+            txtRightLabel.Size = new Size(271, 31);
             txtRightLabel.TabIndex = 1;
             txtRightLabel.Text = "Sản phẩm";
             txtRightLabel.TextAlignment = ContentAlignment.MiddleCenter;

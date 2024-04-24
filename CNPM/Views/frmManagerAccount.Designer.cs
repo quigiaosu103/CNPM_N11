@@ -38,14 +38,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
@@ -58,11 +58,11 @@
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             btnReset = new Guna.UI2.WinForms.Guna2GradientButton();
             cbSearch = new Guna.UI2.WinForms.Guna2ComboBox();
-            txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
             btnEdits = new Guna.UI2.WinForms.Guna2GradientButton();
             btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             btnDelete = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
+            txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             accountManager = new Guna.UI2.WinForms.Guna2DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
@@ -95,7 +95,7 @@
             guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2GradientButton2.FillColor = Color.FromArgb(217, 132, 28);
             guna2GradientButton2.FillColor2 = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2GradientButton2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton2.ForeColor = Color.White;
             guna2GradientButton2.Location = new Point(820, 5);
             guna2GradientButton2.Name = "guna2GradientButton2";
@@ -147,21 +147,20 @@
             btnReset.BackColor = Color.Transparent;
             btnReset.BorderColor = Color.FromArgb(96, 56, 20);
             btnReset.BorderRadius = 5;
-            btnReset.BorderThickness = 2;
             btnReset.CustomizableEdges = customizableEdges1;
             btnReset.DisabledState.BorderColor = Color.DarkGray;
             btnReset.DisabledState.CustomBorderColor = Color.DarkGray;
             btnReset.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnReset.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnReset.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnReset.FillColor = Color.FromArgb(202, 189, 189);
-            btnReset.FillColor2 = Color.FromArgb(202, 189, 189);
-            btnReset.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReset.FillColor = Color.FromArgb(96, 56, 20);
+            btnReset.FillColor2 = Color.FromArgb(96, 56, 20);
+            btnReset.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnReset.ForeColor = Color.White;
             btnReset.Location = new Point(875, 11);
             btnReset.Name = "btnReset";
             btnReset.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnReset.Size = new Size(122, 39);
+            btnReset.Size = new Size(122, 36);
             btnReset.TabIndex = 6;
             btnReset.Text = "Reset";
             btnReset.Click += btnReset_Click;
@@ -170,6 +169,7 @@
             // 
             cbSearch.BackColor = Color.Transparent;
             cbSearch.BorderColor = Color.FromArgb(96, 56, 20);
+            cbSearch.BorderRadius = 4;
             cbSearch.BorderThickness = 2;
             cbSearch.CustomizableEdges = customizableEdges7;
             cbSearch.DrawMode = DrawMode.OwnerDrawFixed;
@@ -187,76 +187,25 @@
             cbSearch.StartIndex = 0;
             cbSearch.TabIndex = 5;
             // 
-            // txtSearch
-            // 
-            txtSearch.BackColor = Color.Transparent;
-            txtSearch.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.BorderRadius = 10;
-            txtSearch.BorderThickness = 2;
-            txtSearch.CustomizableEdges = customizableEdges15;
-            txtSearch.DefaultText = "";
-            txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtSearch.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            txtSearch.ForeColor = Color.FromArgb(96, 56, 20);
-            txtSearch.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.Location = new Point(468, 11);
-            txtSearch.Name = "txtSearch";
-            txtSearch.PasswordChar = '\0';
-            txtSearch.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
-            txtSearch.PlaceholderText = "Tìm kiếm";
-            txtSearch.SelectedText = "";
-            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtSearch.Size = new Size(264, 39);
-            txtSearch.TabIndex = 4;
-            // 
-            // btnSearch
-            // 
-            btnSearch.BackColor = Color.Transparent;
-            btnSearch.BorderColor = Color.FromArgb(96, 56, 20);
-            btnSearch.BorderRadius = 5;
-            btnSearch.BorderThickness = 2;
-            btnSearch.CustomizableEdges = customizableEdges13;
-            btnSearch.DisabledState.BorderColor = Color.DarkGray;
-            btnSearch.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnSearch.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnSearch.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            btnSearch.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnSearch.FillColor = Color.FromArgb(202, 189, 189);
-            btnSearch.FillColor2 = Color.FromArgb(202, 189, 189);
-            btnSearch.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(738, 11);
-            btnSearch.Name = "btnSearch";
-            btnSearch.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnSearch.Size = new Size(122, 39);
-            btnSearch.TabIndex = 3;
-            btnSearch.Text = "Tìm kiếm";
-            btnSearch.Click += btnSearch_Click;
-            // 
             // btnEdits
             // 
             btnEdits.BackColor = Color.Transparent;
             btnEdits.BorderColor = Color.FromArgb(96, 56, 20);
             btnEdits.BorderRadius = 5;
-            btnEdits.BorderThickness = 2;
             btnEdits.CustomizableEdges = customizableEdges9;
             btnEdits.DisabledState.BorderColor = Color.DarkGray;
             btnEdits.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEdits.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnEdits.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnEdits.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnEdits.FillColor = Color.FromArgb(202, 189, 189);
-            btnEdits.FillColor2 = Color.FromArgb(202, 189, 189);
-            btnEdits.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEdits.FillColor = Color.FromArgb(96, 56, 20);
+            btnEdits.FillColor2 = Color.FromArgb(96, 56, 20);
+            btnEdits.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnEdits.ForeColor = Color.White;
-            btnEdits.Location = new Point(115, 20);
+            btnEdits.Location = new Point(112, 11);
             btnEdits.Name = "btnEdits";
             btnEdits.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnEdits.Size = new Size(70, 24);
+            btnEdits.Size = new Size(80, 36);
             btnEdits.TabIndex = 3;
             btnEdits.Text = "Sửa";
             btnEdits.Click += guna2GradientButton5_Click;
@@ -266,21 +215,20 @@
             btnAdd.BackColor = Color.Transparent;
             btnAdd.BorderColor = Color.FromArgb(96, 56, 20);
             btnAdd.BorderRadius = 5;
-            btnAdd.BorderThickness = 2;
             btnAdd.CustomizableEdges = customizableEdges11;
             btnAdd.DisabledState.BorderColor = Color.DarkGray;
             btnAdd.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAdd.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAdd.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnAdd.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAdd.FillColor = Color.FromArgb(202, 189, 189);
-            btnAdd.FillColor2 = Color.FromArgb(202, 189, 189);
-            btnAdd.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAdd.FillColor = Color.FromArgb(96, 56, 20);
+            btnAdd.FillColor2 = Color.FromArgb(96, 56, 20);
+            btnAdd.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnAdd.ForeColor = Color.White;
-            btnAdd.Location = new Point(9, 20);
+            btnAdd.Location = new Point(22, 11);
             btnAdd.Name = "btnAdd";
             btnAdd.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnAdd.Size = new Size(91, 27);
+            btnAdd.Size = new Size(80, 36);
             btnAdd.TabIndex = 0;
             btnAdd.Text = "Thêm";
             btnAdd.Click += btnAdd_Click;
@@ -290,23 +238,71 @@
             btnDelete.BackColor = Color.Transparent;
             btnDelete.BorderColor = Color.FromArgb(96, 56, 20);
             btnDelete.BorderRadius = 5;
-            btnDelete.BorderThickness = 2;
             btnDelete.CustomizableEdges = customizableEdges13;
             btnDelete.DisabledState.BorderColor = Color.DarkGray;
             btnDelete.DisabledState.CustomBorderColor = Color.DarkGray;
             btnDelete.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnDelete.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnDelete.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnDelete.FillColor = Color.FromArgb(202, 189, 189);
-            btnDelete.FillColor2 = Color.FromArgb(202, 189, 189);
-            btnDelete.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelete.FillColor = Color.FromArgb(96, 56, 20);
+            btnDelete.FillColor2 = Color.FromArgb(96, 56, 20);
+            btnDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(191, 17);
+            btnDelete.Location = new Point(208, 11);
             btnDelete.Name = "btnDelete";
             btnDelete.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnDelete.Size = new Size(98, 30);
+            btnDelete.Size = new Size(80, 36);
             btnDelete.TabIndex = 2;
             btnDelete.Text = "Xoá";
+            // 
+            // btnSearch
+            // 
+            btnSearch.BackColor = Color.Transparent;
+            btnSearch.BorderColor = Color.FromArgb(96, 56, 20);
+            btnSearch.BorderRadius = 5;
+            btnSearch.CustomizableEdges = customizableEdges13;
+            btnSearch.DisabledState.BorderColor = Color.DarkGray;
+            btnSearch.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSearch.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSearch.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnSearch.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSearch.FillColor = Color.FromArgb(96, 56, 20);
+            btnSearch.FillColor2 = Color.FromArgb(96, 56, 20);
+            btnSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSearch.ForeColor = Color.White;
+            btnSearch.Location = new Point(738, 11);
+            btnSearch.Name = "btnSearch";
+            btnSearch.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnSearch.Size = new Size(122, 36);
+            btnSearch.TabIndex = 3;
+            btnSearch.Text = "Tìm kiếm";
+            btnSearch.Click += btnSearch_Click;
+            // 
+            // txtSearch
+            // 
+            txtSearch.BackColor = Color.Transparent;
+            txtSearch.BorderColor = Color.FromArgb(96, 56, 20);
+            txtSearch.BorderRadius = 4;
+            txtSearch.BorderThickness = 2;
+            txtSearch.CustomizableEdges = customizableEdges15;
+            txtSearch.DefaultText = "";
+            txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
+            txtSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSearch.ForeColor = Color.FromArgb(96, 56, 20);
+            txtSearch.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
+            txtSearch.Location = new Point(479, 11);
+            txtSearch.Name = "txtSearch";
+            txtSearch.PasswordChar = '\0';
+            txtSearch.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
+            txtSearch.PlaceholderText = "Tìm kiếm";
+            txtSearch.SelectedText = "";
+            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtSearch.Size = new Size(242, 36);
+            txtSearch.TabIndex = 4;
             // 
             // guna2CustomGradientPanel2
             // 
