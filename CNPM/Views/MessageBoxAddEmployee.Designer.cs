@@ -70,14 +70,14 @@
             btnTitle.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnTitle.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnTitle.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnTitle.FillColor = Color.FromArgb(232, 164, 81);
-            btnTitle.FillColor2 = Color.FromArgb(232, 164, 81);
+            btnTitle.FillColor = Color.FromArgb(138, 76, 20);
+            btnTitle.FillColor2 = Color.FromArgb(138, 76, 20);
             btnTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnTitle.ForeColor = Color.White;
             btnTitle.Location = new Point(108, 228);
             btnTitle.Name = "btnTitle";
             btnTitle.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnTitle.Size = new Size(164, 33);
+            btnTitle.Size = new Size(152, 33);
             btnTitle.TabIndex = 1;
             btnTitle.Text = "Thêm tài khoản";
             btnTitle.Click += btnTitle_Click;
@@ -150,7 +150,7 @@
             // 
             guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2ControlBox1.CustomizableEdges = customizableEdges7;
-            guna2ControlBox1.FillColor = Color.FromArgb(191, 54, 12);
+            guna2ControlBox1.FillColor = Color.FromArgb(138, 76, 20);
             guna2ControlBox1.IconColor = Color.White;
             guna2ControlBox1.Location = new Point(339, -1);
             guna2ControlBox1.Name = "guna2ControlBox1";
@@ -167,7 +167,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(232, 164, 81);
+            BackColor = Color.FromArgb(241, 232, 216);
             ClientSize = new Size(381, 274);
             Controls.Add(guna2ControlBox1);
             Controls.Add(txtEmail);

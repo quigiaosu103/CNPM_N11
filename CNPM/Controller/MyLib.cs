@@ -114,6 +114,7 @@ namespace CNPM.Controller
             lab.AutoSize = true;
             lab.Text = message;
             f.Controls.Add(lab);
+            f.StartPosition = FormStartPosition.CenterParent;
             f.ShowDialog();
         }
 

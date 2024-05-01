@@ -1,6 +1,6 @@
 ﻿namespace DangKi__DangNhap__QuenMatKhau
 {
-    partial class form_QuenMatKhau
+    partial class frmQuenMatKhau
     {
         /// <summary>
         /// Required designer variable.
@@ -195,7 +195,7 @@
             label1.Text = "Mã xác thực";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // form_QuenMatKhau
+            // frmQuenMatKhau
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -205,7 +205,7 @@
             Controls.Add(label1_quenmatkhau);
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
-            Name = "form_QuenMatKhau";
+            Name = "frmQuenMatKhau";
             Text = "QuenMatKhau";
             Load += form_QuenMatKhau_Load;
             panelGetOTP.ResumeLayout(false);

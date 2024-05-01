@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace DangKi__DangNhap__QuenMatKhau
 {
-    public partial class form_QuenMatKhau : Form
+    public partial class frmQuenMatKhau : Form
     {
         private string otp = "";
-        public form_QuenMatKhau()
+        public frmQuenMatKhau()
         {
             InitializeComponent();
             txtAlert.Hide();

@@ -47,7 +47,7 @@
             // guna2CustomGradientPanel1
             // 
             guna2CustomGradientPanel1.BackColor = Color.Transparent;
-            guna2CustomGradientPanel1.BorderColor = Color.FromArgb(138, 76, 20);
+            guna2CustomGradientPanel1.BorderColor = Color.FromArgb(241, 232, 216);
             guna2CustomGradientPanel1.BorderThickness = 3;
             guna2CustomGradientPanel1.Controls.Add(btnClose);
             guna2CustomGradientPanel1.Controls.Add(lbName);
@@ -55,10 +55,10 @@
             guna2CustomGradientPanel1.Controls.Add(guna2ControlBox1);
             guna2CustomGradientPanel1.CustomizableEdges = customizableEdges5;
             guna2CustomGradientPanel1.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel1.FillColor = Color.FromArgb(232, 164, 81);
-            guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(232, 164, 81);
-            guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(232, 164, 81);
-            guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(232, 164, 81);
+            guna2CustomGradientPanel1.FillColor = Color.FromArgb(241, 232, 216);
+            guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(241, 232, 216);
+            guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(241, 232, 216);
+            guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(241, 232, 216);
             guna2CustomGradientPanel1.Location = new Point(0, 0);
             guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -67,7 +67,8 @@
             // 
             // btnClose
             // 
-            btnClose.BorderColor = Color.White;
+            btnClose.BorderColor = Color.FromArgb(96, 56, 20);
+            btnClose.BorderRadius = 4;
             btnClose.BorderThickness = 2;
             btnClose.CustomizableEdges = customizableEdges1;
             btnClose.DisabledState.BorderColor = Color.DarkGray;
@@ -75,10 +76,10 @@
             btnClose.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnClose.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnClose.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnClose.FillColor = Color.Transparent;
-            btnClose.FillColor2 = Color.Transparent;
+            btnClose.FillColor = Color.FromArgb(96, 56, 20);
+            btnClose.FillColor2 = Color.FromArgb(96, 56, 20);
             btnClose.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClose.ForeColor = Color.Wheat;
+            btnClose.ForeColor = Color.White;
             btnClose.Location = new Point(84, 155);
             btnClose.Name = "btnClose";
             btnClose.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -92,7 +93,7 @@
             lbName.AutoSize = false;
             lbName.BackColor = Color.Transparent;
             lbName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lbName.ForeColor = Color.FromArgb(138, 76, 20);
+            lbName.ForeColor = Color.FromArgb(96, 56, 20);
             lbName.Location = new Point(3, 96);
             lbName.Name = "lbName";
             lbName.Size = new Size(274, 53);
@@ -105,10 +106,10 @@
             lbError.AutoSize = false;
             lbError.BackColor = Color.Transparent;
             lbError.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbError.ForeColor = Color.FromArgb(138, 76, 20);
-            lbError.Location = new Point(3, 42);
+            lbError.ForeColor = Color.FromArgb(96, 56, 20);
+            lbError.Location = new Point(0, 33);
             lbError.Name = "lbError";
-            lbError.Size = new Size(271, 57);
+            lbError.Size = new Size(277, 57);
             lbError.TabIndex = 1;
             lbError.Text = "Thông tin nhập sai";
             lbError.TextAlignment = ContentAlignment.MiddleCenter;
@@ -117,9 +118,9 @@
             // 
             guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2ControlBox1.CustomizableEdges = customizableEdges3;
-            guna2ControlBox1.FillColor = Color.FromArgb(191, 54, 12);
+            guna2ControlBox1.FillColor = Color.FromArgb(96, 56, 20);
             guna2ControlBox1.IconColor = Color.White;
-            guna2ControlBox1.Location = new Point(230, 3);
+            guna2ControlBox1.Location = new Point(233, 0);
             guna2ControlBox1.Name = "guna2ControlBox1";
             guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ControlBox1.Size = new Size(44, 33);

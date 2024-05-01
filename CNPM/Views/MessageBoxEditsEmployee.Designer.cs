@@ -100,7 +100,7 @@
             guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2ControlBox1.BackColor = Color.FromArgb(232, 164, 81);
             guna2ControlBox1.CustomizableEdges = customizableEdges1;
-            guna2ControlBox1.FillColor = Color.FromArgb(191, 54, 12);
+            guna2ControlBox1.FillColor = Color.FromArgb(138, 76, 20);
             guna2ControlBox1.IconColor = Color.White;
             guna2ControlBox1.Location = new Point(709, 0);
             guna2ControlBox1.Name = "guna2ControlBox1";
@@ -113,7 +113,7 @@
             guna2ControlBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             guna2ControlBox2.CustomizableEdges = customizableEdges3;
-            guna2ControlBox2.FillColor = Color.FromArgb(191, 54, 12);
+            guna2ControlBox2.FillColor = Color.FromArgb(138, 76, 20);
             guna2ControlBox2.IconColor = Color.White;
             guna2ControlBox2.Location = new Point(668, 0);
             guna2ControlBox2.Name = "guna2ControlBox2";
@@ -395,8 +395,9 @@
             // 
             dttBirthday.Checked = true;
             dttBirthday.CustomizableEdges = customizableEdges19;
+            dttBirthday.FillColor = Color.FromArgb(138, 76, 20);
             dttBirthday.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dttBirthday.ForeColor = Color.FromArgb(138, 76, 20);
+            dttBirthday.ForeColor = Color.White;
             dttBirthday.Format = DateTimePickerFormat.Long;
             dttBirthday.Location = new Point(148, 357);
             dttBirthday.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -537,7 +538,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(232, 164, 81);
+            BackColor = Color.FromArgb(241, 232, 216);
             ClientSize = new Size(753, 458);
             Controls.Add(lbEmail);
             Controls.Add(txtEmail);

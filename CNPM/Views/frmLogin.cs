@@ -72,7 +72,7 @@ namespace CNPM.Views
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            form_QuenMatKhau quenMatKhau = new form_QuenMatKhau();
+            frmQuenMatKhau quenMatKhau = new frmQuenMatKhau();
             quenMatKhau.ShowDialog();
         }
     }

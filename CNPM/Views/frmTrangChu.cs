@@ -24,6 +24,7 @@ namespace CNPM.VIew
         {
             InitializeComponent();
             loadData();
+           
         }
 
         public void loadData()

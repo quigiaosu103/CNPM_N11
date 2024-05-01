@@ -196,7 +196,7 @@
             // 
             guna2GradientButton3.BorderColor = Color.FromArgb(96, 56, 20);
             guna2GradientButton3.BorderRadius = 5;
-            guna2GradientButton3.BorderThickness = 2;
+            guna2GradientButton3.BorderThickness = 1;
             guna2GradientButton3.CustomizableEdges = customizableEdges11;
             guna2GradientButton3.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton3.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -207,10 +207,10 @@
             guna2GradientButton3.FillColor2 = Color.FromArgb(202, 189, 189);
             guna2GradientButton3.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton3.ForeColor = Color.White;
-            guna2GradientButton3.Location = new Point(575, 13);
+            guna2GradientButton3.Location = new Point(596, 10);
             guna2GradientButton3.Name = "guna2GradientButton3";
             guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2GradientButton3.Size = new Size(122, 36);
+            guna2GradientButton3.Size = new Size(94, 38);
             guna2GradientButton3.TabIndex = 1;
             guna2GradientButton3.Text = "Tìm kiếm";
             guna2GradientButton3.Click += searchProduct;
@@ -218,8 +218,7 @@
             // inputSearchValue
             // 
             inputSearchValue.BorderColor = Color.FromArgb(96, 56, 20);
-            inputSearchValue.BorderRadius = 10;
-            inputSearchValue.BorderThickness = 2;
+            inputSearchValue.BorderRadius = 5;
             inputSearchValue.CustomizableEdges = customizableEdges13;
             inputSearchValue.DefaultText = "";
             inputSearchValue.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -230,14 +229,14 @@
             inputSearchValue.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
             inputSearchValue.ForeColor = Color.FromArgb(96, 56, 20);
             inputSearchValue.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
-            inputSearchValue.Location = new Point(231, 12);
+            inputSearchValue.Location = new Point(233, 10);
             inputSearchValue.Name = "inputSearchValue";
             inputSearchValue.PasswordChar = '\0';
             inputSearchValue.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
             inputSearchValue.PlaceholderText = "Tìm kiếm";
             inputSearchValue.SelectedText = "";
             inputSearchValue.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            inputSearchValue.Size = new Size(316, 36);
+            inputSearchValue.Size = new Size(316, 38);
             inputSearchValue.TabIndex = 0;
             inputSearchValue.TextChanged += guna2TextBox1_TextChanged;
             // 

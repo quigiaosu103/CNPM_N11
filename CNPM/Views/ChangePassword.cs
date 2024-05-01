@@ -31,9 +31,7 @@ namespace CNPM.Views
             if(confirmPass == newPass)
             {
                 if (UserController.CheckAndUpdatePassword(
-                    UserAuthen.currentUser.Account.UserName,
-                    oldPass,
-                    newPass)
+                    UserAuthen.currentUser.Account.UserName, oldPass, newPass)
                  )
                 {
                     MyLib.AlertMessage("Đổi mật khẩu thành công!");

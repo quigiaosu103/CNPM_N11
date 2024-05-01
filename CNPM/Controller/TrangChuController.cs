@@ -125,25 +125,55 @@ namespace CNPM.Controller
             }
             return (resultListId, resultListAmount);
         }
-
+        private static (List<int>, List<int>) getFiveData(List<int> listId, List<int> listAmount)
+        {
+            List<int> resultListId = new List<int>();
+            List<int> resultListAmount = new List<int>();
+            int amount = 0;
+            if (listId.Count > 6)
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    resultListAmount.Add(listAmount[i]);
+                    resultListId.Add(listId[i]);
+                }
+                for (int i = 5; i<listAmount.Count; i++)
+                {
+                    amount += listAmount[i];
+                }
+                resultListAmount.Add(amount);
+                resultListId.Add(-1);
+                return (resultListId, resultListAmount);
+            } else
+            {
+                return(listId, listAmount);
+            }
+           
+        }
         private static DataTable dataSetPieChart(DateTime start, DateTime end)
         {
             using (var context = new MyDatabaseContext())
             {
                 var (listId, listAmount) = getIdOrderItem(start, end, true);
+                var (listIdNew, listAmountNew) = getFiveData(listId, listAmount);
                 DataTable dataTable = new DataTable("MyTable");
                 dataTable.Columns.Add("A", typeof(string));
                 dataTable.Columns.Add("b", typeof(double));
 
-                for (int i = 0; i < listId.Count; i++)
+                for (int i = 0; i < listIdNew.Count; i++)
                 {
-                    var nameProduct = context.Products.Where(x => x.Id == listId[i]).FirstOrDefault();
-                    
-                    dataTable.Rows.Add(nameProduct.Name.ToString(), listAmount[i]);
+                    if(listIdNew[i] != -1)
+                    {
+                        var nameProduct = context.Products.Where(x => x.Id == listIdNew[i]).FirstOrDefault();
+
+                        dataTable.Rows.Add(nameProduct.Name.ToString(), listAmountNew[i]);
+                    } else
+                    {
+                        dataTable.Rows.Add("Các sản phẩm khác", listAmountNew[i]);
+                    }
                 }
                 return dataTable;
             }
-            return null;
         }
 
         public void ChartPie(GunaChart chart, string nameChart, DateTime start, DateTime end)

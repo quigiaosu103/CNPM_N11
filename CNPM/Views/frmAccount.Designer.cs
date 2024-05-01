@@ -394,7 +394,7 @@
             btnSelectAvatar.FillColor2 = Color.White;
             btnSelectAvatar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnSelectAvatar.ForeColor = Color.FromArgb(96, 56, 20);
-            btnSelectAvatar.Location = new Point(61, 187);
+            btnSelectAvatar.Location = new Point(107, 187);
             btnSelectAvatar.Name = "btnSelectAvatar";
             btnSelectAvatar.PressedColor = Color.FromArgb(96, 56, 20);
             btnSelectAvatar.ShadowDecoration.CustomizableEdges = customizableEdges18;
@@ -408,7 +408,7 @@
             imgAvatar.BackColor = Color.Transparent;
             imgAvatar.FillColor = Color.Gray;
             imgAvatar.ImageRotate = 0F;
-            imgAvatar.Location = new Point(52, 3);
+            imgAvatar.Location = new Point(95, 6);
             imgAvatar.Name = "imgAvatar";
             imgAvatar.ShadowDecoration.CustomizableEdges = customizableEdges19;
             imgAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -533,7 +533,7 @@
             txtUserName.BackColor = Color.Transparent;
             txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             txtUserName.ForeColor = Color.FromArgb(221, 165, 100);
-            txtUserName.Location = new Point(144, 20);
+            txtUserName.Location = new Point(148, 57);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(124, 24);
             txtUserName.TabIndex = 17;
@@ -569,7 +569,7 @@
             guna2HtmlLabel13.BackColor = Color.Transparent;
             guna2HtmlLabel13.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel13.ForeColor = Color.FromArgb(221, 165, 100);
-            guna2HtmlLabel13.Location = new Point(20, 16);
+            guna2HtmlLabel13.Location = new Point(18, 57);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             guna2HtmlLabel13.Size = new Size(124, 24);
             guna2HtmlLabel13.TabIndex = 16;

@@ -53,8 +53,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.Charts.WinForms.ChartFont chartFont1 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont2 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont3 = new Guna.Charts.WinForms.ChartFont();
@@ -70,18 +68,18 @@
             Guna.Charts.WinForms.ChartFont chartFont7 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.Tick tick3 = new Guna.Charts.WinForms.Tick();
             Guna.Charts.WinForms.ChartFont chartFont8 = new Guna.Charts.WinForms.ChartFont();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.Charts.WinForms.ChartFont chartFont9 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont10 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont11 = new Guna.Charts.WinForms.ChartFont();
@@ -97,6 +95,8 @@
             Guna.Charts.WinForms.ChartFont chartFont15 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.Tick tick6 = new Guna.Charts.WinForms.Tick();
             Guna.Charts.WinForms.ChartFont chartFont16 = new Guna.Charts.WinForms.ChartFont();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -120,18 +120,6 @@
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
-            guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            lbTotal4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            lbTotal3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            lbTotal2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            lbTotal1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            lbSp3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            lbSp4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            lbSp2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            lbSp1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             gunaChart2 = new Guna.Charts.WinForms.GunaChart();
             guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -156,6 +144,18 @@
             timeStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
             timeEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            lbTotal4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbTotal3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbTotal2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbTotal1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbSp3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbSp4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbSp2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbSp1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel1.SuspendLayout();
@@ -165,7 +165,6 @@
             guna2Panel3.SuspendLayout();
             guna2Panel7.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
-            guna2CustomGradientPanel1.SuspendLayout();
             guna2CustomGradientPanel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -179,6 +178,7 @@
             tableLayoutPanel5.SuspendLayout();
             guna2CustomGradientPanel7.SuspendLayout();
             tableLayoutPanel9.SuspendLayout();
+            guna2CustomGradientPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // guna2Panel1
@@ -410,11 +410,11 @@
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.22277F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34.77723F));
-            tableLayoutPanel1.Controls.Add(guna2CustomGradientPanel1, 1, 0);
             tableLayoutPanel1.Controls.Add(guna2CustomGradientPanel3, 0, 2);
             tableLayoutPanel1.Controls.Add(guna2CustomGradientPanel4, 1, 2);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel9, 0, 1);
+            tableLayoutPanel1.Controls.Add(guna2CustomGradientPanel1, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -425,9 +425,428 @@
             tableLayoutPanel1.Size = new Size(808, 542);
             tableLayoutPanel1.TabIndex = 0;
             // 
+            // guna2CustomGradientPanel3
+            // 
+            guna2CustomGradientPanel3.BorderRadius = 15;
+            guna2CustomGradientPanel3.Controls.Add(gunaChart2);
+            guna2CustomGradientPanel3.CustomizableEdges = customizableEdges20;
+            guna2CustomGradientPanel3.Dock = DockStyle.Fill;
+            guna2CustomGradientPanel3.Location = new Point(3, 393);
+            guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
+            guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            guna2CustomGradientPanel3.Size = new Size(521, 146);
+            guna2CustomGradientPanel3.TabIndex = 2;
+            // 
+            // gunaChart2
+            // 
+            gunaChart2.BackColor = Color.White;
+            gunaChart2.Dock = DockStyle.Fill;
+            chartFont1.FontName = "Arial";
+            gunaChart2.Legend.LabelFont = chartFont1;
+            gunaChart2.Location = new Point(0, 0);
+            gunaChart2.Name = "gunaChart2";
+            gunaChart2.Size = new Size(521, 146);
+            gunaChart2.TabIndex = 0;
+            chartFont2.FontName = "Arial";
+            chartFont2.Size = 12;
+            chartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            gunaChart2.Title.Font = chartFont2;
+            chartFont3.FontName = "Arial";
+            gunaChart2.Tooltips.BodyFont = chartFont3;
+            chartFont4.FontName = "Arial";
+            chartFont4.Size = 9;
+            chartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            gunaChart2.Tooltips.TitleFont = chartFont4;
+            gunaChart2.XAxes.GridLines = grid1;
+            chartFont5.FontName = "Arial";
+            tick1.Font = chartFont5;
+            gunaChart2.XAxes.Ticks = tick1;
+            gunaChart2.YAxes.GridLines = grid2;
+            chartFont6.FontName = "Arial";
+            tick2.Font = chartFont6;
+            gunaChart2.YAxes.Ticks = tick2;
+            gunaChart2.ZAxes.GridLines = grid3;
+            chartFont7.FontName = "Arial";
+            pointLabel1.Font = chartFont7;
+            gunaChart2.ZAxes.PointLabels = pointLabel1;
+            chartFont8.FontName = "Arial";
+            tick3.Font = chartFont8;
+            gunaChart2.ZAxes.Ticks = tick3;
+            // 
+            // guna2CustomGradientPanel4
+            // 
+            guna2CustomGradientPanel4.BorderRadius = 15;
+            guna2CustomGradientPanel4.CustomizableEdges = customizableEdges22;
+            guna2CustomGradientPanel4.Dock = DockStyle.Fill;
+            guna2CustomGradientPanel4.Location = new Point(530, 393);
+            guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
+            guna2CustomGradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            guna2CustomGradientPanel4.Size = new Size(275, 146);
+            guna2CustomGradientPanel4.TabIndex = 3;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.ColumnCount = 1;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
+            tableLayoutPanel2.Controls.Add(guna2CustomGradientPanel7, 0, 1);
+            tableLayoutPanel2.Dock = DockStyle.Fill;
+            tableLayoutPanel2.Location = new Point(3, 3);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 2;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 22.1264362F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 77.8735657F));
+            tableLayoutPanel2.Size = new Size(521, 360);
+            tableLayoutPanel2.TabIndex = 4;
+            // 
+            // tableLayoutPanel3
+            // 
+            tableLayoutPanel3.ColumnCount = 2;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Controls.Add(guna2CustomGradientPanel5, 1, 0);
+            tableLayoutPanel3.Controls.Add(guna2CustomGradientPanel6, 0, 0);
+            tableLayoutPanel3.Dock = DockStyle.Fill;
+            tableLayoutPanel3.Location = new Point(3, 3);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 1;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Size = new Size(515, 73);
+            tableLayoutPanel3.TabIndex = 0;
+            // 
+            // guna2CustomGradientPanel5
+            // 
+            guna2CustomGradientPanel5.BorderRadius = 15;
+            guna2CustomGradientPanel5.Controls.Add(tableLayoutPanel6);
+            guna2CustomGradientPanel5.CustomizableEdges = customizableEdges26;
+            guna2CustomGradientPanel5.Dock = DockStyle.Fill;
+            guna2CustomGradientPanel5.Location = new Point(260, 3);
+            guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
+            guna2CustomGradientPanel5.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            guna2CustomGradientPanel5.Size = new Size(252, 67);
+            guna2CustomGradientPanel5.TabIndex = 0;
+            // 
+            // tableLayoutPanel6
+            // 
+            tableLayoutPanel6.BackColor = Color.Transparent;
+            tableLayoutPanel6.ColumnCount = 3;
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1.98932135F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 96.0213547F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1.98932135F));
+            tableLayoutPanel6.Controls.Add(guna2CustomGradientPanel9, 1, 1);
+            tableLayoutPanel6.Dock = DockStyle.Fill;
+            tableLayoutPanel6.Location = new Point(0, 0);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            tableLayoutPanel6.RowCount = 3;
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 2.12486887F));
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 95.75026F));
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 2.12486887F));
+            tableLayoutPanel6.Size = new Size(252, 67);
+            tableLayoutPanel6.TabIndex = 0;
+            // 
+            // guna2CustomGradientPanel9
+            // 
+            guna2CustomGradientPanel9.BorderColor = Color.Red;
+            guna2CustomGradientPanel9.BorderRadius = 20;
+            guna2CustomGradientPanel9.BorderThickness = 2;
+            guna2CustomGradientPanel9.Controls.Add(tableLayoutPanel7);
+            guna2CustomGradientPanel9.CustomizableEdges = customizableEdges24;
+            guna2CustomGradientPanel9.Dock = DockStyle.Fill;
+            guna2CustomGradientPanel9.FillColor = Color.FromArgb(255, 205, 210);
+            guna2CustomGradientPanel9.FillColor2 = Color.FromArgb(255, 205, 210);
+            guna2CustomGradientPanel9.FillColor3 = Color.FromArgb(255, 205, 210);
+            guna2CustomGradientPanel9.FillColor4 = Color.FromArgb(255, 205, 210);
+            guna2CustomGradientPanel9.Location = new Point(8, 4);
+            guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
+            guna2CustomGradientPanel9.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            guna2CustomGradientPanel9.Size = new Size(235, 58);
+            guna2CustomGradientPanel9.TabIndex = 0;
+            // 
+            // tableLayoutPanel7
+            // 
+            tableLayoutPanel7.ColumnCount = 1;
+            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel7.Controls.Add(lbMoneyMonth, 0, 1);
+            tableLayoutPanel7.Controls.Add(lbMonth, 0, 0);
+            tableLayoutPanel7.Dock = DockStyle.Fill;
+            tableLayoutPanel7.Location = new Point(0, 0);
+            tableLayoutPanel7.Name = "tableLayoutPanel7";
+            tableLayoutPanel7.RowCount = 2;
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel7.Size = new Size(235, 58);
+            tableLayoutPanel7.TabIndex = 0;
+            // 
+            // lbMoneyMonth
+            // 
+            lbMoneyMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lbMoneyMonth.AutoSize = false;
+            lbMoneyMonth.BackColor = Color.Transparent;
+            lbMoneyMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbMoneyMonth.ForeColor = Color.Red;
+            lbMoneyMonth.Location = new Point(3, 32);
+            lbMoneyMonth.Name = "lbMoneyMonth";
+            lbMoneyMonth.Size = new Size(229, 23);
+            lbMoneyMonth.TabIndex = 3;
+            lbMoneyMonth.Text = "900,000 VND";
+            lbMoneyMonth.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // lbMonth
+            // 
+            lbMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lbMonth.AutoSize = false;
+            lbMonth.BackColor = Color.Transparent;
+            lbMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbMonth.ForeColor = Color.Red;
+            lbMonth.Location = new Point(3, 3);
+            lbMonth.Name = "lbMonth";
+            lbMonth.Size = new Size(229, 23);
+            lbMonth.TabIndex = 2;
+            lbMonth.Text = "Doanh Thu Tháng Trước";
+            lbMonth.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // guna2CustomGradientPanel6
+            // 
+            guna2CustomGradientPanel6.BorderRadius = 15;
+            guna2CustomGradientPanel6.Controls.Add(tableLayoutPanel4);
+            guna2CustomGradientPanel6.CustomizableEdges = customizableEdges30;
+            guna2CustomGradientPanel6.Dock = DockStyle.Fill;
+            guna2CustomGradientPanel6.Location = new Point(3, 3);
+            guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
+            guna2CustomGradientPanel6.ShadowDecoration.CustomizableEdges = customizableEdges31;
+            guna2CustomGradientPanel6.Size = new Size(251, 67);
+            guna2CustomGradientPanel6.TabIndex = 1;
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.BackColor = Color.Transparent;
+            tableLayoutPanel4.ColumnCount = 3;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 2.04336262F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 95.91327F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 2.04336262F));
+            tableLayoutPanel4.Controls.Add(guna2CustomGradientPanel8, 1, 1);
+            tableLayoutPanel4.Dock = DockStyle.Fill;
+            tableLayoutPanel4.Location = new Point(0, 0);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 3;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 2.05067849F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 95.89864F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 2.05067849F));
+            tableLayoutPanel4.Size = new Size(251, 67);
+            tableLayoutPanel4.TabIndex = 0;
+            // 
+            // guna2CustomGradientPanel8
+            // 
+            guna2CustomGradientPanel8.BackColor = Color.Transparent;
+            guna2CustomGradientPanel8.BorderColor = Color.Green;
+            guna2CustomGradientPanel8.BorderRadius = 20;
+            guna2CustomGradientPanel8.BorderThickness = 2;
+            guna2CustomGradientPanel8.Controls.Add(tableLayoutPanel5);
+            guna2CustomGradientPanel8.CustomBorderColor = Color.Lime;
+            guna2CustomGradientPanel8.CustomizableEdges = customizableEdges28;
+            guna2CustomGradientPanel8.Dock = DockStyle.Fill;
+            guna2CustomGradientPanel8.FillColor = Color.FromArgb(176, 255, 87);
+            guna2CustomGradientPanel8.FillColor2 = Color.FromArgb(176, 255, 87);
+            guna2CustomGradientPanel8.FillColor3 = Color.FromArgb(176, 255, 87);
+            guna2CustomGradientPanel8.FillColor4 = Color.FromArgb(176, 255, 87);
+            guna2CustomGradientPanel8.ForeColor = Color.CornflowerBlue;
+            guna2CustomGradientPanel8.Location = new Point(8, 4);
+            guna2CustomGradientPanel8.Name = "guna2CustomGradientPanel8";
+            guna2CustomGradientPanel8.ShadowDecoration.CustomizableEdges = customizableEdges29;
+            guna2CustomGradientPanel8.Size = new Size(234, 58);
+            guna2CustomGradientPanel8.TabIndex = 0;
+            // 
+            // tableLayoutPanel5
+            // 
+            tableLayoutPanel5.ColumnCount = 1;
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel5.Controls.Add(lbMoneyThisMonth, 0, 1);
+            tableLayoutPanel5.Controls.Add(lbThisMonth, 0, 0);
+            tableLayoutPanel5.Dock = DockStyle.Fill;
+            tableLayoutPanel5.Location = new Point(0, 0);
+            tableLayoutPanel5.Name = "tableLayoutPanel5";
+            tableLayoutPanel5.RowCount = 2;
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel5.Size = new Size(234, 58);
+            tableLayoutPanel5.TabIndex = 0;
+            // 
+            // lbMoneyThisMonth
+            // 
+            lbMoneyThisMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lbMoneyThisMonth.AutoSize = false;
+            lbMoneyThisMonth.BackColor = Color.Transparent;
+            lbMoneyThisMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbMoneyThisMonth.ForeColor = Color.Green;
+            lbMoneyThisMonth.Location = new Point(3, 32);
+            lbMoneyThisMonth.Name = "lbMoneyThisMonth";
+            lbMoneyThisMonth.Size = new Size(228, 23);
+            lbMoneyThisMonth.TabIndex = 1;
+            lbMoneyThisMonth.Text = "660,000 VND";
+            lbMoneyThisMonth.TextAlignment = ContentAlignment.MiddleCenter;
+            lbMoneyThisMonth.Click += lbMoneyThisMonth_Click;
+            // 
+            // lbThisMonth
+            // 
+            lbThisMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lbThisMonth.AutoSize = false;
+            lbThisMonth.BackColor = Color.Transparent;
+            lbThisMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbThisMonth.ForeColor = Color.Green;
+            lbThisMonth.Location = new Point(3, 3);
+            lbThisMonth.Name = "lbThisMonth";
+            lbThisMonth.Size = new Size(228, 23);
+            lbThisMonth.TabIndex = 0;
+            lbThisMonth.Text = "Doanh Thu Tháng Này";
+            lbThisMonth.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // guna2CustomGradientPanel7
+            // 
+            guna2CustomGradientPanel7.Controls.Add(gunaChart1);
+            guna2CustomGradientPanel7.CustomizableEdges = customizableEdges32;
+            guna2CustomGradientPanel7.Dock = DockStyle.Fill;
+            guna2CustomGradientPanel7.Location = new Point(3, 82);
+            guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
+            guna2CustomGradientPanel7.ShadowDecoration.CustomizableEdges = customizableEdges33;
+            guna2CustomGradientPanel7.Size = new Size(515, 275);
+            guna2CustomGradientPanel7.TabIndex = 1;
+            // 
+            // gunaChart1
+            // 
+            gunaChart1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gunaChart1.BackColor = Color.White;
+            chartFont9.FontName = "Arial";
+            gunaChart1.Legend.LabelFont = chartFont9;
+            gunaChart1.Location = new Point(0, 0);
+            gunaChart1.Name = "gunaChart1";
+            gunaChart1.Size = new Size(515, 275);
+            gunaChart1.TabIndex = 0;
+            chartFont10.FontName = "Arial";
+            chartFont10.Size = 12;
+            chartFont10.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            gunaChart1.Title.Font = chartFont10;
+            chartFont11.FontName = "Arial";
+            gunaChart1.Tooltips.BodyFont = chartFont11;
+            chartFont12.FontName = "Arial";
+            chartFont12.Size = 9;
+            chartFont12.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            gunaChart1.Tooltips.TitleFont = chartFont12;
+            gunaChart1.XAxes.GridLines = grid4;
+            chartFont13.FontName = "Arial";
+            tick4.Font = chartFont13;
+            gunaChart1.XAxes.Ticks = tick4;
+            gunaChart1.YAxes.GridLines = grid5;
+            chartFont14.FontName = "Arial";
+            tick5.Font = chartFont14;
+            gunaChart1.YAxes.Ticks = tick5;
+            gunaChart1.ZAxes.GridLines = grid6;
+            chartFont15.FontName = "Arial";
+            pointLabel2.Font = chartFont15;
+            gunaChart1.ZAxes.PointLabels = pointLabel2;
+            chartFont16.FontName = "Arial";
+            tick6.Font = chartFont16;
+            gunaChart1.ZAxes.Ticks = tick6;
+            gunaChart1.Load += gunaChart1_Load;
+            // 
+            // tableLayoutPanel9
+            // 
+            tableLayoutPanel9.ColumnCount = 4;
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 47.15262F));
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 6.5759635F));
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.258503F));
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 78F));
+            tableLayoutPanel9.Controls.Add(guna2HtmlLabel1, 1, 0);
+            tableLayoutPanel9.Controls.Add(timeStart, 0, 0);
+            tableLayoutPanel9.Controls.Add(timeEnd, 2, 0);
+            tableLayoutPanel9.Controls.Add(guna2Button1, 3, 0);
+            tableLayoutPanel9.Dock = DockStyle.Fill;
+            tableLayoutPanel9.Location = new Point(3, 369);
+            tableLayoutPanel9.Name = "tableLayoutPanel9";
+            tableLayoutPanel9.RowCount = 1;
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel9.Size = new Size(521, 18);
+            tableLayoutPanel9.TabIndex = 5;
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            guna2HtmlLabel1.AutoSize = false;
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Location = new Point(211, 3);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(23, 12);
+            guna2HtmlLabel1.TabIndex = 1;
+            guna2HtmlLabel1.Text = "đến";
+            guna2HtmlLabel1.TextAlignment = ContentAlignment.BottomCenter;
+            guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
+            // 
+            // timeStart
+            // 
+            timeStart.Checked = true;
+            timeStart.CustomizableEdges = customizableEdges34;
+            timeStart.Dock = DockStyle.Fill;
+            timeStart.FillColor = Color.Wheat;
+            timeStart.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            timeStart.Format = DateTimePickerFormat.Long;
+            timeStart.HoverState.BorderColor = Color.Transparent;
+            timeStart.HoverState.FillColor = Color.Transparent;
+            timeStart.Location = new Point(3, 3);
+            timeStart.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            timeStart.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            timeStart.Name = "timeStart";
+            timeStart.ShadowDecoration.CustomizableEdges = customizableEdges35;
+            timeStart.Size = new Size(202, 12);
+            timeStart.TabIndex = 0;
+            timeStart.Value = new DateTime(2024, 3, 11, 11, 25, 8, 431);
+            timeStart.CheckedChanged += timeStart_CheckedChanged;
+            timeStart.ValueChanged += timeStart_ValueChanged;
+            // 
+            // timeEnd
+            // 
+            timeEnd.BorderColor = Color.BlanchedAlmond;
+            timeEnd.Checked = true;
+            timeEnd.CustomizableEdges = customizableEdges36;
+            timeEnd.Dock = DockStyle.Fill;
+            timeEnd.FillColor = Color.Wheat;
+            timeEnd.FocusedColor = Color.Wheat;
+            timeEnd.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            timeEnd.Format = DateTimePickerFormat.Long;
+            timeEnd.HoverState.BorderColor = Color.Transparent;
+            timeEnd.HoverState.FillColor = Color.Transparent;
+            timeEnd.HoverState.ForeColor = Color.Black;
+            timeEnd.Location = new Point(240, 3);
+            timeEnd.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            timeEnd.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            timeEnd.Name = "timeEnd";
+            timeEnd.ShadowDecoration.CustomizableEdges = customizableEdges37;
+            timeEnd.Size = new Size(198, 12);
+            timeEnd.TabIndex = 1;
+            timeEnd.Value = new DateTime(2024, 3, 11, 11, 25, 8, 431);
+            timeEnd.ValueChanged += timeEnd_ValueChanged;
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.BorderColor = Color.Gray;
+            guna2Button1.BorderThickness = 2;
+            guna2Button1.CustomizableEdges = customizableEdges38;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.FromArgb(204, 128, 34);
+            guna2Button1.Font = new Font("Times New Roman", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            guna2Button1.ForeColor = Color.Silver;
+            guna2Button1.Location = new Point(444, 3);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges39;
+            guna2Button1.Size = new Size(20, 12);
+            guna2Button1.TabIndex = 6;
+            guna2Button1.Click += guna2Button1_Click;
+            // 
             // guna2CustomGradientPanel1
             // 
-            guna2CustomGradientPanel1.BorderRadius = 30;
+            guna2CustomGradientPanel1.BorderRadius = 4;
             guna2CustomGradientPanel1.Controls.Add(lbTotal4);
             guna2CustomGradientPanel1.Controls.Add(lbTotal3);
             guna2CustomGradientPanel1.Controls.Add(lbTotal2);
@@ -439,11 +858,11 @@
             guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel4);
             guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel3);
             guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel2);
-            guna2CustomGradientPanel1.CustomizableEdges = customizableEdges20;
+            guna2CustomGradientPanel1.CustomizableEdges = customizableEdges40;
             guna2CustomGradientPanel1.Dock = DockStyle.Fill;
             guna2CustomGradientPanel1.Location = new Point(530, 3);
             guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges41;
             guna2CustomGradientPanel1.Size = new Size(275, 360);
             guna2CustomGradientPanel1.TabIndex = 0;
             guna2CustomGradientPanel1.Paint += guna2CustomGradientPanel1_Paint;
@@ -574,425 +993,6 @@
             guna2HtmlLabel2.TabIndex = 0;
             guna2HtmlLabel2.Text = "Bán chạy";
             // 
-            // guna2CustomGradientPanel3
-            // 
-            guna2CustomGradientPanel3.BorderRadius = 15;
-            guna2CustomGradientPanel3.Controls.Add(gunaChart2);
-            guna2CustomGradientPanel3.CustomizableEdges = customizableEdges22;
-            guna2CustomGradientPanel3.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel3.Location = new Point(3, 393);
-            guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
-            guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges23;
-            guna2CustomGradientPanel3.Size = new Size(521, 146);
-            guna2CustomGradientPanel3.TabIndex = 2;
-            // 
-            // gunaChart2
-            // 
-            gunaChart2.BackColor = Color.White;
-            gunaChart2.Dock = DockStyle.Fill;
-            chartFont1.FontName = "Arial";
-            gunaChart2.Legend.LabelFont = chartFont1;
-            gunaChart2.Location = new Point(0, 0);
-            gunaChart2.Name = "gunaChart2";
-            gunaChart2.Size = new Size(521, 146);
-            gunaChart2.TabIndex = 0;
-            chartFont2.FontName = "Arial";
-            chartFont2.Size = 12;
-            chartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            gunaChart2.Title.Font = chartFont2;
-            chartFont3.FontName = "Arial";
-            gunaChart2.Tooltips.BodyFont = chartFont3;
-            chartFont4.FontName = "Arial";
-            chartFont4.Size = 9;
-            chartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            gunaChart2.Tooltips.TitleFont = chartFont4;
-            gunaChart2.XAxes.GridLines = grid1;
-            chartFont5.FontName = "Arial";
-            tick1.Font = chartFont5;
-            gunaChart2.XAxes.Ticks = tick1;
-            gunaChart2.YAxes.GridLines = grid2;
-            chartFont6.FontName = "Arial";
-            tick2.Font = chartFont6;
-            gunaChart2.YAxes.Ticks = tick2;
-            gunaChart2.ZAxes.GridLines = grid3;
-            chartFont7.FontName = "Arial";
-            pointLabel1.Font = chartFont7;
-            gunaChart2.ZAxes.PointLabels = pointLabel1;
-            chartFont8.FontName = "Arial";
-            tick3.Font = chartFont8;
-            gunaChart2.ZAxes.Ticks = tick3;
-            // 
-            // guna2CustomGradientPanel4
-            // 
-            guna2CustomGradientPanel4.BorderRadius = 15;
-            guna2CustomGradientPanel4.CustomizableEdges = customizableEdges24;
-            guna2CustomGradientPanel4.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel4.Location = new Point(530, 393);
-            guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            guna2CustomGradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges25;
-            guna2CustomGradientPanel4.Size = new Size(275, 146);
-            guna2CustomGradientPanel4.TabIndex = 3;
-            // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.ColumnCount = 1;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
-            tableLayoutPanel2.Controls.Add(guna2CustomGradientPanel7, 0, 1);
-            tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(3, 3);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 2;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 22.1264362F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 77.8735657F));
-            tableLayoutPanel2.Size = new Size(521, 360);
-            tableLayoutPanel2.TabIndex = 4;
-            // 
-            // tableLayoutPanel3
-            // 
-            tableLayoutPanel3.ColumnCount = 2;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Controls.Add(guna2CustomGradientPanel5, 1, 0);
-            tableLayoutPanel3.Controls.Add(guna2CustomGradientPanel6, 0, 0);
-            tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 3);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 1;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(515, 73);
-            tableLayoutPanel3.TabIndex = 0;
-            // 
-            // guna2CustomGradientPanel5
-            // 
-            guna2CustomGradientPanel5.BorderRadius = 15;
-            guna2CustomGradientPanel5.Controls.Add(tableLayoutPanel6);
-            guna2CustomGradientPanel5.CustomizableEdges = customizableEdges28;
-            guna2CustomGradientPanel5.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel5.Location = new Point(260, 3);
-            guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
-            guna2CustomGradientPanel5.ShadowDecoration.CustomizableEdges = customizableEdges29;
-            guna2CustomGradientPanel5.Size = new Size(252, 67);
-            guna2CustomGradientPanel5.TabIndex = 0;
-            // 
-            // tableLayoutPanel6
-            // 
-            tableLayoutPanel6.BackColor = Color.Transparent;
-            tableLayoutPanel6.ColumnCount = 3;
-            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1.98932135F));
-            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 96.0213547F));
-            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1.98932135F));
-            tableLayoutPanel6.Controls.Add(guna2CustomGradientPanel9, 1, 1);
-            tableLayoutPanel6.Dock = DockStyle.Fill;
-            tableLayoutPanel6.Location = new Point(0, 0);
-            tableLayoutPanel6.Name = "tableLayoutPanel6";
-            tableLayoutPanel6.RowCount = 3;
-            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 2.12486887F));
-            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 95.75026F));
-            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 2.12486887F));
-            tableLayoutPanel6.Size = new Size(252, 67);
-            tableLayoutPanel6.TabIndex = 0;
-            // 
-            // guna2CustomGradientPanel9
-            // 
-            guna2CustomGradientPanel9.BorderColor = Color.Red;
-            guna2CustomGradientPanel9.BorderRadius = 20;
-            guna2CustomGradientPanel9.BorderThickness = 2;
-            guna2CustomGradientPanel9.Controls.Add(tableLayoutPanel7);
-            guna2CustomGradientPanel9.CustomizableEdges = customizableEdges26;
-            guna2CustomGradientPanel9.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel9.FillColor = Color.FromArgb(255, 205, 210);
-            guna2CustomGradientPanel9.FillColor2 = Color.FromArgb(255, 205, 210);
-            guna2CustomGradientPanel9.FillColor3 = Color.FromArgb(255, 205, 210);
-            guna2CustomGradientPanel9.FillColor4 = Color.FromArgb(255, 205, 210);
-            guna2CustomGradientPanel9.Location = new Point(8, 4);
-            guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
-            guna2CustomGradientPanel9.ShadowDecoration.CustomizableEdges = customizableEdges27;
-            guna2CustomGradientPanel9.Size = new Size(235, 58);
-            guna2CustomGradientPanel9.TabIndex = 0;
-            // 
-            // tableLayoutPanel7
-            // 
-            tableLayoutPanel7.ColumnCount = 1;
-            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.Controls.Add(lbMoneyMonth, 0, 1);
-            tableLayoutPanel7.Controls.Add(lbMonth, 0, 0);
-            tableLayoutPanel7.Dock = DockStyle.Fill;
-            tableLayoutPanel7.Location = new Point(0, 0);
-            tableLayoutPanel7.Name = "tableLayoutPanel7";
-            tableLayoutPanel7.RowCount = 2;
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.Size = new Size(235, 58);
-            tableLayoutPanel7.TabIndex = 0;
-            // 
-            // lbMoneyMonth
-            // 
-            lbMoneyMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lbMoneyMonth.AutoSize = false;
-            lbMoneyMonth.BackColor = Color.Transparent;
-            lbMoneyMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbMoneyMonth.ForeColor = Color.Red;
-            lbMoneyMonth.Location = new Point(3, 32);
-            lbMoneyMonth.Name = "lbMoneyMonth";
-            lbMoneyMonth.Size = new Size(229, 23);
-            lbMoneyMonth.TabIndex = 3;
-            lbMoneyMonth.Text = "900,000 VND";
-            lbMoneyMonth.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // lbMonth
-            // 
-            lbMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lbMonth.AutoSize = false;
-            lbMonth.BackColor = Color.Transparent;
-            lbMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbMonth.ForeColor = Color.Red;
-            lbMonth.Location = new Point(3, 3);
-            lbMonth.Name = "lbMonth";
-            lbMonth.Size = new Size(229, 23);
-            lbMonth.TabIndex = 2;
-            lbMonth.Text = "Doanh Thu Tháng Trước";
-            lbMonth.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // guna2CustomGradientPanel6
-            // 
-            guna2CustomGradientPanel6.BorderRadius = 15;
-            guna2CustomGradientPanel6.Controls.Add(tableLayoutPanel4);
-            guna2CustomGradientPanel6.CustomizableEdges = customizableEdges32;
-            guna2CustomGradientPanel6.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel6.Location = new Point(3, 3);
-            guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
-            guna2CustomGradientPanel6.ShadowDecoration.CustomizableEdges = customizableEdges33;
-            guna2CustomGradientPanel6.Size = new Size(251, 67);
-            guna2CustomGradientPanel6.TabIndex = 1;
-            // 
-            // tableLayoutPanel4
-            // 
-            tableLayoutPanel4.BackColor = Color.Transparent;
-            tableLayoutPanel4.ColumnCount = 3;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 2.04336262F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 95.91327F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 2.04336262F));
-            tableLayoutPanel4.Controls.Add(guna2CustomGradientPanel8, 1, 1);
-            tableLayoutPanel4.Dock = DockStyle.Fill;
-            tableLayoutPanel4.Location = new Point(0, 0);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            tableLayoutPanel4.RowCount = 3;
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 2.05067849F));
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 95.89864F));
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 2.05067849F));
-            tableLayoutPanel4.Size = new Size(251, 67);
-            tableLayoutPanel4.TabIndex = 0;
-            // 
-            // guna2CustomGradientPanel8
-            // 
-            guna2CustomGradientPanel8.BackColor = Color.Transparent;
-            guna2CustomGradientPanel8.BorderColor = Color.Green;
-            guna2CustomGradientPanel8.BorderRadius = 20;
-            guna2CustomGradientPanel8.BorderThickness = 2;
-            guna2CustomGradientPanel8.Controls.Add(tableLayoutPanel5);
-            guna2CustomGradientPanel8.CustomBorderColor = Color.Lime;
-            guna2CustomGradientPanel8.CustomizableEdges = customizableEdges30;
-            guna2CustomGradientPanel8.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel8.FillColor = Color.FromArgb(176, 255, 87);
-            guna2CustomGradientPanel8.FillColor2 = Color.FromArgb(176, 255, 87);
-            guna2CustomGradientPanel8.FillColor3 = Color.FromArgb(176, 255, 87);
-            guna2CustomGradientPanel8.FillColor4 = Color.FromArgb(176, 255, 87);
-            guna2CustomGradientPanel8.ForeColor = Color.CornflowerBlue;
-            guna2CustomGradientPanel8.Location = new Point(8, 4);
-            guna2CustomGradientPanel8.Name = "guna2CustomGradientPanel8";
-            guna2CustomGradientPanel8.ShadowDecoration.CustomizableEdges = customizableEdges31;
-            guna2CustomGradientPanel8.Size = new Size(234, 58);
-            guna2CustomGradientPanel8.TabIndex = 0;
-            // 
-            // tableLayoutPanel5
-            // 
-            tableLayoutPanel5.ColumnCount = 1;
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel5.Controls.Add(lbMoneyThisMonth, 0, 1);
-            tableLayoutPanel5.Controls.Add(lbThisMonth, 0, 0);
-            tableLayoutPanel5.Dock = DockStyle.Fill;
-            tableLayoutPanel5.Location = new Point(0, 0);
-            tableLayoutPanel5.Name = "tableLayoutPanel5";
-            tableLayoutPanel5.RowCount = 2;
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel5.Size = new Size(234, 58);
-            tableLayoutPanel5.TabIndex = 0;
-            // 
-            // lbMoneyThisMonth
-            // 
-            lbMoneyThisMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lbMoneyThisMonth.AutoSize = false;
-            lbMoneyThisMonth.BackColor = Color.Transparent;
-            lbMoneyThisMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbMoneyThisMonth.ForeColor = Color.Green;
-            lbMoneyThisMonth.Location = new Point(3, 32);
-            lbMoneyThisMonth.Name = "lbMoneyThisMonth";
-            lbMoneyThisMonth.Size = new Size(228, 23);
-            lbMoneyThisMonth.TabIndex = 1;
-            lbMoneyThisMonth.Text = "660,000 VND";
-            lbMoneyThisMonth.TextAlignment = ContentAlignment.MiddleCenter;
-            lbMoneyThisMonth.Click += lbMoneyThisMonth_Click;
-            // 
-            // lbThisMonth
-            // 
-            lbThisMonth.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lbThisMonth.AutoSize = false;
-            lbThisMonth.BackColor = Color.Transparent;
-            lbThisMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbThisMonth.ForeColor = Color.Green;
-            lbThisMonth.Location = new Point(3, 3);
-            lbThisMonth.Name = "lbThisMonth";
-            lbThisMonth.Size = new Size(228, 23);
-            lbThisMonth.TabIndex = 0;
-            lbThisMonth.Text = "Doanh Thu Tháng Này";
-            lbThisMonth.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // guna2CustomGradientPanel7
-            // 
-            guna2CustomGradientPanel7.Controls.Add(gunaChart1);
-            guna2CustomGradientPanel7.CustomizableEdges = customizableEdges34;
-            guna2CustomGradientPanel7.Dock = DockStyle.Fill;
-            guna2CustomGradientPanel7.Location = new Point(3, 82);
-            guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
-            guna2CustomGradientPanel7.ShadowDecoration.CustomizableEdges = customizableEdges35;
-            guna2CustomGradientPanel7.Size = new Size(515, 275);
-            guna2CustomGradientPanel7.TabIndex = 1;
-            // 
-            // gunaChart1
-            // 
-            gunaChart1.BackColor = Color.White;
-            gunaChart1.Dock = DockStyle.Fill;
-            chartFont9.FontName = "Arial";
-            gunaChart1.Legend.LabelFont = chartFont9;
-            gunaChart1.Location = new Point(0, 0);
-            gunaChart1.Name = "gunaChart1";
-            gunaChart1.Size = new Size(515, 275);
-            gunaChart1.TabIndex = 0;
-            chartFont10.FontName = "Arial";
-            chartFont10.Size = 12;
-            chartFont10.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            gunaChart1.Title.Font = chartFont10;
-            chartFont11.FontName = "Arial";
-            gunaChart1.Tooltips.BodyFont = chartFont11;
-            chartFont12.FontName = "Arial";
-            chartFont12.Size = 9;
-            chartFont12.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            gunaChart1.Tooltips.TitleFont = chartFont12;
-            gunaChart1.XAxes.GridLines = grid4;
-            chartFont13.FontName = "Arial";
-            tick4.Font = chartFont13;
-            gunaChart1.XAxes.Ticks = tick4;
-            gunaChart1.YAxes.GridLines = grid5;
-            chartFont14.FontName = "Arial";
-            tick5.Font = chartFont14;
-            gunaChart1.YAxes.Ticks = tick5;
-            gunaChart1.ZAxes.GridLines = grid6;
-            chartFont15.FontName = "Arial";
-            pointLabel2.Font = chartFont15;
-            gunaChart1.ZAxes.PointLabels = pointLabel2;
-            chartFont16.FontName = "Arial";
-            tick6.Font = chartFont16;
-            gunaChart1.ZAxes.Ticks = tick6;
-            gunaChart1.Load += gunaChart1_Load;
-            // 
-            // tableLayoutPanel9
-            // 
-            tableLayoutPanel9.ColumnCount = 4;
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 47.15262F));
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 6.5759635F));
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.258503F));
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 78F));
-            tableLayoutPanel9.Controls.Add(guna2HtmlLabel1, 1, 0);
-            tableLayoutPanel9.Controls.Add(timeStart, 0, 0);
-            tableLayoutPanel9.Controls.Add(timeEnd, 2, 0);
-            tableLayoutPanel9.Controls.Add(guna2Button1, 3, 0);
-            tableLayoutPanel9.Dock = DockStyle.Fill;
-            tableLayoutPanel9.Location = new Point(3, 369);
-            tableLayoutPanel9.Name = "tableLayoutPanel9";
-            tableLayoutPanel9.RowCount = 1;
-            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel9.Size = new Size(521, 18);
-            tableLayoutPanel9.TabIndex = 5;
-            // 
-            // guna2HtmlLabel1
-            // 
-            guna2HtmlLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            guna2HtmlLabel1.AutoSize = false;
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Location = new Point(211, 3);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(23, 12);
-            guna2HtmlLabel1.TabIndex = 1;
-            guna2HtmlLabel1.Text = "đến";
-            guna2HtmlLabel1.TextAlignment = ContentAlignment.BottomCenter;
-            guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
-            // 
-            // timeStart
-            // 
-            timeStart.Checked = true;
-            timeStart.CustomizableEdges = customizableEdges36;
-            timeStart.Dock = DockStyle.Fill;
-            timeStart.FillColor = Color.Wheat;
-            timeStart.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            timeStart.Format = DateTimePickerFormat.Long;
-            timeStart.HoverState.BorderColor = Color.Transparent;
-            timeStart.HoverState.FillColor = Color.Transparent;
-            timeStart.Location = new Point(3, 3);
-            timeStart.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            timeStart.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            timeStart.Name = "timeStart";
-            timeStart.ShadowDecoration.CustomizableEdges = customizableEdges37;
-            timeStart.Size = new Size(202, 12);
-            timeStart.TabIndex = 0;
-            timeStart.Value = new DateTime(2024, 3, 11, 11, 25, 8, 431);
-            timeStart.CheckedChanged += timeStart_CheckedChanged;
-            timeStart.ValueChanged += timeStart_ValueChanged;
-            // 
-            // timeEnd
-            // 
-            timeEnd.BorderColor = Color.BlanchedAlmond;
-            timeEnd.Checked = true;
-            timeEnd.CustomizableEdges = customizableEdges38;
-            timeEnd.Dock = DockStyle.Fill;
-            timeEnd.FillColor = Color.Wheat;
-            timeEnd.FocusedColor = Color.Wheat;
-            timeEnd.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            timeEnd.Format = DateTimePickerFormat.Long;
-            timeEnd.HoverState.BorderColor = Color.Transparent;
-            timeEnd.HoverState.FillColor = Color.Transparent;
-            timeEnd.HoverState.ForeColor = Color.Black;
-            timeEnd.Location = new Point(240, 3);
-            timeEnd.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            timeEnd.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            timeEnd.Name = "timeEnd";
-            timeEnd.ShadowDecoration.CustomizableEdges = customizableEdges39;
-            timeEnd.Size = new Size(198, 12);
-            timeEnd.TabIndex = 1;
-            timeEnd.Value = new DateTime(2024, 3, 11, 11, 25, 8, 431);
-            timeEnd.ValueChanged += timeEnd_ValueChanged;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BorderColor = Color.Gray;
-            guna2Button1.BorderThickness = 2;
-            guna2Button1.CustomizableEdges = customizableEdges40;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(204, 128, 34);
-            guna2Button1.Font = new Font("Times New Roman", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.Silver;
-            guna2Button1.Location = new Point(444, 3);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges41;
-            guna2Button1.Size = new Size(74, 12);
-            guna2Button1.TabIndex = 6;
-            guna2Button1.Click += guna2Button1_Click;
-            // 
             // guna2Panel5
             // 
             guna2Panel5.BackColor = Color.White;
@@ -1032,8 +1032,6 @@
             guna2Panel3.ResumeLayout(false);
             guna2Panel7.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
-            guna2CustomGradientPanel1.ResumeLayout(false);
-            guna2CustomGradientPanel1.PerformLayout();
             guna2CustomGradientPanel3.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
@@ -1047,6 +1045,8 @@
             tableLayoutPanel5.ResumeLayout(false);
             guna2CustomGradientPanel7.ResumeLayout(false);
             tableLayoutPanel9.ResumeLayout(false);
+            guna2CustomGradientPanel1.ResumeLayout(false);
+            guna2CustomGradientPanel1.PerformLayout();
             ResumeLayout(false);
         }
 

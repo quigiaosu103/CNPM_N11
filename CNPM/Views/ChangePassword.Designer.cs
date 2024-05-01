@@ -36,6 +36,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             txtOldPass = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,6 +49,8 @@
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -52,7 +58,7 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.FromArgb(96, 56, 20);
-            guna2HtmlLabel1.Location = new Point(153, 52);
+            guna2HtmlLabel1.Location = new Point(95, 44);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(122, 27);
             guna2HtmlLabel1.TabIndex = 0;
@@ -88,7 +94,7 @@
             txtOldPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtOldPass.ForeColor = Color.FromArgb(96, 56, 20);
             txtOldPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtOldPass.Location = new Point(113, 117);
+            txtOldPass.Location = new Point(54, 117);
             txtOldPass.Name = "txtOldPass";
             txtOldPass.PasswordChar = '*';
             txtOldPass.PlaceholderText = "";
@@ -112,7 +118,7 @@
             txtNewPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtNewPass.ForeColor = Color.FromArgb(96, 56, 20);
             txtNewPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNewPass.Location = new Point(113, 192);
+            txtNewPass.Location = new Point(54, 192);
             txtNewPass.Name = "txtNewPass";
             txtNewPass.PasswordChar = '*';
             txtNewPass.PlaceholderText = "";
@@ -136,7 +142,7 @@
             txtConfirmPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtConfirmPass.ForeColor = Color.FromArgb(96, 56, 20);
             txtConfirmPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtConfirmPass.Location = new Point(113, 262);
+            txtConfirmPass.Location = new Point(54, 262);
             txtConfirmPass.Name = "txtConfirmPass";
             txtConfirmPass.PasswordChar = '*';
             txtConfirmPass.PlaceholderText = "";
@@ -150,7 +156,7 @@
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.FromArgb(96, 56, 20);
-            guna2HtmlLabel2.Location = new Point(116, 93);
+            guna2HtmlLabel2.Location = new Point(54, 92);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(79, 19);
             guna2HtmlLabel2.TabIndex = 5;
@@ -161,7 +167,7 @@
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.FromArgb(96, 56, 20);
-            guna2HtmlLabel3.Location = new Point(114, 169);
+            guna2HtmlLabel3.Location = new Point(54, 167);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(88, 19);
             guna2HtmlLabel3.TabIndex = 6;
@@ -172,7 +178,7 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.FromArgb(96, 56, 20);
-            guna2HtmlLabel4.Location = new Point(113, 238);
+            guna2HtmlLabel4.Location = new Point(54, 237);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(115, 19);
             guna2HtmlLabel4.TabIndex = 7;
@@ -189,7 +195,7 @@
             guna2Button1.FillColor = Color.FromArgb(96, 56, 20);
             guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(161, 323);
+            guna2Button1.Location = new Point(85, 318);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button1.Size = new Size(107, 36);
@@ -197,12 +203,39 @@
             guna2Button1.Text = "Cập nhật";
             guna2Button1.Click += guna2Button1_Click;
             // 
+            // guna2ControlBox1
+            // 
+            guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2ControlBox1.CustomizableEdges = customizableEdges9;
+            guna2ControlBox1.FillColor = Color.FromArgb(96, 56, 20);
+            guna2ControlBox1.IconColor = Color.White;
+            guna2ControlBox1.Location = new Point(246, 0);
+            guna2ControlBox1.Name = "guna2ControlBox1";
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2ControlBox1.Size = new Size(45, 29);
+            guna2ControlBox1.TabIndex = 9;
+            // 
+            // guna2ControlBox2
+            // 
+            guna2ControlBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            guna2ControlBox2.CustomizableEdges = customizableEdges11;
+            guna2ControlBox2.FillColor = Color.FromArgb(96, 56, 20);
+            guna2ControlBox2.IconColor = Color.White;
+            guna2ControlBox2.Location = new Point(204, 0);
+            guna2ControlBox2.Name = "guna2ControlBox2";
+            guna2ControlBox2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2ControlBox2.Size = new Size(45, 29);
+            guna2ControlBox2.TabIndex = 10;
+            // 
             // ChangePassword
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(241, 232, 216);
-            ClientSize = new Size(427, 410);
+            ClientSize = new Size(291, 366);
+            Controls.Add(guna2ControlBox2);
+            Controls.Add(guna2ControlBox1);
             Controls.Add(guna2Button1);
             Controls.Add(guna2HtmlLabel4);
             Controls.Add(guna2HtmlLabel3);
@@ -211,7 +244,9 @@
             Controls.Add(txtNewPass);
             Controls.Add(txtOldPass);
             Controls.Add(guna2HtmlLabel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ChangePassword";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "ChangePassword";
             ResumeLayout(false);
             PerformLayout();
@@ -228,5 +263,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
     }
 }

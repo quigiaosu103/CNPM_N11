@@ -179,10 +179,10 @@
             btnReset.FillColor2 = Color.FromArgb(96, 56, 20);
             btnReset.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnReset.ForeColor = Color.White;
-            btnReset.Location = new Point(892, 13);
+            btnReset.Location = new Point(903, 13);
             btnReset.Name = "btnReset";
             btnReset.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnReset.Size = new Size(103, 39);
+            btnReset.Size = new Size(78, 39);
             btnReset.TabIndex = 8;
             btnReset.Text = "Reset";
             btnReset.Click += btnReset_Click;
@@ -196,7 +196,7 @@
             emplyeeDatagridView.BackgroundColor = Color.DarkGray;
             emplyeeDatagridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(128, 128, 255);
             dataGridViewCellStyle2.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
@@ -208,7 +208,7 @@
             emplyeeDatagridView.Columns.AddRange(new DataGridViewColumn[] { clUserId, clFullName, clAddress, clPhone, clEmail, clGender, clBirthday, clCartId, clPosition, clSalary, clWorkingTime, clApplyDate });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
@@ -246,7 +246,7 @@
             emplyeeDatagridView.ThemeStyle.ReadOnly = false;
             emplyeeDatagridView.ThemeStyle.RowsStyle.BackColor = Color.White;
             emplyeeDatagridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            emplyeeDatagridView.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            emplyeeDatagridView.ThemeStyle.RowsStyle.Font = new Font("Times New Roman", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             emplyeeDatagridView.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
             emplyeeDatagridView.ThemeStyle.RowsStyle.Height = 70;
             emplyeeDatagridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
@@ -350,8 +350,7 @@
             // 
             txtSearch.BackColor = Color.Transparent;
             txtSearch.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.BorderRadius = 9;
-            txtSearch.BorderThickness = 2;
+            txtSearch.BorderRadius = 5;
             txtSearch.CustomizableEdges = customizableEdges13;
             txtSearch.DefaultText = "";
             txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -369,15 +368,14 @@
             txtSearch.PlaceholderText = "Tìm kiếm";
             txtSearch.SelectedText = "";
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtSearch.Size = new Size(209, 36);
+            txtSearch.Size = new Size(294, 36);
             txtSearch.TabIndex = 4;
             // 
             // cbSearch
             // 
             cbSearch.BackColor = Color.Transparent;
             cbSearch.BorderColor = Color.FromArgb(96, 56, 20);
-            cbSearch.BorderRadius = 9;
-            cbSearch.BorderThickness = 2;
+            cbSearch.BorderRadius = 5;
             cbSearch.CustomizableEdges = customizableEdges15;
             cbSearch.DrawMode = DrawMode.OwnerDrawFixed;
             cbSearch.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -408,10 +406,10 @@
             guna2GradientButton5.FillColor2 = Color.FromArgb(96, 56, 20);
             guna2GradientButton5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton5.ForeColor = Color.White;
-            guna2GradientButton5.Location = new Point(771, 13);
+            guna2GradientButton5.Location = new Point(808, 13);
             guna2GradientButton5.Name = "guna2GradientButton5";
             guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2GradientButton5.Size = new Size(103, 39);
+            guna2GradientButton5.Size = new Size(74, 39);
             guna2GradientButton5.TabIndex = 2;
             guna2GradientButton5.Text = "Lọc";
             guna2GradientButton5.Click += guna2GradientButton5_Click;
@@ -452,7 +450,7 @@
             guna2GradientButton3.FillColor2 = Color.FromArgb(96, 56, 20);
             guna2GradientButton3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2GradientButton3.ForeColor = Color.White;
-            guna2GradientButton3.Location = new Point(9, 13);
+            guna2GradientButton3.Location = new Point(23, 13);
             guna2GradientButton3.Name = "guna2GradientButton3";
             guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2GradientButton3.Size = new Size(103, 39);

@@ -28,6 +28,8 @@ namespace CNPM.Views
             inputFullName.Text = UserAuthen.currentUser.FullName;
             inputPhone.Text = UserAuthen.currentUser.PhoneNumber;
             inputBirthDay.Value = UserAuthen.currentUser.BirthDay;
+            //MessageBox.Show(UserAuthen.Email.ToString());
+            inputMail.Text = UserAuthen.Email;
             selectGender.SelectedIndex = UserAuthen.currentUser.Gender;
             var base64 = UserAuthen.currentUser.Account.AvatarUrl;
             if (base64 != "")

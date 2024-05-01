@@ -166,6 +166,7 @@
             // inputSearchValue
             // 
             inputSearchValue.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            inputSearchValue.BackColor = Color.Transparent;
             inputSearchValue.BorderColor = Color.FromArgb(96, 56, 20);
             inputSearchValue.BorderRadius = 5;
             inputSearchValue.CustomizableEdges = customizableEdges7;

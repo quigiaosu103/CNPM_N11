@@ -157,10 +157,10 @@
             btnReset.FillColor2 = Color.FromArgb(96, 56, 20);
             btnReset.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnReset.ForeColor = Color.White;
-            btnReset.Location = new Point(875, 11);
+            btnReset.Location = new Point(890, 12);
             btnReset.Name = "btnReset";
             btnReset.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnReset.Size = new Size(122, 36);
+            btnReset.Size = new Size(88, 35);
             btnReset.TabIndex = 6;
             btnReset.Text = "Reset";
             btnReset.Click += btnReset_Click;
@@ -170,17 +170,16 @@
             cbSearch.BackColor = Color.Transparent;
             cbSearch.BorderColor = Color.FromArgb(96, 56, 20);
             cbSearch.BorderRadius = 4;
-            cbSearch.BorderThickness = 2;
             cbSearch.CustomizableEdges = customizableEdges7;
             cbSearch.DrawMode = DrawMode.OwnerDrawFixed;
             cbSearch.DropDownStyle = ComboBoxStyle.DropDownList;
             cbSearch.FocusedColor = Color.FromArgb(96, 56, 20);
             cbSearch.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
-            cbSearch.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            cbSearch.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbSearch.ForeColor = Color.FromArgb(96, 56, 20);
             cbSearch.ItemHeight = 30;
             cbSearch.Items.AddRange(new object[] { "Tên tài khoản", "Vai trò", "Email" });
-            cbSearch.Location = new Point(303, 11);
+            cbSearch.Location = new Point(319, 11);
             cbSearch.Name = "cbSearch";
             cbSearch.ShadowDecoration.CustomizableEdges = customizableEdges8;
             cbSearch.Size = new Size(159, 36);
@@ -202,10 +201,10 @@
             btnEdits.FillColor2 = Color.FromArgb(96, 56, 20);
             btnEdits.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnEdits.ForeColor = Color.White;
-            btnEdits.Location = new Point(112, 11);
+            btnEdits.Location = new Point(122, 14);
             btnEdits.Name = "btnEdits";
             btnEdits.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnEdits.Size = new Size(80, 36);
+            btnEdits.Size = new Size(80, 33);
             btnEdits.TabIndex = 3;
             btnEdits.Text = "Sửa";
             btnEdits.Click += guna2GradientButton5_Click;
@@ -225,10 +224,10 @@
             btnAdd.FillColor2 = Color.FromArgb(96, 56, 20);
             btnAdd.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnAdd.ForeColor = Color.White;
-            btnAdd.Location = new Point(22, 11);
+            btnAdd.Location = new Point(26, 14);
             btnAdd.Name = "btnAdd";
             btnAdd.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnAdd.Size = new Size(80, 36);
+            btnAdd.Size = new Size(80, 33);
             btnAdd.TabIndex = 0;
             btnAdd.Text = "Thêm";
             btnAdd.Click += btnAdd_Click;
@@ -248,10 +247,10 @@
             btnDelete.FillColor2 = Color.FromArgb(96, 56, 20);
             btnDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(208, 11);
+            btnDelete.Location = new Point(217, 15);
             btnDelete.Name = "btnDelete";
             btnDelete.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnDelete.Size = new Size(80, 36);
+            btnDelete.Size = new Size(80, 32);
             btnDelete.TabIndex = 2;
             btnDelete.Text = "Xoá";
             // 
@@ -270,10 +269,10 @@
             btnSearch.FillColor2 = Color.FromArgb(96, 56, 20);
             btnSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(738, 11);
+            btnSearch.Location = new Point(757, 11);
             btnSearch.Name = "btnSearch";
             btnSearch.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnSearch.Size = new Size(122, 36);
+            btnSearch.Size = new Size(91, 36);
             btnSearch.TabIndex = 3;
             btnSearch.Text = "Tìm kiếm";
             btnSearch.Click += btnSearch_Click;
@@ -283,7 +282,6 @@
             txtSearch.BackColor = Color.Transparent;
             txtSearch.BorderColor = Color.FromArgb(96, 56, 20);
             txtSearch.BorderRadius = 4;
-            txtSearch.BorderThickness = 2;
             txtSearch.CustomizableEdges = customizableEdges15;
             txtSearch.DefaultText = "";
             txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -291,17 +289,17 @@
             txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtSearch.FocusedState.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             txtSearch.ForeColor = Color.FromArgb(96, 56, 20);
             txtSearch.HoverState.BorderColor = Color.FromArgb(96, 56, 20);
-            txtSearch.Location = new Point(479, 11);
+            txtSearch.Location = new Point(506, 11);
             txtSearch.Name = "txtSearch";
             txtSearch.PasswordChar = '\0';
             txtSearch.PlaceholderForeColor = Color.FromArgb(96, 56, 20);
             txtSearch.PlaceholderText = "Tìm kiếm";
             txtSearch.SelectedText = "";
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtSearch.Size = new Size(242, 36);
+            txtSearch.Size = new Size(212, 36);
             txtSearch.TabIndex = 4;
             // 
             // guna2CustomGradientPanel2

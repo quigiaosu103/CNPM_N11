@@ -94,6 +94,7 @@ namespace DangKi__DangNhap__QuenMatKhau
                 {
                     user = (User)context.Users.OfType<Customer>().Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
                 }
+                UserAuthen.Email = account.Email;
                 UserAuthen.currentUser = user;
                 this.DialogResult = DialogResult.OK;
                 this.Close();
@@ -102,7 +103,7 @@ namespace DangKi__DangNhap__QuenMatKhau
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            form_QuenMatKhau quenMatKhau = new form_QuenMatKhau();
+            frmQuenMatKhau quenMatKhau = new frmQuenMatKhau();
             quenMatKhau.ShowDialog();
         }
     }

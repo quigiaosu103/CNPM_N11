@@ -67,7 +67,7 @@
             // 
             guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2ControlBox1.CustomizableEdges = customizableEdges1;
-            guna2ControlBox1.FillColor = Color.FromArgb(191, 54, 12);
+            guna2ControlBox1.FillColor = Color.FromArgb(96, 56, 20);
             guna2ControlBox1.IconColor = Color.White;
             guna2ControlBox1.Location = new Point(650, 0);
             guna2ControlBox1.Name = "guna2ControlBox1";
@@ -98,14 +98,14 @@
             btnSave.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnSave.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnSave.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnSave.FillColor = Color.FromArgb(232, 164, 81);
-            btnSave.FillColor2 = Color.FromArgb(232, 164, 81);
+            btnSave.FillColor = Color.FromArgb(96, 56, 20);
+            btnSave.FillColor2 = Color.FromArgb(96, 56, 20);
             btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.White;
             btnSave.Location = new Point(302, 281);
             btnSave.Name = "btnSave";
             btnSave.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnSave.Size = new Size(68, 33);
+            btnSave.Size = new Size(60, 33);
             btnSave.TabIndex = 2;
             btnSave.Text = "Lưu";
             btnSave.Click += btnSave_Click;
@@ -261,14 +261,14 @@
             linkImage.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             linkImage.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             linkImage.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            linkImage.FillColor = Color.FromArgb(232, 164, 81);
-            linkImage.FillColor2 = Color.FromArgb(232, 164, 81);
+            linkImage.FillColor = Color.FromArgb(96, 56, 20);
+            linkImage.FillColor2 = Color.FromArgb(96, 56, 20);
             linkImage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             linkImage.ForeColor = Color.White;
             linkImage.Location = new Point(132, 206);
             linkImage.Name = "linkImage";
             linkImage.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            linkImage.Size = new Size(151, 33);
+            linkImage.Size = new Size(139, 33);
             linkImage.TabIndex = 13;
             linkImage.Text = "Chọn ảnh mới";
             linkImage.Click += linkImage_Click;
@@ -310,7 +310,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(232, 164, 81);
+            BackColor = Color.FromArgb(241, 232, 216);
             ClientSize = new Size(693, 326);
             Controls.Add(PB);
             Controls.Add(txtA);

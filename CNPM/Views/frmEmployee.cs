@@ -57,29 +57,32 @@ namespace CNPM.Views
         {
 
             indexRow = e.RowIndex;
-
-            DataGridViewRow row = emplyeeDatagridView.Rows[indexRow];
-            employee.UserId = checkValue(row.Cells["clUserId"].Value?.ToString());
-            employee.FullName = checkValue(row.Cells[1].Value?.ToString());
-            employee.Address = checkValue(row.Cells[2].Value?.ToString());
-            employee.PhoneNumber = checkValue(row.Cells[3].Value?.ToString());
-            employee.Email = checkValue(row.Cells[4].Value?.ToString());
-            var clGender = 0;
-            if (row.Cells[5].Value.ToString() == "Nam")
+            if(indexRow >= 0) 
             {
-                clGender = 0;
+                DataGridViewRow row = emplyeeDatagridView.Rows[indexRow];
+                employee.UserId = checkValue(row.Cells["clUserId"].Value?.ToString());
+                employee.FullName = checkValue(row.Cells[1].Value?.ToString());
+                employee.Address = checkValue(row.Cells[2].Value?.ToString());
+                employee.PhoneNumber = checkValue(row.Cells[3].Value?.ToString());
+                employee.Email = checkValue(row.Cells[4].Value?.ToString());
+                var clGender = 0;
+                if (row.Cells[5].Value.ToString() == "Nam")
+                {
+                    clGender = 0;
+                }
+                else
+                {
+                    clGender = 1;
+                }
+                employee.Gender = clGender;
+                employee.BirthDay = DateTime.Parse(row.Cells[6].Value?.ToString());
+                employee.IdCard = checkValue(row.Cells[7].Value?.ToString());
+                employee.Position = checkValue(row.Cells[8].Value?.ToString());
+                employee.Salary = int.Parse(row.Cells[9].Value?.ToString());
+                employee.WorkingTime = checkValue(row.Cells[10].Value?.ToString());
+                employee.ApplyDate = checkValue(row.Cells[11].Value?.ToString());
             }
-            else
-            {
-                clGender = 1;
-            }
-            employee.Gender = clGender;
-            employee.BirthDay = DateTime.Parse(row.Cells[6].Value?.ToString());
-            employee.IdCard = checkValue(row.Cells[7].Value?.ToString());
-            employee.Position = checkValue(row.Cells[8].Value?.ToString());
-            employee.Salary = int.Parse(row.Cells[9].Value?.ToString());
-            employee.WorkingTime = checkValue(row.Cells[10].Value?.ToString());
-            employee.ApplyDate = checkValue(row.Cells[11].Value?.ToString());
+           
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
