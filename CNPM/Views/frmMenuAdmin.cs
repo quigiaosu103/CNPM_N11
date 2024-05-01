@@ -118,22 +118,24 @@ namespace CNPM.Views
         {
             foreach (Control control in flowLayoutPanel.Controls)
             {
-                control.Click += cardItemClicked;
+                control.Controls["boundPanel"].Click += cardItemClicked;
             }
         }
 
         private void cardItemClicked(object sender, EventArgs e)
         {
-            activeCardView = (CardView)sender;
-            if (activeCardView.Controls["txtProductName"] != null)
+
+            Guna2CustomGradientPanel panel = (Guna2CustomGradientPanel)sender;
+            activeCardView = (CardView)panel.Parent;
+            if (activeCardView.Controls["boundPanel"].Controls["txtProductName"] != null)
             {
-                inputName.Text = activeCardView.Controls["txtProductName"].Text;
+                inputName.Text = activeCardView.Controls["boundPanel"].Controls["txtProductName"].Text;
             }
-            if (activeCardView.Controls["txtProductPrice"] != null)
+            if (activeCardView.Controls["boundPanel"].Controls["txtProductPrice"] != null)
             {
-                inputPrice.Text = activeCardView.Controls["txtProductPrice"].Text;
+                inputPrice.Text = activeCardView.Controls["boundPanel"].Controls["txtProductPrice"].Text;
             }
-            if (activeCardView.Controls["txtproductCategory"] != null)
+            if (activeCardView.Controls["boundPanel"].Controls["txtproductCategory"] != null)
             {
                 selectType.SelectedValue = activeCardView.cateId;
             }
