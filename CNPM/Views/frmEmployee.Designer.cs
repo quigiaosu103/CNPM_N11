@@ -57,7 +57,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            txtName = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             btnReset = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -88,7 +88,7 @@
             // 
             // guna2Panel1
             // 
-            guna2Panel1.Controls.Add(guna2GradientButton2);
+            guna2Panel1.Controls.Add(txtName);
             guna2Panel1.Controls.Add(guna2GradientButton1);
             guna2Panel1.CustomizableEdges = customizableEdges5;
             guna2Panel1.Dock = DockStyle.Top;
@@ -98,27 +98,28 @@
             guna2Panel1.Size = new Size(1010, 53);
             guna2Panel1.TabIndex = 0;
             // 
-            // guna2GradientButton2
+            // txtName
             // 
-            guna2GradientButton2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            guna2GradientButton2.BorderRadius = 13;
-            guna2GradientButton2.CustomizableEdges = customizableEdges1;
-            guna2GradientButton2.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton2.FillColor = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.FillColor2 = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2GradientButton2.ForeColor = Color.White;
-            guna2GradientButton2.ImageAlign = HorizontalAlignment.Left;
-            guna2GradientButton2.Location = new Point(811, 8);
-            guna2GradientButton2.Name = "guna2GradientButton2";
-            guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2GradientButton2.Size = new Size(190, 33);
-            guna2GradientButton2.TabIndex = 1;
-            guna2GradientButton2.Text = "Hi, Nguyễn Văn A";
+            txtName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            txtName.BorderRadius = 13;
+            txtName.CustomizableEdges = customizableEdges1;
+            txtName.DisabledState.BorderColor = Color.DarkGray;
+            txtName.DisabledState.CustomBorderColor = Color.DarkGray;
+            txtName.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            txtName.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            txtName.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            txtName.FillColor = Color.FromArgb(217, 132, 28);
+            txtName.FillColor2 = Color.FromArgb(217, 132, 28);
+            txtName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.ForeColor = Color.White;
+            txtName.ImageAlign = HorizontalAlignment.Left;
+            txtName.Location = new Point(811, 8);
+            txtName.Name = "txtName";
+            txtName.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtName.Size = new Size(190, 33);
+            txtName.TabIndex = 1;
+            txtName.Text = "Hi, Nguyễn Văn A";
+            txtName.Click += guna2GradientButton2_Click;
             // 
             // guna2GradientButton1
             // 
@@ -197,7 +198,7 @@
             emplyeeDatagridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(128, 128, 255);
-            dataGridViewCellStyle2.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -208,7 +209,7 @@
             emplyeeDatagridView.Columns.AddRange(new DataGridViewColumn[] { clUserId, clFullName, clAddress, clPhone, clEmail, clGender, clBirthday, clCartId, clPosition, clSalary, clWorkingTime, clApplyDate });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
@@ -252,6 +253,7 @@
             emplyeeDatagridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             emplyeeDatagridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             emplyeeDatagridView.CellClick += emplyeeDatagridView_CellClick;
+            emplyeeDatagridView.CellContentClick += emplyeeDatagridView_CellContentClick;
             emplyeeDatagridView.CellDoubleClick += emplyeeDatagridView_CellDoubleClick;
             // 
             // clUserId
@@ -479,7 +481,7 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton txtName;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;

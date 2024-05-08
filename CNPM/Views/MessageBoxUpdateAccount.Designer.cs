@@ -89,8 +89,8 @@
             // btnSave
             // 
             btnSave.BorderColor = Color.White;
-            btnSave.BorderRadius = 5;
-            btnSave.BorderThickness = 2;
+            btnSave.BorderRadius = 4;
+            btnSave.BorderThickness = 1;
             btnSave.CustomizableEdges = customizableEdges3;
             btnSave.DefaultAutoSize = true;
             btnSave.DisabledState.BorderColor = Color.DarkGray;
@@ -252,8 +252,8 @@
             // linkImage
             // 
             linkImage.BorderColor = Color.White;
-            linkImage.BorderRadius = 5;
-            linkImage.BorderThickness = 2;
+            linkImage.BorderRadius = 4;
+            linkImage.BorderThickness = 1;
             linkImage.CustomizableEdges = customizableEdges13;
             linkImage.DefaultAutoSize = true;
             linkImage.DisabledState.BorderColor = Color.DarkGray;

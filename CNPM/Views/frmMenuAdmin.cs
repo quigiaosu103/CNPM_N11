@@ -25,6 +25,12 @@ namespace CNPM.Views
             InitializeComponent();
             LoadTypes();
             LoadProducts();
+            LoadUserInfo();
+        }
+
+        private void LoadUserInfo()
+        {
+            txtUsername.Text = UserAuthen.currentUser.FullName;
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -87,6 +93,7 @@ namespace CNPM.Views
                 };
                 CardView item = MyLib.addNewProduct(id + "", name, Int32.Parse(price), type, imageSrting);
                 flowLayoutPanel.Controls.Add(item);
+                flowLayoutPanel.Controls.SetChildIndex(item, 0);
                 ProductController.storeProduct(newItem);
                 tempImage = null;
                 MyLib.clearText(new Guna2TextBox[3] { inputName, inputPrice, inputDescription });
@@ -210,6 +217,17 @@ namespace CNPM.Views
         {
             string searchValue = inputSearchValue.Text.Trim();
             MyLib.searchProduct(searchValue, flowLayoutPanel);
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel.Controls.Clear();
+            LoadProducts();
+        }
+
+        private void txtUsername_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

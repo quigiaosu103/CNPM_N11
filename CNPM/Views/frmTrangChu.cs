@@ -24,7 +24,8 @@ namespace CNPM.VIew
         {
             InitializeComponent();
             loadData();
-           
+            loadUserInfo();
+
         }
 
         public void loadData()
@@ -37,6 +38,15 @@ namespace CNPM.VIew
             //var (listId, listAmount) = TrangChuController.getIdOrderItem(timeStart.Value, timeEnd.Value);
             loadBestSeller();
 
+        }
+
+        private void loadUserInfo()
+        {
+            lbRole.Text = UserAuthen.currentUser.Account.Role;
+            lbName.Text = UserAuthen.currentUser.FullName;
+            lbEmail.Text = UserAuthen.Email;
+            lbPhone.Text = UserAuthen.currentUser.PhoneNumber;
+            imgAvatar.Image = MyLib.Base64ToImage(UserAuthen.currentUser.Account.AvatarUrl);
         }
 
         public void loadBestSeller()
@@ -140,6 +150,16 @@ namespace CNPM.VIew
         }
 
         private void lbMoneyThisMonth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void full_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -199,3 +199,5 @@ Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dl
 Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
 Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
 Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll
+Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.txtDate.resources
+Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CreateNewOrder.resources
