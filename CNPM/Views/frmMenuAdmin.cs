@@ -25,6 +25,11 @@ namespace CNPM.Views
             InitializeComponent();
             LoadTypes();
             LoadProducts();
+            LoadUserInfo();
+        }
+        private void LoadUserInfo()
+        {
+            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)

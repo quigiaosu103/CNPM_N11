@@ -24,6 +24,38 @@ namespace CNPM.Views
             InitializeComponent();
             LoadProduct();
             LoadUserInfo();
+            var count = MyLib.checkList(UserListProduct.dataPayment);
+            if (count > 0)
+            {
+                loadProduct();
+            }
+
+        }
+
+        private void handleAddToCart(DataPayment data)
+        {
+            CartItemView cartItemView = new CartItemView();
+            cartItemView.productName = data.nameProduct;
+            cartItemView.itemId = data.idProduct;
+            cartItemView.itemPrice = int.Parse(data.priceProduct.ToString());
+            cartItemView.totalPrice = int.Parse(data.priceProductTotal.ToString());
+            cartItemView.itemAmount = data.numberProduct;
+            flowLayoutPanelCart.Controls.Add(cartItemView);
+        }
+        private void loadProduct()
+        {
+
+
+            List<DataPayment> data = UserListProduct.dataPayment;
+            if (data != null)
+            {
+                foreach (DataPayment us in data)
+                {
+                    handleAddToCart(us);
+                    //loadDataPayment();
+                }
+            }
+
 
         }
 
@@ -72,7 +104,7 @@ namespace CNPM.Views
                 card.Controls["boundPanel"].Controls["btnAdd"].Click += handleAddToCart;
             }
         }
-      
+
         private void handleAddToCart(object sender, EventArgs e)
         {
             if (sender is Guna2Button button)
@@ -95,7 +127,7 @@ namespace CNPM.Views
                 cartItemView.totalPrice = int.Parse(activeCard.productPrice);
                 cartItemView.itemAmount = 1;
                 flowLayoutPanelCart.Controls.Add(cartItemView);
-               
+
             }
         }
 
@@ -103,13 +135,30 @@ namespace CNPM.Views
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-            List<DataPayment> paymentList = new List<DataPayment>();    
+            
+            List<DataPayment> paymentList = new List<DataPayment>();
             foreach (Control control in flowLayoutPanelCart.Controls)
             {
                 CartItemView card = (CartItemView)control;
-                paymentList.Add(new DataPayment() { idProduct = card.itemId, nameProduct = card.productName, priceProduct = card.itemPrice, numberProduct = card.itemAmount, priceProductTotal = card.totalPrice });
+                
+                //paymentList.Add(new DataPayment() { idProduct = card.itemId, nameProduct = card.productName, priceProduct = card.itemPrice, numberProduct = card.itemAmount, priceProductTotal = card.totalPrice });
+                paymentList.Add(new DataPayment() { idProduct = card.itemId, nameProduct = MyLib.getProductName(card.itemId), priceProduct = card.itemPrice, numberProduct = card.itemAmount, priceProductTotal = card.totalPrice });
+                //MessageBox.Show(card.productName.ToString());
             }
             MyLib.InitUserProduct(paymentList);
+            if(sender is Guna2GradientButton btn)
+            {
+                var mainForm = btn.Parent.Parent.Parent.Parent.Parent as frMain;
+                if (mainForm != null)
+                    mainForm.openCurrentForm(new frmPayment());
+                else
+                {
+                    MyLib.AlertMessage("null");
+                }
+            }else
+            {
+                MyLib.AlertMessage("not a btn");
+            }
         }
 
 
@@ -122,6 +171,12 @@ namespace CNPM.Views
         private void flowLayoutPanelCart_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void flowLayoutPanelCart_EnabledChanged(object sender, EventArgs e)
+        {
+            int rows = MyLib.GetRowCount(flowLayoutPanelCart);
+            MessageBox.Show(rows.ToString());
         }
     }
 }

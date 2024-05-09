@@ -16,6 +16,9 @@
     <Compile Update="Views\CustomMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\CustomMessageBoxYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\DangKi.cs">
       <SubType>Form</SubType>
     </Compile>

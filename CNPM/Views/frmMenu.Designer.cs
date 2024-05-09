@@ -161,6 +161,7 @@
             // flowLayoutCustomer
             // 
             flowLayoutCustomer.AccessibleRole = AccessibleRole.None;
+            flowLayoutCustomer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutCustomer.AutoScroll = true;
             flowLayoutCustomer.BackColor = Color.White;
             flowLayoutCustomer.Location = new Point(6, 68);
@@ -317,6 +318,7 @@
             flowLayoutPanelCart.Name = "flowLayoutPanelCart";
             flowLayoutPanelCart.Size = new Size(260, 342);
             flowLayoutPanelCart.TabIndex = 3;
+            flowLayoutPanelCart.EnabledChanged += flowLayoutPanelCart_EnabledChanged;
             flowLayoutPanelCart.Paint += flowLayoutPanelCart_Paint;
             // 
             // guna2HtmlLabel4

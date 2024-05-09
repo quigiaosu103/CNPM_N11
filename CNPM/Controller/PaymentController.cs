@@ -180,6 +180,10 @@ namespace CNPM.Controller
             MessageBox.Show("ha");
         }
 
+        public static void getTotal(int total) 
+        {
+            MessageBox.Show(total.ToString());
+        }
 
     }
 }

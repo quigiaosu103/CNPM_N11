@@ -52,7 +52,7 @@
             inputCartItemAmount.BackColor = Color.Transparent;
             inputCartItemAmount.CustomizableEdges = customizableEdges1;
             inputCartItemAmount.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            inputCartItemAmount.Location = new Point(247, 7);
+            inputCartItemAmount.Location = new Point(301, 7);
             inputCartItemAmount.Name = "inputCartItemAmount";
             inputCartItemAmount.ShadowDecoration.CustomizableEdges = customizableEdges2;
             inputCartItemAmount.Size = new Size(100, 27);

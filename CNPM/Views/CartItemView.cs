@@ -38,7 +38,16 @@ namespace CNPM.Views
             if(sender is Guna2ImageButton button)
             {
                 var component = button.Parent as CartItemView;
-                button.Parent.Parent.Controls.Remove(component);
+                DialogResult  dr = new CustomMessageBoxYesNo().ShowDialog();
+                switch (dr)
+                {
+                    case DialogResult.Yes:
+                        button.Parent.Parent.Controls.Remove(component);
+                        break;
+                    case DialogResult.No:
+                        break;
+                }
+                
             }
         }
 

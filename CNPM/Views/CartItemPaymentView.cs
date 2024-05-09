@@ -1,4 +1,5 @@
-﻿using Guna.UI2.WinForms;
+﻿using CNPM.Controller;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,34 +26,34 @@ namespace CNPM.Views
 
         }
 
-        private void inputCartItemAmount_ValueChanged(object sender, EventArgs e)
-        {
-            this.itemAmount = (int)inputCartItemAmount.Value;
-            this.totalPrice = this.itemPrice * this.itemAmount;
-        }
-
-        private void btnRemoveItem_Click(object sender, EventArgs e)
-        {
-            if (sender is Guna2ImageButton button)
-            {
-                var component = button.Parent as CartItemPaymentView;
-                button.Parent.Parent.Controls.Remove(component);
-            }
-        }
+     
 
         private void btnRemoveItem_Click_1(object sender, EventArgs e)
         {
+            
+
             if (sender is Guna2ImageButton button)
             {
                 var component = button.Parent as CartItemPaymentView;
-                button.Parent.Parent.Controls.Remove(component);
+                DialogResult dr = new CustomMessageBoxYesNo().ShowDialog();
+                switch (dr)
+                {
+                    case DialogResult.Yes:
+                        button.Parent.Parent.Controls.Remove(component);
+                     
+                        break;
+                    case DialogResult.No:
+                        break;
+                }
+
             }
         }
-
+     
         private void inputCartItemAmount_ValueChanged_1(object sender, EventArgs e)
         {
             this.itemAmount = (int)inputCartItemAmount.Value;
             this.totalPrice = this.itemPrice * this.itemAmount;
+          
         }
 
         public string productName

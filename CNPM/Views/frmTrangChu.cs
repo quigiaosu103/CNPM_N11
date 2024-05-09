@@ -15,6 +15,7 @@ using Guna.UI2.WinForms;
 using System.Globalization;
 using System.Windows.Documents;
 using System.Collections;
+using System.Drawing.Imaging;
 namespace CNPM.VIew
 {
     public partial class frmTrangChu : Form
@@ -24,7 +25,22 @@ namespace CNPM.VIew
         {
             InitializeComponent();
             loadData();
-           
+            loadUserInfo();
+        }
+
+        private void loadUserInfo()
+        {
+            lbName.Text = UserAuthen.currentUser.FullName.ToString();
+            lbEmail.Text = UserAuthen.Email.ToString();
+            lbPhone.Text = UserAuthen.currentUser.PhoneNumber.ToString();
+            lbLocation.Text = UserAuthen.currentUser.Address.ToString();
+            lbRole.Text = UserAuthen.Position;
+            var base64 = UserAuthen.currentUser.Account.AvatarUrl;
+            if (base64 != "")
+            {
+                Image avt = MyLib.Base64ToImage(base64);
+                pcUser.Image = avt;
+            }
         }
 
         public void loadData()
@@ -116,21 +132,27 @@ namespace CNPM.VIew
 
         private void timeStart_ValueChanged(object sender, EventArgs e)
         {
+            var creatorChart = new TrangChuController();
+            //TrangChuController.dataSetPieChart(timeStart.Value, timeEnd.Value);
 
+            creatorChart.ChartPie(gunaChart2, "Doanh số sản phẩm", timeStart.Value, timeEnd.Value);
         }
 
         private void timeEnd_ValueChanged(object sender, EventArgs e)
         {
+            var creatorChart = new TrangChuController();
+            //TrangChuController.dataSetPieChart(timeStart.Value, timeEnd.Value);
 
+            creatorChart.ChartPie(gunaChart2, "Doanh số sản phẩm", timeStart.Value, timeEnd.Value);
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             //TrangChuController.getOrderItem(timeStart.Value, timeEnd.Value);
-            var creatorChart = new TrangChuController();
-            //TrangChuController.dataSetPieChart(timeStart.Value, timeEnd.Value);
+            //var creatorChart = new TrangChuController();
+            ////TrangChuController.dataSetPieChart(timeStart.Value, timeEnd.Value);
 
-            creatorChart.ChartPie(gunaChart2, "Doanh số sản phẩm", timeStart.Value, timeEnd.Value);
+            //creatorChart.ChartPie(gunaChart2, "Doanh số sản phẩm", timeStart.Value, timeEnd.Value);
 
         }
 

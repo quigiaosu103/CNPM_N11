@@ -18,9 +18,13 @@ namespace CNPM.Views
         public frmManagerAccount()
         {
             InitializeComponent();
+            LoadUserInfo();
             ManagerAccountController.loadDataAccount(accountManager);
         }
-
+        private void LoadUserInfo()
+        {
+            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+        }
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
             if (account.UserId == null)

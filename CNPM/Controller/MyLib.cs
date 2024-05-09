@@ -236,6 +236,36 @@ namespace CNPM.Controller
             return verification_code;
         }
 
-       
+        public static int checkList(List<DataPayment> list)
+        {
+            try
+            {
+                return 1;
+
+            }
+            catch (Exception ex)
+            {
+
+                return 0;
+            }
+
+        }
+
+        public static int GetRowCount(FlowLayoutPanel flowPanel)
+        {
+            int rows = flowPanel.Controls.Count;
+            return rows;
+        }
+
+        public static string getProductName(string id)
+        {
+            using (var context = new MyDatabaseContext())
+            {
+                int a = int.Parse(id);
+                var nameProduct = context.Products.Where(x=>x.Id == a).FirstOrDefault();
+                return nameProduct.Name;
+            }
+        }
+
     }
 }

@@ -18,11 +18,12 @@ namespace CNPM.Views
         PaymentController controller = new PaymentController();
 
         MyDatabaseContext databaseContext = new MyDatabaseContext();
-       
+
         public DataPayment payment = new DataPayment();
         public frmPayment()
         {
             InitializeComponent();
+            LoadUserInfo();
             List<DataPayment> data = UserListProduct.dataPayment;
             if (data != null)
             {
@@ -34,12 +35,16 @@ namespace CNPM.Views
             }
             controller.loadInforBill(txtTotal, txtVAT, txtDiscount, txtFinalTotal);
         }
+        private void LoadUserInfo()
+        {
+            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+        }
         private void loadDataPayment()
         {
 
             using (var context = new MyDatabaseContext())
             {
-                txtTotal .Text= controller.totalPriceProduct(flowLayoutPanelPayment).ToString("N0");
+                txtTotal.Text = controller.totalPriceProduct(flowLayoutPanelPayment).ToString("N0");
             }
         }
         private CartItemPaymentView cartItemPaymentView;
@@ -48,7 +53,7 @@ namespace CNPM.Views
         {
 
         }
-        private void handleAddToCart(DataPayment data) 
+        private void handleAddToCart(DataPayment data)
         {
             CartItemPaymentView cartItemView = new CartItemPaymentView();
             cartItemView.productName = data.nameProduct;
@@ -78,7 +83,17 @@ namespace CNPM.Views
             {
                 controller.insertOder(txtFinalTotal.Text, textStatus, paymentList);
             }
-            
+
+        }
+
+        private void flowLayoutPanelPayment_EnabledChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void flowLayoutPanelPayment_CausesValidationChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

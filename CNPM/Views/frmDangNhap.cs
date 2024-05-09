@@ -75,6 +75,9 @@ namespace DangKi__DangNhap__QuenMatKhau
             using (var context = new MyDatabaseContext())
             {
                 Account account = context.Account.Find(user_name);
+
+                Employee employee = context.Employees.Where(x => x.UserId == account.UserId).FirstOrDefault();
+          
                 if (account == null)
                 {
                     MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!");
@@ -96,6 +99,12 @@ namespace DangKi__DangNhap__QuenMatKhau
                 }
                 UserAuthen.Email = account.Email;
                 UserAuthen.currentUser = user;
+                
+                if(employee != null)
+                {
+                    UserAuthen.Position = employee.Position;
+                }
+             
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }

@@ -23,10 +23,13 @@ namespace CNPM.Views
         {
             InitializeComponent();
             controller.loadDataEmployee(emplyeeDatagridView);
-
+            LoadUserInfo();
         }
 
-
+        private void LoadUserInfo()
+        {
+            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+        }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {

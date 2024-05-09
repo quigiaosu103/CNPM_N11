@@ -61,7 +61,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            txtAuthenName = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -123,30 +123,30 @@
             guna2GradientButton1.TabIndex = 0;
             guna2GradientButton1.Text = "THANH TOÁN";
             // 
-            // guna2GradientButton2
+            // txtAuthenName
             // 
-            guna2GradientButton2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            guna2GradientButton2.BorderRadius = 13;
-            guna2GradientButton2.CustomizableEdges = customizableEdges3;
-            guna2GradientButton2.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton2.FillColor = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.FillColor2 = Color.FromArgb(217, 132, 28);
-            guna2GradientButton2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2GradientButton2.ForeColor = Color.White;
-            guna2GradientButton2.Location = new Point(817, 8);
-            guna2GradientButton2.Name = "guna2GradientButton2";
-            guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2GradientButton2.Size = new Size(190, 33);
-            guna2GradientButton2.TabIndex = 1;
-            guna2GradientButton2.Text = "Hi, Nguyễn Văn A";
+            txtAuthenName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            txtAuthenName.BorderRadius = 13;
+            txtAuthenName.CustomizableEdges = customizableEdges3;
+            txtAuthenName.DisabledState.BorderColor = Color.DarkGray;
+            txtAuthenName.DisabledState.CustomBorderColor = Color.DarkGray;
+            txtAuthenName.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            txtAuthenName.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            txtAuthenName.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            txtAuthenName.FillColor = Color.FromArgb(217, 132, 28);
+            txtAuthenName.FillColor2 = Color.FromArgb(217, 132, 28);
+            txtAuthenName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            txtAuthenName.ForeColor = Color.White;
+            txtAuthenName.Location = new Point(817, 8);
+            txtAuthenName.Name = "txtAuthenName";
+            txtAuthenName.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtAuthenName.Size = new Size(190, 33);
+            txtAuthenName.TabIndex = 1;
+            txtAuthenName.Text = "Hi, Nguyễn Văn A";
             // 
             // guna2Panel1
             // 
-            guna2Panel1.Controls.Add(guna2GradientButton2);
+            guna2Panel1.Controls.Add(txtAuthenName);
             guna2Panel1.Controls.Add(guna2GradientButton1);
             guna2Panel1.CustomizableEdges = customizableEdges5;
             guna2Panel1.Dock = DockStyle.Top;
@@ -519,6 +519,8 @@
             flowLayoutPanelPayment.Name = "flowLayoutPanelPayment";
             flowLayoutPanelPayment.Size = new Size(633, 391);
             flowLayoutPanelPayment.TabIndex = 4;
+            flowLayoutPanelPayment.CausesValidationChanged += flowLayoutPanelPayment_CausesValidationChanged;
+            flowLayoutPanelPayment.EnabledChanged += flowLayoutPanelPayment_EnabledChanged;
             // 
             // guna2CustomGradientPanel3
             // 
@@ -557,7 +559,7 @@
             guna2HtmlLabel11.BackColor = Color.Transparent;
             guna2HtmlLabel11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel11.ForeColor = Color.White;
-            guna2HtmlLabel11.Location = new Point(231, 12);
+            guna2HtmlLabel11.Location = new Point(263, 12);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             guna2HtmlLabel11.Size = new Size(133, 35);
             guna2HtmlLabel11.TabIndex = 1;
@@ -635,7 +637,7 @@
             btnDiscount.Name = "btnDiscount";
             btnDiscount.ShadowDecoration.CustomizableEdges = customizableEdges28;
             btnDiscount.Size = new Size(113, 34);
-            btnDiscount.TabIndex = 1;
+            btnDiscount.TabIndex = 2;
             btnDiscount.Text = "Áp dụng";
             btnDiscount.Click += btnDiscount_Click;
             // 
@@ -673,7 +675,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton txtAuthenName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.Charts.WinForms.GunaPolarAreaDataset gunaPolarAreaDataset1;

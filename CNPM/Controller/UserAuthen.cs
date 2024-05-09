@@ -12,7 +12,7 @@ namespace CNPM.Controller
     {
         public static string Email;
         public static User currentUser;
-        
+        public static string Position;
     }
 
 }

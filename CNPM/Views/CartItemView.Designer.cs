@@ -92,9 +92,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(txtCartItemTotal);
             Controls.Add(inputCartItemAmount);
             Controls.Add(btnRemoveItem);
-            Controls.Add(txtCartItemTotal);
             Controls.Add(txtCartItemName);
             Name = "CartItemView";
             Size = new Size(235, 38);

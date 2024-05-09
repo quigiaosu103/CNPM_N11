@@ -18,8 +18,12 @@ namespace CNPM.Views
         {
             InitializeComponent();
             LoadHistory();
+            LoadUserInfo();
         }
-
+        private void LoadUserInfo()
+        {
+            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+        }
         private void LoadHistory()
         {
             tableHistory.Rows.Clear();
