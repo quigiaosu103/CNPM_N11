@@ -49,10 +49,7 @@ namespace CNPM.Views
         }
         private CartItemPaymentView cartItemPaymentView;
 
-        private void changeUpDownNumberic(object sender, EventArgs e)
-        {
-
-        }
+       
         private void handleAddToCart(DataPayment data)
         {
             CartItemPaymentView cartItemView = new CartItemPaymentView();
@@ -72,7 +69,12 @@ namespace CNPM.Views
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            var textStatus = lbNamePayment.Text + " " + lbAddressPayment.Text + " " + lbPhonePayment.Text + " " + cbPaymentMethod.Text + " " + cbImportBill.Text;
+            string importBill = "";
+            if(cbImportBill.Checked)
+            {
+                importBill = "Xuất hoá đơn khi nhận hàng";
+            }
+            var textStatus = lbNamePayment.Text + " " + lbAddressPayment.Text + " " + lbPhonePayment.Text + " " + cbPaymentMethod.Text + " " + importBill;
             List<DataPayment> paymentList = new List<DataPayment>();
             foreach (Control control in flowLayoutPanelPayment.Controls)
             {
@@ -81,8 +83,27 @@ namespace CNPM.Views
             }
             if (controller.checkInforCustomer(lbNamePayment, lbPhonePayment, lbAddressPayment))
             {
-                controller.insertOder(txtFinalTotal.Text, textStatus, paymentList);
+                bool state = controller.insertOder(txtFinalTotal.Text, textStatus, paymentList);
+                
+                if(state)
+                {
+                    if (sender is Guna2GradientButton btn)
+                    {
+                        var mainForm = btn.Parent.Parent.Parent.Parent.Parent as frMain;
+                        if (mainForm != null)
+                            mainForm.openCurrentForm(new frmPayment());
+                        else
+                        {
+                            MyLib.AlertMessage("null");
+                        }
+                    }
+                    else
+                    {
+                        MyLib.AlertMessage("not a btn");
+                    }
+                }
             }
+
 
         }
 

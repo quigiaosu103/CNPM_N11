@@ -84,7 +84,7 @@ namespace CNPM.Controller
             return 0;
         }
 
-        public void insertOder(string totalPrice, string paymentMethods, List<DataPayment> data)
+        public bool insertOder(string totalPrice, string paymentMethods, List<DataPayment> data)
         {
             using (var context = new MyDatabaseContext())
             {
@@ -129,10 +129,13 @@ namespace CNPM.Controller
 
                     }
                     new CustomMessageBox("Đơn hàng của bạn đặt thành công", "Đặt hàng thành công").ShowDialog();
+                    UserListProduct.dataPayment.Clear();
+                    return true;
                 }
                 else
                 {
                     new CustomMessageBox("Đơn hàng của bạn đặt thất bại", "Đặt hàng không thành công").ShowDialog();
+                    return false;
                 }
             }
         }

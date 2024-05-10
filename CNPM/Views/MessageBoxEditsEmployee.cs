@@ -38,7 +38,14 @@ namespace CNPM.Views
             ////MessageBox.Show(data.BirthDay.ToString());
             dttBirthday.CustomFormat = "dd/mm/yy";
             dttBirthday.Value = data.BirthDay;
-            cbPosition.Text = data.Position;
+            if(data.Position == "Nhân viên" || data.Position == "Employee") 
+            {
+                cbPosition.SelectedIndex = 0;
+            } else if(data.Position == "Manager")
+            {
+                cbPosition.SelectedIndex = 1;
+            }
+           
             txtTimeWork.Text = data.WorkingTime.ToString();
             txtTimeApply.Text = data.ApplyDate.ToString();
             txtId.Text = data.UserId.ToString();
@@ -64,7 +71,15 @@ namespace CNPM.Views
                 data.Address = txtAddress.Text;
                 data.Gender = cbGender.SelectedIndex;
                 data.BirthDay = dttBirthday.Value;
-                data.Position = cbPosition.Text;
+                if (cbPosition.SelectedIndex == 0)
+                {
+                    data.Position = "Employee";
+                }
+                else if (cbPosition.SelectedIndex == 1)
+                {
+                    data.Position = "Manager";
+                }
+                //data.Position = cbPosition.Text;
                 data.WorkingTime = txtTimeWork.Text;
                 data.ApplyDate = txtTimeApply.Text;
                 data.UserId = txtId.Text;

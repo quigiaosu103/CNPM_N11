@@ -420,7 +420,7 @@
             cbPosition.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             cbPosition.ForeColor = Color.FromArgb(138, 76, 20);
             cbPosition.ItemHeight = 30;
-            cbPosition.Items.AddRange(new object[] { "Quản lý", "Nhân viên bán hàng" });
+            cbPosition.Items.AddRange(new object[] { "Nhân viên", "Quản lý" });
             cbPosition.Location = new Point(513, 228);
             cbPosition.Name = "cbPosition";
             cbPosition.ShadowDecoration.CustomizableEdges = customizableEdges22;
