@@ -4,6 +4,7 @@ using CNPM.Views;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
 using CNPM.Model;
+using DangKi__DangNhap__QuenMatKhau;
 namespace CNPM
 {
     public partial class frMain : Form
@@ -34,13 +35,14 @@ namespace CNPM
                     btnTrangChu.Hide();
                     btnEmployee.Hide();
                     btnDiary.Hide();
+                    btnManagerAccount.Hide();
                 }
             }
-                txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName;
-            
+            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName;
+
         }
-   
-        
+
+
         public void openCurrentForm(Form form)
         {
             if (currentForm != null)
@@ -64,7 +66,14 @@ namespace CNPM
 
         private void guna2GradientButton8_Click(object sender, EventArgs e)
         {
-            openCurrentForm(new frmManagerAccount());
+            //this.Close();
+            this.Close();
+            Form f = new form_DangNhap();
+
+            //frmHistory f = new frmHistory();
+            f.Show();
+          
+            
         }
 
         private void guna2GradientButton7_Click(object sender, EventArgs e)
@@ -138,6 +147,11 @@ namespace CNPM
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnManagerAccount_Click(object sender, EventArgs e)
+        {
+            openCurrentForm(new frmManagerAccount());
         }
     }
 }

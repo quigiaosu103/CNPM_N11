@@ -44,6 +44,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             lbTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -60,6 +62,8 @@
             guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             txtA = new Guna.UI2.WinForms.Guna2HtmlLabel();
             PB = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)PB).BeginInit();
             SuspendLayout();
             // 
@@ -148,7 +152,7 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.FromArgb(138, 76, 20);
-            guna2HtmlLabel4.Location = new Point(13, 218);
+            guna2HtmlLabel4.Location = new Point(13, 266);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(43, 19);
             guna2HtmlLabel4.TabIndex = 6;
@@ -265,7 +269,7 @@
             linkImage.FillColor2 = Color.FromArgb(96, 56, 20);
             linkImage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             linkImage.ForeColor = Color.White;
-            linkImage.Location = new Point(132, 206);
+            linkImage.Location = new Point(132, 252);
             linkImage.Name = "linkImage";
             linkImage.ShadowDecoration.CustomizableEdges = customizableEdges14;
             linkImage.Size = new Size(139, 33);
@@ -306,12 +310,46 @@
             PB.TabIndex = 16;
             PB.TabStop = false;
             // 
+            // guna2HtmlLabel6
+            // 
+            guna2HtmlLabel6.BackColor = Color.Transparent;
+            guna2HtmlLabel6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel6.ForeColor = Color.FromArgb(138, 76, 20);
+            guna2HtmlLabel6.Location = new Point(13, 218);
+            guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            guna2HtmlLabel6.Size = new Size(85, 19);
+            guna2HtmlLabel6.TabIndex = 17;
+            guna2HtmlLabel6.Text = "Số điện thoại";
+            // 
+            // txtPhone
+            // 
+            txtPhone.BorderRadius = 4;
+            txtPhone.CustomizableEdges = customizableEdges17;
+            txtPhone.DefaultText = "";
+            txtPhone.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtPhone.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtPhone.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPhone.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtPhone.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPhone.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPhone.Location = new Point(132, 201);
+            txtPhone.Name = "txtPhone";
+            txtPhone.PasswordChar = '\0';
+            txtPhone.PlaceholderText = "";
+            txtPhone.SelectedText = "";
+            txtPhone.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtPhone.Size = new Size(200, 36);
+            txtPhone.TabIndex = 18;
+            // 
             // MessageBoxUpdateAccount
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(241, 232, 216);
             ClientSize = new Size(693, 326);
+            Controls.Add(txtPhone);
+            Controls.Add(guna2HtmlLabel6);
             Controls.Add(PB);
             Controls.Add(txtA);
             Controls.Add(linkImage);
@@ -354,5 +392,7 @@
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtA;
         private Guna.UI2.WinForms.Guna2PictureBox PB;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhone;
     }
 }

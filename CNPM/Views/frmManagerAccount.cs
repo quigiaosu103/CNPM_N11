@@ -15,24 +15,29 @@ namespace CNPM.Views
     public partial class frmManagerAccount : Form
     {
         Account account = new Account();
+        string phone;
         public frmManagerAccount()
         {
             InitializeComponent();
             LoadUserInfo();
             ManagerAccountController.loadDataAccount(accountManager);
+
+
         }
+
         private void LoadUserInfo()
         {
             txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
         }
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
-            if (account.UserId == null)
+            if (account.UserName == null)
             {
+
                 new CustomMessageBox("Vui lòng chọn dữ liệu muốn thay đổi", "Lỗi").ShowDialog();
                 return;
             }
-            new MessageBoxUpdateAccount("Cập nhật thông tin", "Lưu", account).ShowDialog();
+            new MessageBoxUpdateAccount("Cập nhật thông tin", "Lưu", account, phone).ShowDialog();
             accountManager.Rows.Clear();
             ManagerAccountController.loadDataAccount(accountManager);
         }
@@ -49,13 +54,7 @@ namespace CNPM.Views
         }
         private void accountManager_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            indexRow = e.RowIndex;
-
-            DataGridViewRow row = accountManager.Rows[indexRow];
-            account.UserId = checkValue(row.Cells[0].Value?.ToString());
-            account.AvatarUrl = checkValue(row.Cells[1].Value?.ToString());
-            account.Role = checkValue(row.Cells[2].Value?.ToString());
-            account.Email = checkValue(row.Cells[3].Value?.ToString());
+           
 
         }
 
@@ -75,6 +74,22 @@ namespace CNPM.Views
         {
             accountManager.Rows.Clear();
             ManagerAccountController.loadDataAccount(accountManager);
+        }
+
+        private void accountManager_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            if(indexRow > 0)
+            {
+                DataGridViewRow row = accountManager.Rows[indexRow];
+
+                account.UserName = checkValue(row.Cells[0].Value?.ToString());
+                phone = checkValue(row.Cells[1].Value?.ToString());
+                account.Role = checkValue(row.Cells[2].Value?.ToString());
+                account.Email = checkValue(row.Cells[3].Value?.ToString());
+            }
+           
+            
         }
     }
 }

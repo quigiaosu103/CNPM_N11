@@ -10,5 +10,7 @@ namespace CNPM.Controller
     public class AccountInfor
     {
         public static Account dataAccount { get; set; }
+
+        public static User dataUserAccount { get; set; }
     }
 }

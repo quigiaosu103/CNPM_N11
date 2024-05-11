@@ -20,8 +20,8 @@ namespace CNPM.Views
         {
             InitializeComponent();
         }
-
-        public MessageBoxUpdateAccount(string htmlLabel, string button, Account data)
+        string url;
+        public MessageBoxUpdateAccount(string htmlLabel, string button, Account data, string phone)
         {
 
             InitializeComponent();
@@ -30,7 +30,9 @@ namespace CNPM.Views
             txtEmail.Text = data.Email;
             txtRole.Text = data.Role;
             txtPass.Text = data.HashedPassword;
-            txtUserName.Text = data.UserId;
+            txtUserName.Text = data.UserName;
+            txtPhone.Text = phone;
+            url = data.AvatarUrl;
             //linkImage.Text = data.AvatarUrl;
             //txtUserName.Enabled = true;
             //lbId.Visible = false;
@@ -44,10 +46,18 @@ namespace CNPM.Views
             data.UserName = txtUserName.Text;
             data.Email = txtEmail.Text;
             data.Role = txtRole.Text;
-            data.AvatarUrl = MyLib.ImageToBase64(tempImage, ImageFormat.Jpeg); 
+            data.UserId = txtUserName.Text;
+            if(tempImage != null )
+            {
+                data.AvatarUrl = MyLib.ImageToBase64(tempImage, ImageFormat.Jpeg);
+            } else
+            {
+                data.AvatarUrl = url;
+            }
+          
             //data.AvatarUrl = linkImage.Text;
             ManagerAccountController.InitAccount(data);
-            ManagerAccountController.updateAccount(data);
+            ManagerAccountController.updateAccount(data, txtPhone.Text);
             this.Close();
 
         }

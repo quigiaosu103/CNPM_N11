@@ -76,9 +76,9 @@ namespace DangKi__DangNhap__QuenMatKhau
             {
                 Account account = context.Account.Find(user_name);
 
-                Employee employee = context.Employees.Where(x => x.UserId == account.UserId).FirstOrDefault();
+                Employee employee = context.Employees.Find(user_name);
           
-                if (account == null)
+                if (account == null || employee == null)
                 {
                     MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!");
                     return;
