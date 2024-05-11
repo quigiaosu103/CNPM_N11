@@ -120,6 +120,7 @@ namespace CNPM.Views
             btnAdd.Size = new Size(65, 23);
             btnAdd.TabIndex = 28;
             btnAdd.Text = "Thêm";
+            btnAdd.Click += btnAdd_Click_1;
             // 
             // boundPanel
             // 

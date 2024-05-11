@@ -29,6 +29,14 @@ namespace CNPM
                     openCurrentForm(new frmTrangChu());
                     btnPayment.Hide();
                     btnHistory.Hide();
+                    if(role == "Admin")
+                    {
+                        btnDiary.Hide();
+                        btnOrders.Hide();
+                    }else
+                    {
+                        userManagement.Hide();
+                    }
                 }
                 else
                 {
@@ -37,11 +45,10 @@ namespace CNPM
                     btnEmployee.Hide();
                     btnDiary.Hide();
                     btnOrders.Hide();
-                    btnManagerAccount.Hide();
+                    userManagement.Hide();
                 }
+                txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName;
             }
-            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName;
-
         }
 
 
@@ -165,6 +172,11 @@ namespace CNPM
         private void btnOrders_Click(object sender, EventArgs e)
         {
             openCurrentForm(new frmOrders());
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            openCurrentForm(new frmManagerAccount());
         }
     }
 }

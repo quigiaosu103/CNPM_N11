@@ -31,7 +31,7 @@ namespace CNPM.Views
             tableHistory.Rows.Clear();
             using (var context = new MyDatabaseContext())
             {
-                var orderItems = context.OrderItems.Where(o => o.Order.Customer.UserId == UserAuthen.currentUser.UserId).Include(o => o.Product).Include(o => o.Order).ToList();
+                var orderItems = context.OrderItems.Where(o => o.Order.Customer.UserId == UserAuthen.currentUser.UserId).Include(o => o.Product).Include(o => o.Order).OrderByDescending(o => o.Order.Date).ToList();
                 foreach (var orderItem in orderItems)
                 {
                     tableHistory.Rows.Add(orderItem.Product.Name, orderItem.Amount, orderItem.Product.Price, orderItem.Order.Date);

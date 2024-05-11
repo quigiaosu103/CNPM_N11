@@ -63,7 +63,7 @@ namespace CNPM.Controller
 
         public int excelFileReader(string code)
         {
-            var stream = File.Open("C:\\Users\\thanh\\Desktop\\github\\CNPM_N11\\CNPM\\Resources\\DataCodeDiscount.xlsx", FileMode.Open, FileAccess.Read);
+            var stream = File.Open(Path.Combine(Application.StartupPath, "DataCodeDiscount.xlsx"), FileMode.Open, FileAccess.Read);
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             var reader = ExcelReaderFactory.CreateReader(stream);
             var result = reader.AsDataSet();

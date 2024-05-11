@@ -1,211 +1,3 @@
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.exe
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.deps.json
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.runtimeconfig.json
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\CNPM.pdb
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Guna.Charts.WinForms.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Guna.UI2.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Humanizer.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\MySqlConnector.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\System.Management.dll
-Q:\Code\CNPM_code\CNPM\CNPM\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.AssemblyReference.cache
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Properties.Resources.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CardView.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemPaymentView.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemView.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.ChangePassword.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CustomMessageBox.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangKi.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangNhap.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmAccount.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.frMain.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmCreateAccount.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.frmDiary.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmEmployee.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmHistory.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmLogin.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmManagerAccount.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenu.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenuAdmin.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmPayment.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmResetPassword.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.VIew.frmTrangChu.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxAddEmployee.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxEditsEmployee.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxUpdateAccount.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_QuenMatKhau.resources
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.GenerateResource.cache
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.GeneratedMSBuildEditorConfig.editorconfig
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.AssemblyInfoInputs.cache
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.AssemblyInfo.cs
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CoreCompileInputs.cache
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.sourcelink.json
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CopyComplete
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.dll
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dll
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
-Q:\Code\CNPM_code\CNPM\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.exe
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.deps.json
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.runtimeconfig.json
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.pdb
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Guna.Charts.WinForms.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Guna.UI2.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Humanizer.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\MySqlConnector.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\System.Management.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.AssemblyReference.cache
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Properties.Resources.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CardView.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemPaymentView.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemView.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.ChangePassword.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CustomMessageBox.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangKi.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangNhap.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmAccount.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.frMain.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmCreateAccount.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.frmDiary.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmEmployee.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmHistory.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmLogin.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmManagerAccount.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenu.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenuAdmin.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmPayment.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmResetPassword.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.VIew.frmTrangChu.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxAddEmployee.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxEditsEmployee.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxUpdateAccount.resources
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.GenerateResource.cache
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.AssemblyInfoInputs.cache
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.AssemblyInfo.cs
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CoreCompileInputs.cache
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.sourcelink.json
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CopyComplete
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.frmQuenMatKhau.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.exe
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.deps.json
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.runtimeconfig.json
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\CNPM.pdb
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Guna.Charts.WinForms.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Guna.UI2.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Humanizer.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\MySqlConnector.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\System.Management.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.AssemblyReference.cache
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Properties.Resources.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CardView.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemPaymentView.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CartItemView.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.ChangePassword.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CustomMessageBox.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangKi.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmAccount.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.frMain.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmCreateAccount.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.form_DangNhap.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.frmDiary.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmEmployee.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmHistory.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmLogin.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmManagerAccount.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenu.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenuAdmin.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmPayment.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.frmQuenMatKhau.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmResetPassword.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.VIew.frmTrangChu.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxAddEmployee.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxEditsEmployee.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.MessageBoxUpdateAccount.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.GenerateResource.cache
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.GeneratedMSBuildEditorConfig.editorconfig
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.AssemblyInfoInputs.cache
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.AssemblyInfo.cs
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CoreCompileInputs.cache
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.sourcelink.json
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CopyComplete
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dll
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll
-<<<<<<< HEAD
-C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CustomMessageBoxYesNo.resources
-=======
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.txtDate.resources
-Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CreateNewOrder.resources
-<<<<<<< Updated upstream
->>>>>>> fix-func
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.exe
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.deps.json
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.runtimeconfig.json
@@ -235,7 +27,6 @@ Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Pomelo.Entity
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\System.Management.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
->>>>>>> Stashed changes
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.AssemblyReference.cache
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Properties.Resources.resources
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CardView.resources
@@ -257,7 +48,7 @@ Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.fr
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmManagerAccount.resources
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenu.resources
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmMenuAdmin.resources
-Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.txtDate.resources
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmOrders.resources
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmPayment.resources
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\DangKi__DangNhap__QuenMatKhau.frmQuenMatKhau.resources
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmResetPassword.resources
@@ -271,10 +62,9 @@ Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Assembly
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.AssemblyInfo.cs
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CoreCompileInputs.cache
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.sourcelink.json
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CopyComplete
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
-Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmOrders.resources
-Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CopyComplete
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll

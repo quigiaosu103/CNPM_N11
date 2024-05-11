@@ -39,6 +39,9 @@ namespace CNPM.Views
         private void loadUserInfo()
         {
             txtName.Text = "Hi, " + UserAuthen.currentUser.FullName;
+            lbNamePayment.Text = UserAuthen.currentUser.FullName;
+            lbPhonePayment.Text = UserAuthen.currentUser.PhoneNumber;
+            lbAddressPayment.Text = UserAuthen.currentUser.Address;
         }
         private void loadDataPayment()
         {
@@ -67,7 +70,8 @@ namespace CNPM.Views
 
         private void btnDiscount_Click(object sender, EventArgs e)
         {
-            txtDiscount.Text = controller.getCodeDiscount(txtCodeDiscount).ToString() + "%";
+            double discount = controller.getCodeDiscount(txtCodeDiscount);
+            txtDiscount.Text = discount.ToString() + "%";
             controller.getFinalTotal(txtTotal, txtVAT, txtDiscount, txtFinalTotal);
         }
 
@@ -78,7 +82,7 @@ namespace CNPM.Views
             {
                 importBill = "Xuất hoá đơn khi nhận hàng";
             }
-            var textStatus = lbNamePayment.Text + " " + lbAddressPayment.Text + " " + lbPhonePayment.Text + " " + cbPaymentMethod.Text + " " + importBill;
+            //var textStatus = lbNamePayment.Text + " " + lbAddressPayment.Text + " " + lbPhonePayment.Text + " " + cbPaymentMethod.Text + " " + importBill;
             List<DataPayment> paymentList = new List<DataPayment>();
             foreach (Control control in flowLayoutPanelPayment.Controls)
             {
@@ -87,7 +91,7 @@ namespace CNPM.Views
             }
             if (controller.checkInforCustomer(lbNamePayment, lbPhonePayment, lbAddressPayment))
             {
-                controller.insertOder(txtFinalTotal.Text, textStatus, paymentList);
+                controller.insertOder(txtFinalTotal.Text, "Đang xử lý", paymentList);
             }
 
         }

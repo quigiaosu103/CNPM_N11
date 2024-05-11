@@ -78,24 +78,29 @@ namespace DangKi__DangNhap__QuenMatKhau
 
                 Employee employee = context.Employees.Find(user_name);
           
-                if (account == null || employee == null)
+                if (account == null)
                 {
-                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!");
+                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!1");
                     return;
                 }
                 if (MyLib.hashPassword(password) != account.HashedPassword)
                 {
-                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!");
+                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúngr!");
                     return;
                 }
                 User user;
-                if (account.Role != "customer")
+                //if (account.Role != "customer")
+                //{
+                //    user = (User)context.Users.OfType<Employee>().Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
+                //}
+                //else
+                //{
+                //    user = (User)context.Users.OfType<Customer>().Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
+                //}
+                user = context.Users.Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
+                if(user == null)
                 {
-                    user = (User)context.Users.OfType<Employee>().Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
-                }
-                else
-                {
-                    user = (User)context.Users.OfType<Customer>().Where(u => u.Account.UserName == account.UserName).FirstOrDefault();
+                    MyLib.AlertMessage("null");
                 }
                 UserAuthen.Email = account.Email;
                 UserAuthen.currentUser = user;

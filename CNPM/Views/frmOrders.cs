@@ -67,7 +67,11 @@ namespace CNPM.Views
                 txtCustomer.Text = row.Cells[1].Value.ToString();
                 txtAddress.Text = row.Cells[2].Value.ToString();
                 txtCreateDate.Text = row.Cells[6].Value.ToString();
-                txtEmployee.Text = row.Cells[5].Value.ToString();
+                if(row.Cells[5].Value != null)
+                {
+                    txtEmployee.Text = row.Cells[5].Value.ToString();
+
+                }
                 txtTotal.Text = row.Cells[3].Value.ToString();
                 switch (row.Cells[4].Value.ToString())
                 {
@@ -167,7 +171,8 @@ namespace CNPM.Views
                         selectType.SelectedValue.ToString()
                         );
                     row.Cells[4].Value = selectType.SelectedValue.ToString();
-                } 
+                }
+                row.Cells[5].Value = UserAuthen.currentUser.FullName;
             }
         }
 

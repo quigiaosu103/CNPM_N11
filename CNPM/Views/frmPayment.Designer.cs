@@ -359,7 +359,7 @@
             btnPayment.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnPayment.Size = new Size(144, 45);
             btnPayment.TabIndex = 10;
-            btnPayment.Text = "Thanh toán";
+            btnPayment.Text = "Đặt hàng";
             btnPayment.Click += btnPayment_Click;
             // 
             // cbImportBill
@@ -369,7 +369,7 @@
             cbImportBill.CheckedState.BorderRadius = 0;
             cbImportBill.CheckedState.BorderThickness = 0;
             cbImportBill.CheckedState.FillColor = Color.FromArgb(221, 165, 100);
-            cbImportBill.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            cbImportBill.Font = new Font("Segoe UI", 9.75F, FontStyle.Italic, GraphicsUnit.Point);
             cbImportBill.ImageAlign = ContentAlignment.MiddleLeft;
             cbImportBill.Location = new Point(15, 427);
             cbImportBill.Name = "cbImportBill";
@@ -524,8 +524,6 @@
             flowLayoutPanelPayment.Size = new Size(633, 391);
             flowLayoutPanelPayment.TabIndex = 4;
             flowLayoutPanelPayment.Paint += flowLayoutPanelPayment_Paint;
-            //flowLayoutPanelPayment.CausesValidationChanged += flowLayoutPanelPayment_CausesValidationChanged;
-            //flowLayoutPanelPayment.EnabledChanged += flowLayoutPanelPayment_EnabledChanged;
             // 
             // guna2CustomGradientPanel3
             // 
@@ -646,28 +644,6 @@
             txtCodeDiscount.Size = new Size(287, 34);
             txtCodeDiscount.TabIndex = 2;
             // 
-            // btnDiscount
-            // 
-            btnDiscount.BorderRadius = 4;
-            btnDiscount.BorderThickness = 2;
-            btnDiscount.CustomizableEdges = customizableEdges27;
-            btnDiscount.DisabledState.BorderColor = Color.DarkGray;
-            btnDiscount.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnDiscount.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnDiscount.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            btnDiscount.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnDiscount.FillColor = Color.Transparent;
-            btnDiscount.FillColor2 = Color.Transparent;
-            btnDiscount.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDiscount.ForeColor = Color.Black;
-            btnDiscount.Location = new Point(479, 14);
-            btnDiscount.Name = "btnDiscount";
-            btnDiscount.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            btnDiscount.Size = new Size(113, 34);
-            btnDiscount.TabIndex = 2;
-            btnDiscount.Text = "Áp dụng";
-            btnDiscount.Click += btnDiscount_Click;
-            // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
@@ -703,7 +679,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton btnDiscount;
         private Guna.UI2.WinForms.Guna2GradientButton txtName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;

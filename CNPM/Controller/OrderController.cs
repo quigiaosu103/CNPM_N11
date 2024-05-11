@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CNPM.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -13,12 +14,17 @@ namespace CNPM.Controller
         {
             using(var context = new MyDatabaseContext())
             {
+                var user = context.Users.Find(UserAuthen.currentUser.UserId);
                 int id = Int32.Parse(orderId);
                 var order = context.Orders.Find(id);
                 if(order != null)
                 {
                     //order.Customer.Address = address;
                     order.Status  = status;
+                    if(user!= null)
+                    {
+                        order.Employee = (Employee)user;
+                    }
                     context.Orders.Update(order);
                     context.SaveChanges();
                 }

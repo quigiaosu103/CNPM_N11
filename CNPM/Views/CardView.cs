@@ -51,19 +51,21 @@ namespace CNPM.Views
         public CardView()
         {
             InitializeComponent();
-            if(UserAuthen.currentUser.Account.Role !="customer")
+            if (UserAuthen.currentUser.Account.Role != "customer")
             {
+
                 btnAdd.Hide();
 
             }
+
             txtProductName.MaximumSize = new System.Drawing.Size(134, 0);
             txtProductName.AutoSize = true;
-            
+
         }
 
         private void txtProductName_Click(object sender, EventArgs e)
         {
-            
+
             // MyLib.loadProductInfo(this.productId, this.productName, this,productPrice, this.productCategory);
         }
 
@@ -95,6 +97,11 @@ namespace CNPM.Views
 
             //    MyLib.AlertMessage(parent.Name);
             //}
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
