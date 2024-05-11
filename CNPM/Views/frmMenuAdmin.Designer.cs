@@ -91,11 +91,11 @@
             // 
             guna2Panel1.Controls.Add(txtUsername);
             guna2Panel1.Controls.Add(guna2GradientButton1);
-            guna2Panel1.CustomizableEdges = customizableEdges39;
+            guna2Panel1.CustomizableEdges = customizableEdges3;
             guna2Panel1.Dock = DockStyle.Top;
             guna2Panel1.Location = new Point(0, 0);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel1.Size = new Size(1010, 39);
             guna2Panel1.TabIndex = 0;
             // 
@@ -124,7 +124,7 @@
             // 
             // guna2GradientButton1
             // 
-            guna2GradientButton1.CustomizableEdges = customizableEdges37;
+            guna2GradientButton1.CustomizableEdges = customizableEdges3;
             guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -139,7 +139,7 @@
             guna2GradientButton1.ImageAlign = HorizontalAlignment.Left;
             guna2GradientButton1.Location = new Point(0, 0);
             guna2GradientButton1.Name = "guna2GradientButton1";
-            guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges3;
             guna2GradientButton1.Size = new Size(180, 39);
             guna2GradientButton1.TabIndex = 0;
             guna2GradientButton1.Text = "THỰC ĐƠN";

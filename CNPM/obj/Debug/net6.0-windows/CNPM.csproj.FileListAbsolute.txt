@@ -204,7 +204,38 @@ C:\Users\thanh\Desktop\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CustomM
 =======
 Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.txtDate.resources
 Q:\Code\CNPM\Final Project\CNPM_N11\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CreateNewOrder.resources
+<<<<<<< Updated upstream
 >>>>>>> fix-func
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.exe
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.deps.json
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.runtimeconfig.json
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\CNPM.pdb
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Guna.Charts.WinForms.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Guna.UI2.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Humanizer.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\MySqlConnector.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\System.Management.dll
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+>>>>>>> Stashed changes
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.AssemblyReference.cache
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Properties.Resources.resources
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.CardView.resources
@@ -244,3 +275,6 @@ Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmOrders.resources
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.csproj.CopyComplete
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.genruntimeconfig.cache
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\ref\CNPM.dll

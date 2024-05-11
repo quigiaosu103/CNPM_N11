@@ -24,7 +24,7 @@ namespace CNPM
         }
         private void LoadUserInfo()
         {
-            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+            txtName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
         }
         private void LoadData()
         {

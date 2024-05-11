@@ -320,7 +320,7 @@
             imgAvatar.ImageRotate = 0F;
             imgAvatar.Location = new Point(46, 13);
             imgAvatar.Name = "imgAvatar";
-            imgAvatar.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            imgAvatar.ShadowDecoration.CustomizableEdges = customizableEdges60;
             imgAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             imgAvatar.Size = new Size(100, 100);
             imgAvatar.SizeMode = PictureBoxSizeMode.Zoom;
