@@ -524,8 +524,8 @@
             flowLayoutPanelPayment.Size = new Size(633, 391);
             flowLayoutPanelPayment.TabIndex = 4;
             flowLayoutPanelPayment.Paint += flowLayoutPanelPayment_Paint;
-            flowLayoutPanelPayment.CausesValidationChanged += flowLayoutPanelPayment_CausesValidationChanged;
-            flowLayoutPanelPayment.EnabledChanged += flowLayoutPanelPayment_EnabledChanged;
+            //flowLayoutPanelPayment.CausesValidationChanged += flowLayoutPanelPayment_CausesValidationChanged;
+            //flowLayoutPanelPayment.EnabledChanged += flowLayoutPanelPayment_EnabledChanged;
             // 
             // guna2CustomGradientPanel3
             // 
@@ -703,6 +703,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDiscount;
         private Guna.UI2.WinForms.Guna2GradientButton txtName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;

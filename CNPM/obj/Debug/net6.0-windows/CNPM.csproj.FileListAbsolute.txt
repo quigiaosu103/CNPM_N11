@@ -243,3 +243,4 @@ Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.sourceli
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\refint\CNPM.dll
 Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.pdb
+Q:\Code\CNPM\Final Project\CNPM_N112\CNPM\obj\Debug\net6.0-windows\CNPM.Views.frmOrders.resources

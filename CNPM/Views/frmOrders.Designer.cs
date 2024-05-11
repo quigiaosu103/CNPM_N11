@@ -1,6 +1,6 @@
 ﻿namespace CNPM.Views
 {
-    partial class txtDate
+    partial class frmOrders
     {
         /// <summary> 
         /// Required designer variable.

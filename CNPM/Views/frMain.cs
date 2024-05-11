@@ -75,8 +75,8 @@ namespace CNPM
 
             //frmHistory f = new frmHistory();
             f.Show();
-          
-            
+
+
         }
 
         private void guna2GradientButton7_Click(object sender, EventArgs e)
@@ -160,6 +160,11 @@ namespace CNPM
         private void btnManagerAccount_Click(object sender, EventArgs e)
         {
             openCurrentForm(new frmManagerAccount());
+        }
+
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+            openCurrentForm(new frmOrders());
         }
     }
 }

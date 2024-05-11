@@ -40,9 +40,6 @@ namespace CNPM.Controller
             return new String(stringChars);
         }
 
-            return new String(stringChars);
-        }
-
 
 
         public static CardView addNewProduct(string id, string name, int price, Category category, string image64String, string des = "")

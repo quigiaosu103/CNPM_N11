@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace CNPM.Views
 {
-    public partial class txtDate : Form
+    public partial class frmOrders : Form
     {
-        public txtDate()
+        public frmOrders()
         {
             InitializeComponent();
             fillDataToList();
