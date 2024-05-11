@@ -37,7 +37,7 @@ namespace CNPM.Controller
                 foreach (var i in dataEmployee)
                 {
                     var phoneNumber = context.Users.Where(x=>x.UserId == i.UserId).FirstOrDefault();
-                  
+                   
                     data.Rows.Add(i.UserName, phoneNumber.PhoneNumber, i.Role, i.Email);
                     
                 }
@@ -131,11 +131,12 @@ namespace CNPM.Controller
             using (var context = new MyDatabaseContext())
             {
                 data.Rows.Clear();
-                foreach (Account emp in dataAccount)
+                foreach (Account i in dataAccount)
                 {
-                    var phoneNumber = context.Users.Where(x => x.UserId == emp.UserId).FirstOrDefault();
-
-                    data.Rows.Add(emp.UserName, phoneNumber.PhoneNumber, emp.Role, emp.Email);
+                    var phoneNumber = context.Users.Where(x => x.UserId == i.UserId).FirstOrDefault();
+                    
+                   
+                    data.Rows.Add(i.UserName, phoneNumber.PhoneNumber, i.Role, i.Email);
                 }
                 data.AllowUserToAddRows = false;
                 data.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;

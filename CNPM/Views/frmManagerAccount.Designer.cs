@@ -383,24 +383,32 @@
             // 
             // Column1
             // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             Column1.HeaderText = "Tên tài khoản";
             Column1.Name = "Column1";
             Column1.Resizable = DataGridViewTriState.True;
+            Column1.Width = 251;
             // 
             // Column2
             // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             Column2.HeaderText = "Số điện thoại";
             Column2.Name = "Column2";
+            Column2.Width = 252;
             // 
             // Column3
             // 
+            Column3.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             Column3.HeaderText = "Vai trò";
             Column3.Name = "Column3";
+            Column3.Width = 251;
             // 
             // Column4
             // 
+            Column4.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             Column4.HeaderText = "Email";
             Column4.Name = "Column4";
+            Column4.Width = 251;
             // 
             // frmManagerAccount
             // 

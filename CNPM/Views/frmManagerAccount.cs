@@ -47,7 +47,7 @@ namespace CNPM.Views
 
             if (data == null || data == "")
             {
-                return "Chưa cập nhật";
+                return "";
             }
             return data;
 
