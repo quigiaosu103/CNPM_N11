@@ -66,6 +66,7 @@ namespace CNPM
 
         private void guna2GradientButton8_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK;
             //this.Close();
             this.Close();
             Form f = new form_DangNhap();
