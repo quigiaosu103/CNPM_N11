@@ -26,6 +26,23 @@ namespace CNPM.Controller
                 }
             }
         }
+<<<<<<< Updated upstream
+=======
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var stringChars = new char[length];
+            var random = new Random();
+
+            for (int i = 0; i < stringChars.Length; i++)
+            {
+                stringChars[i] = chars[random.Next(chars.Length)];
+            }
+
+            return new String(stringChars);
+        }
+
+>>>>>>> Stashed changes
 
         public static CardView addNewProduct(string id, string name, int price, Category category, string image64String, string des = "")
         {

@@ -23,7 +23,6 @@ namespace CNPM.Views
         public frmPayment()
         {
             InitializeComponent();
-            LoadUserInfo();
             List<DataPayment> data = UserListProduct.dataPayment;
             if (data != null)
             {
