@@ -15,11 +15,14 @@ namespace CNPM
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Form login = new form_DangNhap();
+            
             if(login.ShowDialog() == DialogResult.OK)
             {
+             
                 Application.Run(new frMain());
-
+               
             }
+            
         }
     }
 }
