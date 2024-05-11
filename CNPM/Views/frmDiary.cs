@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CNPM.Model;
 using Guna.UI2.WinForms;
+using System.Xml.Linq;
 namespace CNPM
 {
     public partial class frmDiary : Form

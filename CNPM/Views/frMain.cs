@@ -1,9 +1,10 @@
-using CNPM.Controller;
+﻿using CNPM.Controller;
 using CNPM.VIew;
 using CNPM.Views;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
 using CNPM.Model;
+using System.Drawing;
 using DangKi__DangNhap__QuenMatKhau;
 namespace CNPM
 {
@@ -26,8 +27,8 @@ namespace CNPM
                 if (role == "Manager" || role == "Admin")
                 {
                     openCurrentForm(new frmTrangChu());
-                    btnHistory.Hide();
                     btnPayment.Hide();
+                    btnHistory.Hide();
                 }
                 else
                 {
@@ -35,6 +36,7 @@ namespace CNPM
                     btnTrangChu.Hide();
                     btnEmployee.Hide();
                     btnDiary.Hide();
+                    btnOrders.Hide();
                     btnManagerAccount.Hide();
                 }
             }
@@ -146,6 +148,11 @@ namespace CNPM
         }
 
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bodyPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

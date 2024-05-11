@@ -20,10 +20,12 @@ namespace CNPM.Views
             LoadHistory();
             LoadUserInfo();
         }
+
         private void LoadUserInfo()
         {
-            txtName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+            txtName.Text = "Hi, " + UserAuthen.currentUser.FullName;
         }
+
         private void LoadHistory()
         {
             tableHistory.Rows.Clear();
@@ -72,7 +74,7 @@ namespace CNPM.Views
         {
             DateTime start = inputDateStart.Value;
             DateTime end = inputDateEnd.Value;
-            if(start <= end)
+            if (start <= end)
             {
                 tableHistory.Rows.Clear();
                 using (var context = new MyDatabaseContext())
@@ -80,7 +82,7 @@ namespace CNPM.Views
                     var orderItems = context.OrderItems
                         .Where(o =>
                             o.Order.Customer.UserId == UserAuthen.currentUser.UserId
-                            && o.Order.Date > start 
+                            && o.Order.Date > start
                             && o.Order.Date < end
                             )
                         .Include(o => o.Product).Include(o => o.Order)
@@ -91,10 +93,26 @@ namespace CNPM.Views
 
                     }
                 }
-            }else
+            }
+            else
             {
                 return;
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

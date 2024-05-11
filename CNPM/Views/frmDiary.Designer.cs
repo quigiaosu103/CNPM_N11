@@ -53,7 +53,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             tableLayoutPanel2 = new TableLayoutPanel();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            txtAuthenName = new Guna.UI2.WinForms.Guna2GradientButton();
+            txtName = new Guna.UI2.WinForms.Guna2GradientButton();
             tableLayoutPanel1 = new TableLayoutPanel();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -86,7 +86,7 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 63.7810936F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.4029846F));
             tableLayoutPanel2.Controls.Add(guna2GradientButton1, 0, 0);
-            tableLayoutPanel2.Controls.Add(txtAuthenName, 2, 0);
+            tableLayoutPanel2.Controls.Add(txtName, 2, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(3, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -119,26 +119,26 @@
             guna2GradientButton1.Text = "NHẬT KÝ";
             guna2GradientButton1.TextAlign = HorizontalAlignment.Left;
             // 
-            // txtAuthenName
+            // txtName
             // 
-            txtAuthenName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            txtAuthenName.BorderRadius = 13;
-            txtAuthenName.CustomizableEdges = customizableEdges23;
-            txtAuthenName.DisabledState.BorderColor = Color.DarkGray;
-            txtAuthenName.DisabledState.CustomBorderColor = Color.DarkGray;
-            txtAuthenName.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            txtAuthenName.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            txtAuthenName.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            txtAuthenName.FillColor = Color.FromArgb(217, 132, 28);
-            txtAuthenName.FillColor2 = Color.FromArgb(217, 132, 28);
-            txtAuthenName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            txtAuthenName.ForeColor = Color.White;
-            txtAuthenName.Location = new Point(811, 3);
-            txtAuthenName.Name = "txtAuthenName";
-            txtAuthenName.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            txtAuthenName.Size = new Size(190, 33);
-            txtAuthenName.TabIndex = 2;
-            txtAuthenName.Text = "Hi, Nguyễn Văn A";
+            txtName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            txtName.BorderRadius = 13;
+            txtName.CustomizableEdges = customizableEdges23;
+            txtName.DisabledState.BorderColor = Color.DarkGray;
+            txtName.DisabledState.CustomBorderColor = Color.DarkGray;
+            txtName.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            txtName.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            txtName.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            txtName.FillColor = Color.FromArgb(217, 132, 28);
+            txtName.FillColor2 = Color.FromArgb(217, 132, 28);
+            txtName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.ForeColor = Color.White;
+            txtName.Location = new Point(811, 3);
+            txtName.Name = "txtName";
+            txtName.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            txtName.Size = new Size(190, 33);
+            txtName.TabIndex = 2;
+            txtName.Text = "Hi, Nguyễn Văn A";
             // 
             // tableLayoutPanel1
             // 
@@ -409,7 +409,7 @@
         #endregion
         private TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton txtAuthenName;
+        private Guna.UI2.WinForms.Guna2GradientButton txtName;
         private TableLayoutPanel tableLayoutPanel1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;

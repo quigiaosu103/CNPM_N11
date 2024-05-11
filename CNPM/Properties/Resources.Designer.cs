@@ -73,6 +73,26 @@ namespace CNPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bill_icon {
+            get {
+                object obj = ResourceManager.GetObject("bill_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bill_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bill-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_book_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-book-50", resourceCulture);
@@ -243,6 +263,16 @@ namespace CNPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_reload_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-reload-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-50", resourceCulture);
@@ -266,6 +296,16 @@ namespace CNPM.Properties {
         internal static System.Drawing.Bitmap LogoHANCiTy {
             get {
                 object obj = ResourceManager.GetObject("LogoHANCiTy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reload_icon {
+            get {
+                object obj = ResourceManager.GetObject("reload_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

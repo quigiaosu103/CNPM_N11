@@ -23,12 +23,12 @@ namespace CNPM.Views
         {
             InitializeComponent();
             controller.loadDataEmployee(emplyeeDatagridView);
-            LoadUserInfo();
+            loadUserInfo();
         }
 
-        private void LoadUserInfo()
+        private void loadUserInfo()
         {
-            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+            txtName.Text = UserAuthen.currentUser.FullName;
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
@@ -48,19 +48,19 @@ namespace CNPM.Views
         //}
         private string checkValue(string data)
         {
-           
-            if (data == null || data =="")
+
+            if (data == null || data == "")
             {
                 return "Chưa cập nhật";
             }
             return data;
-          
+
         }
         private void emplyeeDatagridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
             indexRow = e.RowIndex;
-            if(indexRow >= 0) 
+            if (indexRow >= 0)
             {
                 DataGridViewRow row = emplyeeDatagridView.Rows[indexRow];
                 employee.UserId = checkValue(row.Cells["clUserId"].Value?.ToString());
@@ -85,7 +85,7 @@ namespace CNPM.Views
                 employee.WorkingTime = checkValue(row.Cells[10].Value?.ToString());
                 employee.ApplyDate = checkValue(row.Cells[11].Value?.ToString());
             }
-           
+
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
@@ -117,6 +117,16 @@ namespace CNPM.Views
         private void btnReset_Click(object sender, EventArgs e)
         {
             controller.loadDataEmployee(emplyeeDatagridView);
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emplyeeDatagridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

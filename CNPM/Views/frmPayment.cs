@@ -33,10 +33,12 @@ namespace CNPM.Views
                 }
             }
             controller.loadInforBill(txtTotal, txtVAT, txtDiscount, txtFinalTotal);
+            loadUserInfo();
         }
-        private void LoadUserInfo()
+
+        private void loadUserInfo()
         {
-            txtAuthenName.Text = "Hi, " + UserAuthen.currentUser.FullName.ToString();
+            txtName.Text = "Hi, " + UserAuthen.currentUser.FullName;
         }
         private void loadDataPayment()
         {
@@ -48,7 +50,10 @@ namespace CNPM.Views
         }
         private CartItemPaymentView cartItemPaymentView;
 
-       
+        private void changeUpDownNumberic(object sender, EventArgs e)
+        {
+
+        }
         private void handleAddToCart(DataPayment data)
         {
             CartItemPaymentView cartItemView = new CartItemPaymentView();
@@ -82,38 +87,29 @@ namespace CNPM.Views
             }
             if (controller.checkInforCustomer(lbNamePayment, lbPhonePayment, lbAddressPayment))
             {
-                bool state = controller.insertOder(txtFinalTotal.Text, textStatus, paymentList);
-                
-                if(state)
-                {
-                    if (sender is Guna2GradientButton btn)
-                    {
-                        var mainForm = btn.Parent.Parent.Parent.Parent.Parent as frMain;
-                        if (mainForm != null)
-                            mainForm.openCurrentForm(new frmPayment());
-                        else
-                        {
-                            MyLib.AlertMessage("null");
-                        }
-                    }
-                    else
-                    {
-                        MyLib.AlertMessage("not a btn");
-                    }
-                }
+                controller.insertOder(txtFinalTotal.Text, textStatus, paymentList);
             }
 
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
-        private void flowLayoutPanelPayment_EnabledChanged(object sender, EventArgs e)
+        private void btnPrint_Click(object sender, EventArgs e)
         {
-           
+
         }
 
-        private void flowLayoutPanelPayment_CausesValidationChanged(object sender, EventArgs e)
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void flowLayoutPanelPayment_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

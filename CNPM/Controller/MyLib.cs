@@ -26,8 +26,6 @@ namespace CNPM.Controller
                 }
             }
         }
-<<<<<<< Updated upstream
-=======
         public static string RandomString(int length)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -42,7 +40,10 @@ namespace CNPM.Controller
             return new String(stringChars);
         }
 
->>>>>>> Stashed changes
+            return new String(stringChars);
+        }
+
+
 
         public static CardView addNewProduct(string id, string name, int price, Category category, string image64String, string des = "")
         {

@@ -70,7 +70,7 @@
             btnRemoveItem.ImageSize = new Size(16, 16);
             btnRemoveItem.Location = new Point(215, 13);
             btnRemoveItem.Name = "btnRemoveItem";
-            btnRemoveItem.PressedState.ImageSize = new Size(64, 64);
+            btnRemoveItem.PressedState.ImageSize = new Size(16, 16);
             btnRemoveItem.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnRemoveItem.Size = new Size(16, 16);
             btnRemoveItem.TabIndex = 2;

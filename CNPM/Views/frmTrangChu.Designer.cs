@@ -113,7 +113,7 @@
             lbPhone = new Guna.UI2.WinForms.Guna2GradientButton();
             lbEmail = new Guna.UI2.WinForms.Guna2GradientButton();
             lbName = new Guna.UI2.WinForms.Guna2GradientButton();
-            pcUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            imgAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             lbRole = new Guna.UI2.WinForms.Guna2GradientButton();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -160,7 +160,7 @@
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel1.SuspendLayout();
             full.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pcUser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgAvatar).BeginInit();
             guna2Panel2.SuspendLayout();
             guna2Panel3.SuspendLayout();
             guna2Panel7.SuspendLayout();
@@ -200,7 +200,7 @@
             full.Controls.Add(lbPhone);
             full.Controls.Add(lbEmail);
             full.Controls.Add(lbName);
-            full.Controls.Add(pcUser);
+            full.Controls.Add(imgAvatar);
             full.Controls.Add(lbRole);
             full.CustomizableEdges = customizableEdges61;
             full.FillColor = Color.FromArgb(204, 128, 34);
@@ -212,6 +212,7 @@
             full.ShadowDecoration.CustomizableEdges = customizableEdges62;
             full.Size = new Size(194, 530);
             full.TabIndex = 0;
+            full.Paint += full_Paint;
             // 
             // lbLocation
             // 
@@ -312,19 +313,19 @@
             lbName.Text = "Nguyễn Văn A";
             lbName.TextAlign = HorizontalAlignment.Left;
             // 
-            // pcUser
+            // imgAvatar
             // 
-            pcUser.BackColor = Color.Transparent;
-            pcUser.FillColor = Color.DarkGray;
-            pcUser.ImageRotate = 0F;
-            pcUser.Location = new Point(41, 0);
-            pcUser.Name = "pcUser";
-            pcUser.ShadowDecoration.CustomizableEdges = customizableEdges58;
-            pcUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            pcUser.Size = new Size(120, 120);
-            pcUser.SizeMode = PictureBoxSizeMode.Zoom;
-            pcUser.TabIndex = 0;
-            pcUser.TabStop = false;
+            imgAvatar.BackColor = Color.Transparent;
+            imgAvatar.FillColor = Color.DarkGray;
+            imgAvatar.ImageRotate = 0F;
+            imgAvatar.Location = new Point(46, 13);
+            imgAvatar.Name = "imgAvatar";
+            imgAvatar.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            imgAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            imgAvatar.Size = new Size(100, 100);
+            imgAvatar.SizeMode = PictureBoxSizeMode.Zoom;
+            imgAvatar.TabIndex = 0;
+            imgAvatar.TabStop = false;
             // 
             // lbRole
             // 
@@ -346,6 +347,7 @@
             lbRole.Size = new Size(194, 45);
             lbRole.TabIndex = 0;
             lbRole.Text = "Quản lý";
+            lbRole.Click += lbRole_Click;
             // 
             // guna2Panel2
             // 
@@ -1027,7 +1029,7 @@
             Text = "frmTrangChu";
             guna2Panel1.ResumeLayout(false);
             full.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pcUser).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgAvatar).EndInit();
             guna2Panel2.ResumeLayout(false);
             guna2Panel3.ResumeLayout(false);
             guna2Panel7.ResumeLayout(false);
@@ -1057,7 +1059,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel full;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox pcUser;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox imgAvatar;
         private Guna.UI2.WinForms.Guna2GradientButton lbRole;
         private Guna.UI2.WinForms.Guna2GradientButton lbName;
         private Guna.UI2.WinForms.Guna2GradientButton lbEmail;

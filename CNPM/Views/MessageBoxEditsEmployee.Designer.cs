@@ -134,9 +134,10 @@
             // 
             // btnTitle
             // 
+            btnTitle.BackColor = Color.FromArgb(138, 76, 20);
             btnTitle.BorderColor = Color.White;
-            btnTitle.BorderRadius = 5;
-            btnTitle.BorderThickness = 2;
+            btnTitle.BorderRadius = 4;
+            btnTitle.BorderThickness = 1;
             btnTitle.CustomizableEdges = customizableEdges5;
             btnTitle.DefaultAutoSize = true;
             btnTitle.DisabledState.BorderColor = Color.DarkGray;
@@ -146,7 +147,7 @@
             btnTitle.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnTitle.FillColor = Color.Transparent;
             btnTitle.FillColor2 = Color.Transparent;
-            btnTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnTitle.ForeColor = Color.White;
             btnTitle.Location = new Point(326, 415);
             btnTitle.Name = "btnTitle";
@@ -183,7 +184,7 @@
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.FromArgb(138, 76, 20);
-            guna2HtmlLabel3.Location = new Point(35, 243);
+            guna2HtmlLabel3.Location = new Point(35, 238);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(57, 19);
             guna2HtmlLabel3.TabIndex = 6;
@@ -205,7 +206,7 @@
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel5.ForeColor = Color.FromArgb(138, 76, 20);
-            guna2HtmlLabel5.Location = new Point(35, 307);
+            guna2HtmlLabel5.Location = new Point(35, 305);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(39, 19);
             guna2HtmlLabel5.TabIndex = 8;
@@ -268,6 +269,7 @@
             // 
             // txtName
             // 
+            txtName.BorderRadius = 4;
             txtName.CustomizableEdges = customizableEdges7;
             txtName.DefaultText = "";
             txtName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -289,6 +291,7 @@
             // 
             // txtPhone
             // 
+            txtPhone.BorderRadius = 4;
             txtPhone.CustomizableEdges = customizableEdges9;
             txtPhone.DefaultText = "";
             txtPhone.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -310,6 +313,7 @@
             // 
             // txtAddress
             // 
+            txtAddress.BorderRadius = 4;
             txtAddress.CustomizableEdges = customizableEdges11;
             txtAddress.DefaultText = "";
             txtAddress.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -331,6 +335,7 @@
             // 
             // txtSalary
             // 
+            txtSalary.BorderRadius = 4;
             txtSalary.CustomizableEdges = customizableEdges13;
             txtSalary.DefaultText = "";
             txtSalary.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -352,6 +357,7 @@
             // 
             // txtIdCard
             // 
+            txtIdCard.BorderRadius = 4;
             txtIdCard.CustomizableEdges = customizableEdges15;
             txtIdCard.DefaultText = "";
             txtIdCard.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -374,13 +380,14 @@
             // cbGender
             // 
             cbGender.BackColor = Color.Transparent;
+            cbGender.BorderRadius = 4;
             cbGender.CustomizableEdges = customizableEdges17;
             cbGender.DrawMode = DrawMode.OwnerDrawFixed;
             cbGender.DropDownStyle = ComboBoxStyle.DropDownList;
             cbGender.FillColor = Color.WhiteSmoke;
             cbGender.FocusedColor = Color.FromArgb(94, 148, 255);
             cbGender.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbGender.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            cbGender.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             cbGender.ForeColor = Color.FromArgb(138, 76, 20);
             cbGender.ItemHeight = 30;
             cbGender.Items.AddRange(new object[] { "Nam ", "Nữ", "Khác" });
@@ -393,10 +400,11 @@
             // 
             // dttBirthday
             // 
+            dttBirthday.BorderRadius = 4;
             dttBirthday.Checked = true;
             dttBirthday.CustomizableEdges = customizableEdges19;
             dttBirthday.FillColor = Color.FromArgb(138, 76, 20);
-            dttBirthday.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            dttBirthday.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             dttBirthday.ForeColor = Color.White;
             dttBirthday.Format = DateTimePickerFormat.Long;
             dttBirthday.Location = new Point(148, 357);
@@ -411,13 +419,14 @@
             // cbPosition
             // 
             cbPosition.BackColor = Color.Transparent;
+            cbPosition.BorderRadius = 4;
             cbPosition.CustomizableEdges = customizableEdges21;
             cbPosition.DrawMode = DrawMode.OwnerDrawFixed;
             cbPosition.DropDownStyle = ComboBoxStyle.DropDownList;
             cbPosition.FillColor = Color.WhiteSmoke;
             cbPosition.FocusedColor = Color.FromArgb(94, 148, 255);
             cbPosition.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbPosition.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            cbPosition.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             cbPosition.ForeColor = Color.FromArgb(138, 76, 20);
             cbPosition.ItemHeight = 30;
             cbPosition.Items.AddRange(new object[] { "Nhân viên", "Quản lý" });
@@ -430,6 +439,7 @@
             // 
             // txtTimeWork
             // 
+            txtTimeWork.BorderRadius = 4;
             txtTimeWork.CustomizableEdges = customizableEdges23;
             txtTimeWork.DefaultText = "";
             txtTimeWork.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -451,6 +461,7 @@
             // 
             // txtTimeApply
             // 
+            txtTimeApply.BorderRadius = 4;
             txtTimeApply.CustomizableEdges = customizableEdges25;
             txtTimeApply.DefaultText = "";
             txtTimeApply.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -461,7 +472,7 @@
             txtTimeApply.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimeApply.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTimeApply.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTimeApply.Location = new Point(513, 357);
+            txtTimeApply.Location = new Point(513, 353);
             txtTimeApply.Name = "txtTimeApply";
             txtTimeApply.PasswordChar = '\0';
             txtTimeApply.PlaceholderText = "";
@@ -483,6 +494,7 @@
             // 
             // txtId
             // 
+            txtId.BorderRadius = 4;
             txtId.CustomizableEdges = customizableEdges27;
             txtId.DefaultText = "";
             txtId.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -504,6 +516,7 @@
             // 
             // txtEmail
             // 
+            txtEmail.BorderRadius = 4;
             txtEmail.CustomizableEdges = customizableEdges29;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
