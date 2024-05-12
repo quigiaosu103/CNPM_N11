@@ -12,6 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Security.Cryptography;
 using CNPM.Controller;
 using CNPM.Model;
+using CNPM.Views;
 
 namespace DangKi__DangNhap__QuenMatKhau
 {
@@ -63,13 +64,13 @@ namespace DangKi__DangNhap__QuenMatKhau
 
             if (user_name.Trim() == "")
             {
-                MessageBox.Show("Vui lòng nhập tên đăng nhập!");
+                (new CustomMessageBox("Vui lòng nhập tên đăng nhập!", "Đăng nhập")).ShowDialog();
                 return;
             }
 
             else if (password.Trim() == "")
             {
-                MessageBox.Show("Vui lòng nhập mật khẩu!");
+                (new CustomMessageBox("Vui lòng nhập mật khẩu!", "Đăng nhập")).ShowDialog();
                 return;
             }
             using (var context = new MyDatabaseContext())
@@ -80,12 +81,12 @@ namespace DangKi__DangNhap__QuenMatKhau
           
                 if (account == null)
                 {
-                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúng!1");
+                    (new CustomMessageBox("Tên tài khoản hoăc mật khẩu không đúng!1", "Đăng nhập")).ShowDialog();
                     return;
                 }
                 if (MyLib.hashPassword(password) != account.HashedPassword)
                 {
-                    MessageBox.Show("Tên tài khoản hoăc mật khẩu không đúngr!");
+                    (new CustomMessageBox("Tên tài khoản hoăc mật khẩu không đúng!1", "Đăng nhập")).ShowDialog();
                     return;
                 }
                 User user;

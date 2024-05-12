@@ -21,13 +21,18 @@ namespace CNPM.Views
         {
             DialogResult = DialogResult.Yes;
             this.Close();
-            
+
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.No;
-            this.Close ();
+            this.Close();
+        }
+
+        private void CustomMessageBoxYesNo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

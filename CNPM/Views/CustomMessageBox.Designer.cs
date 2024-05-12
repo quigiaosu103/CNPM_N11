@@ -47,8 +47,9 @@
             // guna2CustomGradientPanel1
             // 
             guna2CustomGradientPanel1.BackColor = Color.Transparent;
-            guna2CustomGradientPanel1.BorderColor = Color.FromArgb(241, 232, 216);
-            guna2CustomGradientPanel1.BorderThickness = 3;
+            guna2CustomGradientPanel1.BorderColor = Color.BurlyWood;
+            guna2CustomGradientPanel1.BorderRadius = 4;
+            guna2CustomGradientPanel1.BorderThickness = 1;
             guna2CustomGradientPanel1.Controls.Add(btnClose);
             guna2CustomGradientPanel1.Controls.Add(lbName);
             guna2CustomGradientPanel1.Controls.Add(lbError);
@@ -67,9 +68,10 @@
             // 
             // btnClose
             // 
+            btnClose.BackColor = Color.Wheat;
             btnClose.BorderColor = Color.FromArgb(96, 56, 20);
             btnClose.BorderRadius = 4;
-            btnClose.BorderThickness = 2;
+            btnClose.Cursor = Cursors.Hand;
             btnClose.CustomizableEdges = customizableEdges1;
             btnClose.DisabledState.BorderColor = Color.DarkGray;
             btnClose.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -78,7 +80,7 @@
             btnClose.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnClose.FillColor = Color.FromArgb(96, 56, 20);
             btnClose.FillColor2 = Color.FromArgb(96, 56, 20);
-            btnClose.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClose.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnClose.ForeColor = Color.White;
             btnClose.Location = new Point(84, 155);
             btnClose.Name = "btnClose";
@@ -92,9 +94,9 @@
             // 
             lbName.AutoSize = false;
             lbName.BackColor = Color.Transparent;
-            lbName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbName.ForeColor = Color.FromArgb(96, 56, 20);
-            lbName.Location = new Point(3, 96);
+            lbName.Location = new Point(3, 95);
             lbName.Name = "lbName";
             lbName.Size = new Size(274, 53);
             lbName.TabIndex = 2;
@@ -105,11 +107,12 @@
             // 
             lbError.AutoSize = false;
             lbError.BackColor = Color.Transparent;
-            lbError.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbError.BackgroundImageLayout = ImageLayout.None;
+            lbError.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lbError.ForeColor = Color.FromArgb(96, 56, 20);
-            lbError.Location = new Point(0, 33);
+            lbError.Location = new Point(0, 43);
             lbError.Name = "lbError";
-            lbError.Size = new Size(277, 57);
+            lbError.Size = new Size(277, 47);
             lbError.TabIndex = 1;
             lbError.Text = "Thông tin nhập sai";
             lbError.TextAlignment = ContentAlignment.MiddleCenter;
@@ -117,10 +120,13 @@
             // guna2ControlBox1
             // 
             guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2ControlBox1.BackColor = Color.Wheat;
+            guna2ControlBox1.BorderColor = Color.Transparent;
+            guna2ControlBox1.BorderRadius = 4;
             guna2ControlBox1.CustomizableEdges = customizableEdges3;
             guna2ControlBox1.FillColor = Color.FromArgb(96, 56, 20);
             guna2ControlBox1.IconColor = Color.White;
-            guna2ControlBox1.Location = new Point(233, 0);
+            guna2ControlBox1.Location = new Point(229, 4);
             guna2ControlBox1.Name = "guna2ControlBox1";
             guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ControlBox1.Size = new Size(44, 33);

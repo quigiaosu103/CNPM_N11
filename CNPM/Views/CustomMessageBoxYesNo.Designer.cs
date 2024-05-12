@@ -151,6 +151,7 @@
             Name = "CustomMessageBoxYesNo";
             StartPosition = FormStartPosition.CenterParent;
             Text = "CustomMessageBoxYesNo";
+            Load += CustomMessageBoxYesNo_Load;
             ResumeLayout(false);
             PerformLayout();
         }
