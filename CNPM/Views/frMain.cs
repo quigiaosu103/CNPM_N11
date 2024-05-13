@@ -75,11 +75,23 @@ namespace CNPM
 
         private void guna2GradientButton8_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-            Form f = new form_DangNhap();
-            //frmHistory f = new frmHistory();
-            f.Show();
+            var dialog = new CustomMessageBoxYesNo();
+            dialog.SetMess("Bạn muốn đăng xuất khỏi hệ thống?");
+            DialogResult dr = dialog.ShowDialog();
+            switch (dr)
+            {
+                case DialogResult.Yes:
+                    Form login = new form_DangNhap();
+                    this.Hide();
+                    if (login.ShowDialog() == DialogResult.OK)
+                    {
+                        Form main = new frMain();
+                        main.ShowDialog();
+                    }
+                    break;
+                case DialogResult.No:
+                    break;
+            }
 
 
         }

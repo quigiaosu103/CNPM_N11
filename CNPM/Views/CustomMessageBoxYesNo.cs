@@ -17,6 +17,11 @@ namespace CNPM.Views
             InitializeComponent();
         }
 
+        public void SetMess(string mess)
+        {
+            guna2HtmlLabel2.Text = mess;
+        }
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Yes;
